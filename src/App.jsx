@@ -206,8 +206,8 @@ const Modal = ({ isOpen, onClose, data }) => {
 };
 
 const SectionHeader = ({ title, subtitle, color, containerRef, scrollerRef }) => (
-  <div className="mb-16 text-center overflow-hidden">
-    <RevealText text={title} containerRef={containerRef} scrollerRef={scrollerRef} className={`font-playfair text-5xl md:text-6xl font-bold mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent pb-2`} />
+  <div className="mb-4 md:mb-16 text-center overflow-hidden">
+    <RevealText text={title} containerRef={containerRef} scrollerRef={scrollerRef} className={`font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent pb-2`} />
     <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto subtitle-reveal opacity-0 translate-y-8">{subtitle}</p>
   </div>
 );
@@ -384,23 +384,25 @@ const CategorySection = ({ categoryKey, scrollerRef, onCardClick }) => {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} id={categoryKey} className={`snap-start min-h-screen w-full flex flex-col justify-center shrink-0 pt-20 pb-10 bg-transparent relative overflow-hidden`}>
+    <section ref={containerRef} id={categoryKey} className={`snap-start min-h-screen w-full flex flex-col justify-center shrink-0 pt-16 md:pt-20 pb-6 md:pb-10 bg-transparent relative overflow-hidden`}>
       {/* Gradient Transitions */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#00FFAB]/30 to-violet-500/30 opacity-70"></div>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-gradient-to-b from-[#00FFAB]/5 to-transparent blur-[100px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 flex flex-col items-center">
-        <SectionHeader
-          title={data.title}
-          subtitle={data.subtitle}
-          color={theme.text}
-          containerRef={containerRef}
-          scrollerRef={scrollerRef}
-        />
+        <div className="w-full mb-8 md:mb-16">
+          <SectionHeader
+            title={data.title}
+            subtitle={data.subtitle}
+            color={theme.text}
+            containerRef={containerRef}
+            scrollerRef={scrollerRef}
+          />
+        </div>
 
         {/* 3D Infinite Circular Carousel */}
         <div
-          className="relative w-full h-[500px] md:h-[400px] mt-8 flex items-center justify-center touch-pan-y md:cursor-default"
+          className="relative w-full h-[500px] md:h-[400px] mt-2 md:mt-8 flex items-center justify-center touch-pan-y md:cursor-default"
           style={{ perspective: '2000px' }}
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
@@ -434,7 +436,7 @@ const CategorySection = ({ categoryKey, scrollerRef, onCardClick }) => {
               return (
                 <div
                   key={index}
-                  className="absolute w-[80vw] sm:w-[350px] md:w-[450px]"
+                  className="absolute w-[70vw] sm:w-[350px] md:w-[450px]"
                   style={{
                     // Each card orbits around the central cylinder point
                     transform: `rotateY(${itemAngle}deg) translateZ(${radius}px)`,
@@ -511,18 +513,18 @@ const OverviewSection = ({ scrollerRef, onNavigate }) => {
     if (!containerRef.current || !scrollerRef?.current) return;
 
     gsap.fromTo('.overview-card', {
-      y: 60,
       opacity: 0,
+      scale: 0.95
     }, {
-      y: 0,
       opacity: 1,
-      duration: 1.2,
+      scale: 1,
+      duration: 1,
       stagger: 0.15,
-      ease: 'expo.out',
+      ease: 'power2.out',
       scrollTrigger: {
         trigger: containerRef.current,
         scroller: scrollerRef.current,
-        start: 'top center+=150',
+        start: 'top 80%',
         toggleActions: 'play none none reverse'
       }
     });
@@ -644,76 +646,8 @@ function App() {
 
     container.addEventListener('scroll', handleScroll, { passive: true });
 
-    // Strict Full-Page Snapping Logic
-    let isScrolling = false;
-    let scrollTimeout;
-
-    const handleWheel = (e) => {
-      // Don't intercept if a modal is open
-      if (typeof document !== 'undefined' && (document.querySelector('.ReactModalPortal') || document.querySelector('[role="dialog"]'))) return;
-
-      // Stop the native continuous scroll from firing multiple events instantly
-      e.preventDefault();
-
-      // If we are currently animating a scroll, block all new scroll commands
-      if (isScrolling) return;
-
-      // Lock scrolling
-      isScrolling = true;
-
-      const direction = e.deltaY > 0 ? 1 : -1;
-
-      // Dynamically array of IDs for all sections
-      const sectionNodes = Array.from(container.querySelectorAll('.snap-start'));
-      const sections = sectionNodes.map(node => node.id).filter(Boolean);
-
-      // Determine current section index
-      const scrollTop = container.scrollTop;
-      let currentIndex = 0;
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const el = document.getElementById(sections[i]);
-        if (el && scrollTop >= el.offsetTop - 100) {
-          currentIndex = i;
-          break;
-        }
-      }
-
-      // Calculate next index
-      let nextIndex = currentIndex + direction;
-      if (nextIndex < 0) nextIndex = 0;
-      if (nextIndex >= sections.length) nextIndex = sections.length - 1;
-
-      // Scroll to target section
-      const targetId = sections[nextIndex];
-      const targetEl = document.getElementById(targetId);
-
-      if (targetEl) {
-        // Use scrollTo instead of scrollIntoView to keep momentum strictly controlled by the container
-        container.scrollTo({ top: targetEl.offsetTop, behavior: 'smooth' });
-
-        // Update tab if it's a specific category
-        if (targetId === 'physical' || targetId === 'mental' || targetId === 'financial') {
-          setActiveTab(targetId);
-        } else if (targetId === 'home') {
-          setActiveTab('physical');
-        }
-      }
-
-      // Strong debounce: unlock scrolling ONLY after 1200ms
-      // This absorbs the continuous rapid-fire events sent by Apple Trackpads / Logitech smooth wheels
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        isScrolling = false;
-      }, 1200);
-    };
-
-    // Attach wheel listener with passive: false to allow e.preventDefault()
-    container.addEventListener('wheel', handleWheel, { passive: false });
-
     return () => {
       container.removeEventListener('scroll', handleScroll);
-      container.removeEventListener('wheel', handleWheel);
-      clearTimeout(scrollTimeout);
     };
   }, []);
 
@@ -1086,8 +1020,8 @@ function App() {
               © {new Date().getFullYear()} {content.footer.copyright}
             </div>
           </div>
-          {/* Trust Badge - Corner Positioned (Right Side) */}
-          <div className="trust-badge absolute bottom-4 sm:bottom-8 right-24 sm:right-28 opacity-0 group z-20">
+          {/* Trust Badge - Corner Positioned (Left Side) */}
+          <div className="trust-badge absolute bottom-6 left-6 sm:bottom-8 sm:left-28 opacity-0 group z-20">
             <img
               src="https://www.greatplacetowork.in/wp-content/uploads/2025/01/gptw_CERTIFIED_badge_year-2025-1.png"
               alt="Great Place to Work Certified 2025"
