@@ -1,0 +1,211 @@
+{
+  "physical": {
+    "title": "Physical Wellness",
+    "subtitle": "Invest in your health with programs designed to energize, strengthen, and sustain your lifestyle.",
+    "bg": "bg-zinc-900",
+    "benefits": [
+      { 
+        "title": "Annual Health Checkup", 
+        "iconName": "Stethoscope", 
+        "desc": "Comprehensive yearly health screening.",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Your health is the foundation of everything you do. Our annual health checkup provides a complete overview of your physical wellbeing, featuring comprehensive blood panels, cardiovascular screenings, and personalized consultations with top-tier physicians. We believe in preventative care that keeps you performing at your best.",
+          "bulletPoints": ["Comprehensive Blood Panel", "Cardiovascular Screening", "Vision & Dental Check", "Personalized Physician Consultation"],
+          "gallery": [
+            "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1480&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1470&auto=format&fit=crop"
+          ]
+        }
+      },
+      { 
+        "title": "Gym Membership", 
+        "iconName": "Dumbbell", 
+        "desc": "Sponsored premium access to top fitness centers.",
+        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Access the best fitness facilities in your area. We subsidize memberships to premium gyms, boutique studios, and specialized fitness centers to ensure you have the equipment and environment needed to achieve your physical goals.",
+          "bulletPoints": ["Cross-country Gym Access", "Boutique Studio Allowances", "Personal Training Discounts", "Unlimited Classes"]
+        }
+      },
+      { 
+        "title": "Nutrition Consultation", 
+        "iconName": "Utensils", 
+        "desc": "Personalized diet and wellness plans.",
+        "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1453&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Fuel your body right. Connect with certified nutritionists and dietitians to create sustainable, personalized eating plans tailored to your specific lifestyle, allergies, and physical objectives.",
+          "bulletPoints": ["1-on-1 Dietitian Access", "Custom Meal Planning", "Supplement Guidance", "Metabolic Assessments"]
+        }
+      },
+      { 
+        "title": "Sports Reimbursement", 
+        "iconName": "Activity", 
+        "desc": "Support for recreational and competitive sports.",
+        "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Whether you are running a marathon, joining a local soccer league, or taking up rock climbing, we provide financial reimbursement for sports leagues, event registrations, and essential activewear.",
+          "bulletPoints": ["League Fees Covered", "Race Registration Support", "Equipment Allowances"]
+        }
+      },
+      { 
+        "title": "Wellness Leave", 
+        "iconName": "Calendar", 
+        "desc": "Dedicated wellness days to recharge and recover.",
+        "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1402&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Sometimes your body just needs a break. Take advantage of our dedicated wellness leave days—separate from your standard PTO—specifically designed for physical recovery, doctor visits, or just resting at home.",
+          "bulletPoints": ["Additional Paid Days Off", "No Questions Asked Policy", "Rollover Eligible"]
+        }
+      }
+    ]
+  },
+  "mental": {
+    "title": "Mental Wellness",
+    "subtitle": "Prioritize your inner balance and emotional resilience.",
+    "bg": "bg-zinc-950",
+    "benefits": [
+      { 
+        "title": "Therapy Sessions", 
+        "iconName": "Brain", 
+        "desc": "Confidential professional counseling.",
+        "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Take care of your mind with completely confidential, fully covered therapy sessions. Connect with licensed psychologists, psychiatrists, and counselors either in-person or virtually to navigate life's challenges.",
+          "bulletPoints": ["Virtual & In-person Options", "100% Confidential", "Zero Out-of-pocket Costs", "Diverse Network of Specialists"],
+          "gallery": [
+            "https://images.unsplash.com/photo-1555448248-2571daf6344b?q=80&w=1374&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=1470&auto=format&fit=crop"
+          ]
+        }
+      },
+      { 
+        "title": "Meditation Programs", 
+        "iconName": "Leaf", 
+        "desc": "Guided meditation for clarity and focus.",
+        "image": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?q=80&w=1519&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Quiet the noise. We provide premium subscriptions to top meditation platforms like Headspace and Calm, alongside access to in-office or virtual guided meditation workshops led by mindfulness experts.",
+          "bulletPoints": ["Premium App Subscriptions", "Weekly Guided Group Sessions", "Breathwork Workshops"]
+        }
+      },
+      { 
+        "title": "Stress Management", 
+        "iconName": "Coffee", 
+        "desc": "Practical techniques to manage workplace stress.",
+        "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Learn how to build resilience and navigate high-pressure environments. Our stress management programs include cognitive behavioral techniques, time-management workshops, and biofeedback training.",
+          "bulletPoints": ["Resilience Training", "Biofeedback Devices", "Managerial Support Training"]
+        }
+      },
+      { 
+        "title": "Work-Life Balance", 
+        "iconName": "Heart", 
+        "desc": "Personalized productivity and balance strategies.",
+        "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Discover how to disconnect effectively. We offer coaching on boundary setting, asynchronous communication strategies, and flexible working hours to ensure your career doesn't consume your personal life.",
+          "bulletPoints": ["Flexible Scheduling Agreements", "Asynchronous Comm Policies", "Boundary Coaching"]
+        }
+      },
+      { 
+        "title": "24/7 Helpline Support", 
+        "iconName": "Phone", 
+        "desc": "Around-the-clock emotional assistance.",
+        "image": "https://images.unsplash.com/photo-1520962880247-cfaf541c8724?q=80&w=1632&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Mental health emergencies don't stick to business hours. Access our dedicated 24/7 crisis and emotional support helpline directly connected to licensed professionals anytime you or your dependents need immediate help.",
+          "bulletPoints": ["Available 365 Days a Year", "Immediate Crisis Intervention", "Dependent Access"]
+        }
+      },
+      { 
+        "title": "Mindfulness Retreat", 
+        "iconName": "CheckCircle", 
+        "desc": "Sponsored wellness retreats and experiences.",
+        "image": "https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1559&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Unplug completely. We subsidize costs for approved multi-day mindfulness, yoga, and silent retreats, giving you the ultimate opportunity to reset your mental state away from screens and obligations.",
+          "bulletPoints": ["Subsidized Travel & Board", "Approved Global Locations", "Digital Detox Focused"]
+        }
+      }
+    ]
+  },
+  "financial": {
+    "title": "Financial Wellness",
+    "subtitle": "Build security, stability, and long-term prosperity.",
+    "bg": "bg-zinc-900",
+    "benefits": [
+      { 
+        "title": "Car Lease Program", 
+        "iconName": "Car", 
+        "desc": "Premium vehicle leasing options.",
+        "image": "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=1471&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Upgrade your commute with our corporate car lease program. Enjoy tax-efficient vehicle leasing options with no down payments, inclusive insurance, and comprehensive maintenance packages.",
+          "bulletPoints": ["Tax-efficient Pre-tax Deductions", "Zero Down Payment", "Insurance & Maintenance Included", "EV Subsidies Available"],
+          "gallery": [
+            "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1470&auto=format&fit=crop",
+            "https://images2.alphacoders.com/504/thumb-1920-504375.jpg"
+          ]
+        }
+      },
+      { 
+        "title": "Retirement Planning", 
+        "iconName": "TrendingUp", 
+        "desc": "Long-term savings and pension planning.",
+        "image": "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?q=80&w=1471&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Secure your future today. We provide aggressive corporate matching on your retirement contributions, comprehensive pension planning, and access to personalized wealth accumulation strategies.",
+          "bulletPoints": ["Aggressive Employer Match", "Diversified Investment Options", "Vesting Transparency"]
+        }
+      },
+      { 
+        "title": "Tax Consultation", 
+        "iconName": "DollarSign", 
+        "desc": "Expert guidance on tax planning and compliance.",
+        "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Navigate complex tax codes effortlessly. We offer free sessions with certified CPAs and tax advisors to help you optimize deductions, plan for capital gains, and file your annual returns effectively.",
+          "bulletPoints": ["Annual Filing Assistance", "Investment Tax Strategy", "Equity Compensation Guidance"]
+        }
+      },
+      { 
+        "title": "Investment Assistance", 
+        "iconName": "Wallet", 
+        "desc": "Portfolio management and advisory support.",
+        "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Grow your wealth with expert advice. Connect with fiduciary financial advisors to review your stock portfolio, real estate investments, and asset allocation strategy without the hefty management fees.",
+          "bulletPoints": ["Fiduciary Advisors", "Stock Option Planning", "Real Estate Investment Analysis", "Debt Reduction Strategies"]
+        }
+      },
+      { 
+        "title": "Emergency Fund Support", 
+        "iconName": "CheckCircle", 
+        "desc": "Financial assistance during unexpected situations.",
+        "image": "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Life is unpredictable, but your financial stability doesn't have to be. We offer zero-interest emergency loans, salary advances, and disaster relief grants to help you weather sudden financial storms.",
+          "bulletPoints": ["Zero-interest Emergency Loans", "Confidential Grant Programs", "Immediate Fund Disbursement"]
+        }
+      }
+    ]
+  },
+  "hero": {
+    "tag": "Your Modern Wellbeing Platform",
+    "title": "Empower Every",
+    "highlight": "Dimension",
+    "subtitle": "Designed to support every aspect of your life — physical, mental, and financial. Because true success begins with holistic wellbeing.",
+    "cta": "Explore Benefits"
+  },
+  "footer": {
+    "title": "Your Wellness,",
+    "titleHighlight": "Our Priority.",
+    "subtitle": "We are committed to providing comprehensive support across all facets of your life, ensuring you thrive both personally and professionally.",
+    "policyTag": "Policy Reference",
+    "policyLinkText": "View Detailed Policies",
+    "policyUrl": "https://people.zoho.in/fyershrms/zp#files/orgfile-catId:46493000000196190",
+    "copyright": "360° Wellness Platform. All rights reserved."
+  }
+}
