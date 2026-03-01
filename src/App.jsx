@@ -1001,10 +1001,10 @@ function App() {
           </div>
 
           <div className="hero-content max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10 w-full pt-4 md:pt-8" style={{ transformStyle: 'preserve-3d' }}>
-            <div className="hero-tag inline-flex items-center gap-2 sm:gap-3 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-zinc-900/80 border border-zinc-700/50 mb-6 sm:mb-8 backdrop-blur-md shadow-2xl cursor-default opacity-0">
+            {/*<div className="hero-tag inline-flex items-center gap-2 sm:gap-3 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-zinc-900/80 border border-zinc-700/50 mb-6 sm:mb-8 backdrop-blur-md shadow-2xl cursor-default opacity-0">
               <span className="flex h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-emerald-500 animate-pulse"></span>
               <span className="text-xs sm:text-sm font-semibold text-zinc-300">{content.hero.tag}</span>
-            </div>
+            </div>*/}
 
             <h1 className="font-playfair text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 md:mb-8 tracking-tight leading-[1.1] md:leading-[1.1]">
               <div className="flex justify-center flex-wrap gap-x-2 md:gap-x-4">
