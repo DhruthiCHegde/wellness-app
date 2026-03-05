@@ -11,7 +11,7 @@
         "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1470&auto=format&fit=crop",
         "modalDetails": {
           "fullDescription": "Your health is the foundation of everything you do. Our annual health checkup provides a complete overview of your physical wellbeing, featuring comprehensive blood panels, cardiovascular screenings, and personalized consultations with top-tier physicians. We believe in preventative care that keeps you performing at your best.",
-          "bulletPoints": ["Comprehensive Blood Panel", "Cardiovascular Screening", "Vision & Dental Check", "Personalized Physician Consultation"],
+          "bulletPoints": ["Access Doctor on Call With Practo", "Health Screening with Ethika", "Vision & Dental Check-Ups", "Personalized Physician Consultation"],
           "gallery": [
             "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1480&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1470&auto=format&fit=crop"
@@ -25,37 +25,37 @@
         "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop",
         "modalDetails": {
           "fullDescription": "Access the best fitness facilities in your area. We subsidize memberships to premium gyms, boutique studios, and specialized fitness centers to ensure you have the equipment and environment needed to achieve your physical goals.",
-          "bulletPoints": ["Cross-country Gym Access", "Boutique Studio Allowances", "Personal Training Discounts", "Unlimited Classes"]
+          "bulletPoints": ["Cross-country Gym Access", "Boutique Studio Allowances", "Free Access to 5000+ cult & Fiternity centers across 30+ states"]
         }
       },
       { 
         "title": "Nutrition Consultation", 
         "iconName": "Utensils", 
-        "desc": "Personalized diet and wellness plans.",
+        "desc": "Nutritious, affordable meals available at all Bengaluru offices.",
         "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1453&auto=format&fit=crop",
         "modalDetails": {
-          "fullDescription": "Fuel your body right. Connect with certified nutritionists and dietitians to create sustainable, personalized eating plans tailored to your specific lifestyle, allergies, and physical objectives.",
-          "bulletPoints": ["1-on-1 Dietitian Access", "Custom Meal Planning", "Supplement Guidance", "Metabolic Assessments"]
+          "fullDescription": "Eat well at work. Enjoy hygienic, balanced, and delicious meals.",
+          "bulletPoints": ["Balanced & Nutritious Menus", "Hygienic Food Preparation", "Available Across All Bengaluru Offices"]
         }
       },
       { 
         "title": "Sports Reimbursement", 
         "iconName": "Activity", 
-        "desc": "Support for recreational and competitive sports.",
+        "desc": "Thrilling inter-team sports events across multiple games.",
         "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1470&auto=format&fit=crop",
         "modalDetails": {
-          "fullDescription": "Whether you are running a marathon, joining a local soccer league, or taking up rock climbing, we provide financial reimbursement for sports leagues, event registrations, and essential activewear.",
-          "bulletPoints": ["League Fees Covered", "Race Registration Support", "Equipment Allowances"]
+          "fullDescription": "Get ready to compete, connect, and celebrate team spirit with Game On — our exciting inter-team sports initiative. Participate in action-packed tournaments across cricket, badminton, snooker, table tennis, and many more games designed to promote camaraderie, wellness, and friendly competition.",
+          "bulletPoints": ["Inter-Team Cricket Tournaments", "Badminton & Table Tennis Matches", "Snooker Championships", "Exciting Multi-Sport Competitions"]
         }
       },
       { 
-        "title": "Wellness Leave", 
+        "title": "Empowering Women", 
         "iconName": "Calendar", 
-        "desc": "Dedicated wellness days to recharge and recover.",
+        "desc": "Supporting women’s health and well-being at the workplace.",
         "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1402&auto=format&fit=crop",
         "modalDetails": {
-          "fullDescription": "Sometimes your body just needs a break. Take advantage of our dedicated wellness leave days—separate from your standard PTO—specifically designed for physical recovery, doctor visits, or just resting at home.",
-          "bulletPoints": ["Additional Paid Days Off", "No Questions Asked Policy", "Rollover Eligible"]
+          "fullDescription": "We are committed to creating an inclusive and supportive workplace for women. Our initiative provides convenient and eco-friendly hygiene solutions in restrooms, along with a dedicated one-day women’s wellness leave to support health, comfort, and overall well-being.",
+          "bulletPoints": ["1-Day Women’s Wellness Leave", "Convenient Hygiene Solutions", "Eco-Friendly Restroom Essentials", "Supportive & Inclusive Workplace"]
         }
       }
     ]
@@ -72,23 +72,27 @@
         "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1470&auto=format&fit=crop",
         "modalDetails": {
           "fullDescription": "Take care of your mind with completely confidential, fully covered therapy sessions. Connect with licensed psychologists, psychiatrists, and counselors either in-person or virtually to navigate life's challenges.",
-          "bulletPoints": ["Virtual & In-person Options", "100% Confidential", "Zero Out-of-pocket Costs", "Diverse Network of Specialists"],
+          "bulletPoints": ["Daily Guided Meditation", "Stress-Relief Sessions", "Mindfullness Webinars"],
           "gallery": [
             "https://images.unsplash.com/photo-1555448248-2571daf6344b?q=80&w=1374&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=1470&auto=format&fit=crop"
           ]
         }
       },
-      { 
-        "title": "Meditation Programs", 
-        "iconName": "Leaf", 
-        "desc": "Guided meditation for clarity and focus.",
-        "image": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?q=80&w=1519&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Quiet the noise. We provide premium subscriptions to top meditation platforms like Headspace and Calm, alongside access to in-office or virtual guided meditation workshops led by mindfulness experts.",
-          "bulletPoints": ["Premium App Subscriptions", "Weekly Guided Group Sessions", "Breathwork Workshops"]
-        }
-      },
+      {
+      "title": "Harassment Free Workspace",
+      "iconName": "ShieldCheck",
+      "desc": "Promoting respect, safety, and dignity at work.",
+      "image": "https://image.pngaaa.com/783/4957783-middle.png",
+      "modalDetails": {
+        "fullDescription": "We are committed to maintaining a workplace where everyone feels safe, respected, and valued. Our policies, training, and support systems ensure a harassment-free environment for all employees.",
+        "bulletPoints": [
+        "Clear Anti-Harassment Policies",
+        "Training & Awareness Programs",
+        "Support & Reporting Resources"
+        ]
+      }
+    },
       { 
         "title": "Stress Management", 
         "iconName": "Coffee", 
@@ -96,39 +100,66 @@
         "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1470&auto=format&fit=crop",
         "modalDetails": {
           "fullDescription": "Learn how to build resilience and navigate high-pressure environments. Our stress management programs include cognitive behavioral techniques, time-management workshops, and biofeedback training.",
-          "bulletPoints": ["Resilience Training", "Biofeedback Devices", "Managerial Support Training"]
+          "bulletPoints": ["Ensuring transparency with swift resolutions", "Biofeedback Devices", "Managerial Support Training"]
         }
       },
+      {
+  "title": "Empowering Women & Supporting Families",
+  "iconName": "FamilySupport",
+  "desc": "Inclusive programs for women’s growth and family care benefits.",
+  "image": "https://static.vecteezy.com/system/resources/previews/023/523/204/large_2x/women-empowerment-womens-day-campaign-celebration-poster-with-women-face-silhouette-vector.jpg",
+  "modalDetails": {
+    "fullDescription": "We are dedicated to fostering gender equality and supporting families. Our initiatives empower women through career development and leadership opportunities, while family-focused benefits like on-site creche support make balancing work and home easier.",
+    "bulletPoints": [
+      "₹8000 Monthly childcare assistance until your child turns 6"
+    ]
+  }
+},
       { 
-        "title": "Work-Life Balance", 
-        "iconName": "Heart", 
-        "desc": "Personalized productivity and balance strategies.",
-        "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1470&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Discover how to disconnect effectively. We offer coaching on boundary setting, asynchronous communication strategies, and flexible working hours to ensure your career doesn't consume your personal life.",
-          "bulletPoints": ["Flexible Scheduling Agreements", "Asynchronous Comm Policies", "Boundary Coaching"]
-        }
-      },
-      { 
-        "title": "24/7 Helpline Support", 
+        "title": "Comprehensive Leave Program", 
         "iconName": "Phone", 
         "desc": "Around-the-clock emotional assistance.",
         "image": "https://images.unsplash.com/photo-1520962880247-cfaf541c8724?q=80&w=1632&auto=format&fit=crop",
         "modalDetails": {
-          "fullDescription": "Mental health emergencies don't stick to business hours. Access our dedicated 24/7 crisis and emotional support helpline directly connected to licensed professionals anytime you or your dependents need immediate help.",
-          "bulletPoints": ["Available 365 Days a Year", "Immediate Crisis Intervention", "Dependent Access"]
+          "fullDescription": "We believe rest and personal time are essential to long-term success. Our comprehensive leave program supports employees through life’s important moments—whether it’s vacation, parental leave, medical needs, or personal time—so you can recharge and return at your best.",
+          "bulletPoints": ["15 Days Priviledged Leave with up to 45 days of Carry-Over", "12 Days of Medical Leave", "1 Day to Celebrate Your Birthday with loved ones", "1 Additional day for Marriages", "3 Days of Bereavement Leave", "15 Days of Paternity or Adoption Leave", "Compensatory Off - Your Hard work Deserves Extra Time Off"]
         }
       },
-      { 
-        "title": "Mindfulness Retreat", 
-        "iconName": "CheckCircle", 
-        "desc": "Sponsored wellness retreats and experiences.",
-        "image": "https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=1559&auto=format&fit=crop",
+      {
+  "title": "Recognizing and Rewarding Excellence",
+  "iconName": "StarAward",
+  "desc": "Honoring outstanding performance and contributions.",
+  "image": "https://www.thomas.co/sites/default/files/thomas-files/styles/resource_banner_image/public/2022-06/The%20Secret%20of%20Employee%20Reward%20Strategies.jpg?itok=x1Ex6orI",
+  "modalDetails": {
+    "fullDescription": "We celebrate exceptional achievements by acknowledging and rewarding individuals and teams who go above and beyond. Our recognition programs are designed to motivate, inspire, and foster a culture of excellence across the organization.",
+    "bulletPoints": [
+      "Performance-Based Awards",
+      "Peer Recognition Programs",
+      "Incentives & Honors",
+      "Spot Awards - Recognizing Spot Brilliance",
+        "🏅 FYERS Values Ambassador",
+        "🏅 FYERS Rising Star",
+        "🏅FYERS Flash of Brilliance",
+        "🏅 FYERS Exceptional Team Player",
+        "THANK Anyone @ FYERS - Every Thank You makes a difference"
+
+    ]
+  }
+},
+      {
+        "title":"Milestone Celebrations",
+        "iconName":"Milestone",
+        "desc":"Celebrate achievements and team events",
+        "image":"https://lovinglifeco.com/wp-content/uploads/2023/07/motivated-employees-celebrating.jpg",
         "modalDetails": {
-          "fullDescription": "Unplug completely. We subsidize costs for approved multi-day mindfulness, yoga, and silent retreats, giving you the ultimate opportunity to reset your mental state away from screens and obligations.",
-          "bulletPoints": ["Subsidized Travel & Board", "Approved Global Locations", "Digital Detox Focused"]
-        }
-      }
+           "fullDescription": "Recognize the moments that matter. We sponsor milestone celebrations for individual achievements, project launches, anniversaries, and major team wins—creating meaningful experiences that strengthen culture and boost morale.",
+    "bulletPoints": [
+      "Company-Sponsored Celebrations",
+      "Team & Individual Recognition",
+      "Event Planning Support"
+    ]
+  }
+}  
     ]
   },
   "financial": {
@@ -137,16 +168,16 @@
     "bg": "bg-zinc-900",
     "benefits": [
       { 
-        "title": "Car Lease Program", 
+        "title": "Drive in Style", 
         "iconName": "Car", 
         "desc": "Premium vehicle leasing options.",
         "image": "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=1471&auto=format&fit=crop",
         "modalDetails": {
           "fullDescription": "Upgrade your commute with our corporate car lease program. Enjoy tax-efficient vehicle leasing options with no down payments, inclusive insurance, and comprehensive maintenance packages.",
-          "bulletPoints": ["Tax-efficient Pre-tax Deductions", "Zero Down Payment", "Insurance & Maintenance Included", "EV Subsidies Available"],
+          "bulletPoints": ["Exclusive Car Lease Plans for Level 6 & Above", "Zero Down Payment", "Insurance & Maintenance Included", "EV Subsidies Available"],
           "gallery": [
             "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1470&auto=format&fit=crop",
-            "https://images2.alphacoders.com/504/thumb-1920-504375.jpg"
+            "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1470&auto=format&fit=crop"
           ]
         }
       },
@@ -157,19 +188,22 @@
         "image": "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?q=80&w=1471&auto=format&fit=crop",
         "modalDetails": {
           "fullDescription": "Secure your future today. We provide aggressive corporate matching on your retirement contributions, comprehensive pension planning, and access to personalized wealth accumulation strategies.",
-          "bulletPoints": ["Aggressive Employer Match", "Diversified Investment Options", "Vesting Transparency"]
+          "bulletPoints": ["Provident Fund (PF)", "Gratuity for long-term financial stability"]
         }
       },
-      { 
-        "title": "Tax Consultation", 
-        "iconName": "DollarSign", 
-        "desc": "Expert guidance on tax planning and compliance.",
-        "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1470&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Navigate complex tax codes effortlessly. We offer free sessions with certified CPAs and tax advisors to help you optimize deductions, plan for capital gains, and file your annual returns effectively.",
-          "bulletPoints": ["Annual Filing Assistance", "Investment Tax Strategy", "Equity Compensation Guidance"]
-        }
-      },
+      {
+  "title": "Refer a You",
+  "iconName": "Megaphone",
+  "desc": "Encouraging team referrals to grow our talent community.",
+  "image": "https://static.vecteezy.com/system/resources/previews/002/899/014/non_2x/refer-a-friend-with-loudspeaker-in-speech-bubble-vector.jpg",
+  "modalDetails": {
+    "fullDescription": "Help us find great talent by referring people you know! Our Refer-a-You program rewards employees who bring in qualified candidates, strengthening our team with trusted connections and expanding our culture of success.",
+    "bulletPoints": [
+      "Earn upto ₹ 60,000 for Tech roles",
+      "₹30,000 for Non-Tech roles"
+    ]
+  }
+},
       { 
         "title": "Investment Assistance", 
         "iconName": "Wallet", 
@@ -177,11 +211,11 @@
         "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1470&auto=format&fit=crop",
         "modalDetails": {
           "fullDescription": "Grow your wealth with expert advice. Connect with fiduciary financial advisors to review your stock portfolio, real estate investments, and asset allocation strategy without the hefty management fees.",
-          "bulletPoints": ["Fiduciary Advisors", "Stock Option Planning", "Real Estate Investment Analysis", "Debt Reduction Strategies"]
+          "bulletPoints": ["Expert-led sessions on budgeting", "Investment Planning", "Wealth Creation"]
         }
       },
       { 
-        "title": "Emergency Fund Support", 
+        "title": "Risk Covered, Future Secured", 
         "iconName": "CheckCircle", 
         "desc": "Financial assistance during unexpected situations.",
         "image": "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?q=80&w=1470&auto=format&fit=crop",
@@ -194,7 +228,7 @@
   },
   "hero": {
     "tag": "Your Modern Wellbeing Platform",
-    "title": "Empower Every",
+    "title": "Empowering Every",
     "highlight": "Dimension",
     "subtitle": "Designed to support every aspect of your life — physical, mental, and financial. Because true success begins with holistic wellbeing.",
     "cta": "Explore Benefits"
