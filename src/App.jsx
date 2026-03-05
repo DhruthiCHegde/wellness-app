@@ -19,7 +19,12 @@ import {
   X,
   ArrowUp,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  ShieldCheck,
+  Award,
+  Milestone,
+  Megaphone,
+  Orbit // Renamed FamilySupport to a standard Lucide equivalent Orbit or Users
 } from 'lucide-react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -33,11 +38,11 @@ gsap.registerPlugin(ScrollTrigger);
 const iconMap = {
   Heart, Activity, Wallet, Brain, Leaf, Coffee, Phone,
   TrendingUp, Car, DollarSign, Calendar, Utensils,
-  Dumbbell, Stethoscope, CheckCircle
+  Dumbbell, Stethoscope, CheckCircle, ShieldCheck,
+  StarAward: Award, Milestone, Megaphone, FamilySupport: Orbit
 };
 
 const getThemeClasses = (categoryKey) => {
-  if (categoryKey === 'mental') return { text: 'text-violet-400', bg: 'bg-violet-500/10', icon: 'text-violet-400', hover: 'group-hover:bg-violet-500/20' };
   return { text: 'text-[#00FFAB]', bg: 'bg-[#00FFAB]/10', icon: 'text-[#00FFAB]', hover: 'group-hover:bg-[#00FFAB]/20' };
 };
 
@@ -130,6 +135,7 @@ const RevealText = ({ text, className, containerRef, scrollerRef, scrollSnapDela
         </span>
       ))}
     </div>
+    // <></>
   );
 };
 
@@ -170,9 +176,30 @@ const Modal = ({ isOpen, onClose, data }) => {
         <div className="h-64 md:h-96 w-full relative group overflow-hidden">
           <img src={data.item.image} alt={data.item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent"></div>
-          <div className="absolute bottom-6 left-8">
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent mb-2 pb-1">{data.item.title}</h2>
-            <p className={`text-lg font-bold ${data.theme.text}`}>{data.item.desc}</p>
+          <div className="absolute bottom-6 left-8 right-8 flex flex-row justify-between items-end gap-4">
+            <div className="flex-1 pr-4">
+              <h2 className="font-playfair text-3xl md:text-5xl font-bold bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent mb-2 pb-1">{data.item.title}</h2>
+              <p className={`text-base md:text-lg font-bold ${data.theme.text}`}>{data.item.desc}</p>
+            </div>
+            {/* Animated Policy Link Pinned to Image overlay */}
+            <a
+              href={content.footer.policyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block relative w-12 h-12 md:w-16 md:h-16 shrink-0 transition-all duration-300 hover:scale-110 md:mb-2 hover:-translate-y-1"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src="/privacy-policy.gif"
+                alt="Policy Information"
+                className="w-full h-full object-contain filter drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)] group-hover:drop-shadow-[0_8px_20px_rgba(0,255,171,0.6)] transition-all duration-300"
+              />
+              {/* Tooltip */}
+              <span className="absolute top-[100%] left-1/3 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap bg-zinc-900 border border-[#00FFAB]/30 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-xl pointer-events-none z-20">
+                View detailed policy
+                <span className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-zinc-900 border-t border-l border-[#00FFAB]/30 rotate-45 transform"></span>
+              </span>
+            </a>
           </div>
         </div>
 
@@ -207,7 +234,9 @@ const Modal = ({ isOpen, onClose, data }) => {
 
 const SectionHeader = ({ title, subtitle, color, containerRef, scrollerRef }) => (
   <div className="mb-4 md:mb-16 text-center overflow-hidden">
-    <RevealText text={title} containerRef={containerRef} scrollerRef={scrollerRef} className={`font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent pb-2`} />
+    <RevealText
+      text={title}
+      containerRef={containerRef} scrollerRef={scrollerRef} className={`font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent pb-2`} />
     <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto subtitle-reveal opacity-0 translate-y-8">{subtitle}</p>
   </div>
 );
@@ -531,14 +560,14 @@ const OverviewSection = ({ scrollerRef, onNavigate }) => {
   }, { scope: containerRef });
 
   return (
-    <section id="overview" ref={containerRef} className="snap-start min-h-screen w-full relative flex flex-col items-center justify-center shrink-0 bg-zinc-950 py-20 overflow-hidden border-b border-zinc-900">
+    <section id="overview" ref={containerRef} className="snap-start min-h-screen w-full relative flex flex-col items-center justify-center shrink-0 bg-zinc-950 py-0 md:py-0 overflow-hidden border-b border-zinc-900">
       {/* Subtle parallax background elements */}
       <div className="parallax-bg absolute top-1/4 -right-1/4 w-[800px] h-[800px] bg-emerald-500/10 rounded-full blur-[150px] mix-blend-screen pointer-events-none z-0"></div>
       <div className="parallax-bg absolute bottom-1/4 -left-1/4 w-[800px] h-[800px] bg-violet-500/10 rounded-full blur-[150px] mix-blend-screen pointer-events-none z-0"></div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 mt-0 md:mt-0">
         <SectionHeader
-          title="Holistic Pillars"
+          title=""
           subtitle="We support every dimension of your life with comprehensive benefits."
           color="text-white"
           containerRef={containerRef}
@@ -592,8 +621,6 @@ const OverviewSection = ({ scrollerRef, onNavigate }) => {
 
 function App() {
   const [activeTab, setActiveTab] = useState('physical');
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(true);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [scrollerReady, setScrollerReady] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
@@ -635,7 +662,6 @@ function App() {
           }
         }
 
-        setShowNavbar(scrollTop < 100 || scrollTop < scrollContainerRef.current.lastScrollTop);
         scrollContainerRef.current.lastScrollTop = scrollTop;
         setShowBackToTop(scrollTop > 500);
       }
@@ -653,7 +679,6 @@ function App() {
 
   const scrollToSection = (section) => {
     setActiveTab(section);
-    setIsMobileMenuOpen(false);
     const element = document.getElementById(section);
     if (element && scrollContainerRef.current) {
       scrollContainerRef.current.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
@@ -834,22 +859,6 @@ function App() {
         }
       );
 
-      // Trust Badge Fade-In
-      gsap.fromTo('.trust-badge',
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1.5,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: '.trust-badge',
-            scroller: scroller,
-            start: 'top bottom-=50',
-            toggleActions: 'play none none reverse'
-          }
-        }
-      );
     }
 
     return cleanup;
@@ -859,47 +868,21 @@ function App() {
     <>
       <div id="main-scroller" ref={scrollContainerRef} className="h-screen w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth font-sans text-zinc-100 bg-zinc-950 hide-scrollbar selection:bg-emerald-500/30">
 
-        {/* Navbar */}
-        <nav className={`fixed w-full bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/50 top-0 z-50 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-20 items-center">
-              <div className="flex items-center gap-3 cursor-pointer nav-logo" onClick={() => scrollToSection('home')}>
-                <div className="bg-gradient-to-br from-emerald-400 to-emerald-600 p-2 rounded-xl border border-zinc-700/50 shadow-[0_0_15px_rgba(16,185,129,0.3)]">
-                  <Heart className="h-6 w-6 text-zinc-950 fill-current" />
-                </div>
+        {/* Hero Section */}
+        <div id="home" ref={homeRef} className="snap-start min-h-screen w-full relative text-white flex flex-col items-center justify-center overflow-hidden shrink-0 pt-20 sm:pt-24 border-b border-zinc-900 bg-zinc-950">
+
+          {/* Logos in Hero Section */}
+          <div className="absolute top-8 left-0 right-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-50 pointer-events-none">
+            <div className="flex justify-between items-center w-full pointer-events-auto">
+              <div className="flex items-center gap-3 cursor-pointer nav-logo w-fit" onClick={() => scrollToSection('home')}>
+                <img src="/fyers.jpeg" alt="Fyers Logo" className="h-8 md:h-10 w-auto rounded-md object-contain" />
                 <span className="font-playfair text-2xl font-bold tracking-tight text-white hover:text-emerald-400 transition-colors">360° Wellness</span>
               </div>
-
-              {/* Desktop Menu */}
-              <div className="hidden md:flex space-x-2">
-                <button onClick={() => scrollToSection('physical')} className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === 'physical' ? 'border border-[#00FFAB] text-[#00FFAB] shadow-[0_0_15px_rgba(0,255,171,0.2)] bg-[#00FFAB]/10' : 'text-zinc-400 hover:text-[#00FFAB] hover:border-[#00FFAB]/50 border border-transparent hover:bg-[#00FFAB]/5'}`}>Physical</button>
-                <button onClick={() => scrollToSection('mental')} className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === 'mental' ? 'border border-[#00FFAB] text-[#00FFAB] shadow-[0_0_15px_rgba(0,255,171,0.2)] bg-[#00FFAB]/10' : 'text-zinc-400 hover:text-[#00FFAB] hover:border-[#00FFAB]/50 border border-transparent hover:bg-[#00FFAB]/5'}`}>Mental</button>
-                <button onClick={() => scrollToSection('financial')} className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === 'financial' ? 'border border-[#00FFAB] text-[#00FFAB] shadow-[0_0_15px_rgba(0,255,171,0.2)] bg-[#00FFAB]/10' : 'text-zinc-400 hover:text-[#00FFAB] hover:border-[#00FFAB]/50 border border-transparent hover:bg-[#00FFAB]/5'}`}>Financial</button>
-              </div>
-
-              {/* Mobile Menu Button */}
-              <div className="md:hidden flex items-center">
-                <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-zinc-400 hover:text-white focus:outline-none p-2 rounded-lg hover:bg-zinc-800 transition-colors">
-                  {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                </button>
+              <div className="nav-logo w-fit cursor-pointer group">
+                <img src="/GPW.jpeg" alt="Great Place To Work" className="w-14 md:w-16 h-auto object-contain rounded-md transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]" />
               </div>
             </div>
           </div>
-
-          {/* Mobile Menu Dropdown */}
-          {isMobileMenuOpen && (
-            <div className="md:hidden bg-zinc-950 border-b border-zinc-800 absolute w-full shadow-2xl">
-              <div className="px-4 pt-2 pb-6 space-y-2">
-                <button onClick={() => scrollToSection('physical')} className={`block w-full text-left px-4 py-3 rounded-xl text-base font-bold transition-all border ${activeTab === 'physical' ? 'text-[#00FFAB] bg-[#00FFAB]/10 border-[#00FFAB]/20 shadow-[0_0_15px_rgba(0,255,171,0.1)]' : 'text-zinc-400 hover:bg-zinc-800 hover:text-[#00FFAB] border-transparent'}`}>Physical</button>
-                <button onClick={() => scrollToSection('mental')} className={`block w-full text-left px-4 py-3 rounded-xl text-base font-bold transition-all border ${activeTab === 'mental' ? 'text-[#00FFAB] bg-[#00FFAB]/10 border-[#00FFAB]/20 shadow-[0_0_15px_rgba(0,255,171,0.1)]' : 'text-zinc-400 hover:bg-zinc-800 hover:text-[#00FFAB] border-transparent'}`}>Mental</button>
-                <button onClick={() => scrollToSection('financial')} className={`block w-full text-left px-4 py-3 rounded-xl text-base font-bold transition-all border ${activeTab === 'financial' ? 'text-[#00FFAB] bg-[#00FFAB]/10 border-[#00FFAB]/20 shadow-[0_0_15px_rgba(0,255,171,0.1)]' : 'text-zinc-400 hover:bg-zinc-800 hover:text-[#00FFAB] border-transparent'}`}>Financial</button>
-              </div>
-            </div>
-          )}
-        </nav>
-
-        {/* Hero Section */}
-        <div id="home" ref={homeRef} className="snap-start min-h-screen w-full relative text-white flex flex-col items-center justify-center overflow-hidden shrink-0 pt-20 sm:pt-24 border-b border-zinc-900 bg-zinc-950">
 
           {/* Ambient Motion: Moving Mesh Gradient replacing the video */}
           <div className="absolute inset-0 z-0 opacity-50 mix-blend-screen pointer-events-none overflow-hidden" style={{ perspective: '1000px' }}>
@@ -913,7 +896,7 @@ function App() {
                 <defs>
                   <linearGradient id="ecg-grad" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stopColor="#00FFAB" stopOpacity="0" />
-                    <stop offset="20%" stopColor="#00FFAB" />
+                    <stop offset="20%" stopColor="#00bb7dff" />
                     <stop offset="50%" stopColor="#ffffff" />
                     <stop offset="80%" stopColor="#172BFE" />
                     <stop offset="100%" stopColor="#172BFE" stopOpacity="0" />
@@ -959,7 +942,7 @@ function App() {
 
             <div className="hero-cta opacity-0">
               <MagneticButton
-                onClick={() => scrollToSection('physical')}
+                onClick={() => scrollToSection('overview')}
                 className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 font-bold text-zinc-950 bg-[#00FFAB] rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_4px_20px_rgba(0,255,171,0.2)] hover:shadow-[0_8px_40px_rgba(0,255,171,0.4)] duration-300 text-base sm:text-lg border border-[#00FFAB]/50"
               >
                 <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease"></div>
@@ -998,7 +981,7 @@ function App() {
               {content.footer.subtitle}
             </p>
 
-            <a
+            {/* <a
               href={content.footer.policyUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -1012,21 +995,13 @@ function App() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </div>
-            </a>
+            </a> */}
 
             {/* Trust Badge has been moved to absolute corner positioning below */}
 
             <div className="footer-text-anim mt-16 text-sm text-zinc-600 font-medium tracking-wide">
               © {new Date().getFullYear()} {content.footer.copyright}
             </div>
-          </div>
-          {/* Trust Badge - Corner Positioned (Left Side) */}
-          <div className="trust-badge absolute bottom-6 left-6 sm:bottom-8 sm:left-28 opacity-0 group z-20">
-            <img
-              src="https://www.greatplacetowork.in/wp-content/uploads/2025/01/gptw_CERTIFIED_badge_year-2025-1.png"
-              alt="Great Place to Work Certified 2025"
-              className="w-14 md:w-14 h-auto object-contain drop-shadow-[0_0_15px_rgba(16,185,129,0.2)] hover:scale-105 transition-transform duration-500 hover:drop-shadow-[0_0_25px_rgba(16,185,129,0.4)]"
-            />
           </div>
         </footer>
 
