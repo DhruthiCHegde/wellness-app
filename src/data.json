@@ -1,231 +1,4 @@
 {
-  "physical": {
-    "title": "Physical Wellness",
-    "subtitle": "Invest in your health with programs designed to energize, strengthen, and sustain your lifestyle.",
-    "bg": "bg-zinc-900",
-    "benefits": [
-      { 
-        "title": "Annual Health Checkup", 
-        "iconName": "Stethoscope", 
-        "desc": "Comprehensive yearly health screening.",
-        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1470&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Your health is the foundation of everything you do. Our annual health checkup provides a complete overview of your physical wellbeing, featuring comprehensive blood panels, cardiovascular screenings, and personalized consultations with top-tier physicians. We believe in preventative care that keeps you performing at your best.",
-          "bulletPoints": ["Access Doctor on Call With Practo", "Health Screening with Ethika", "Vision & Dental Check-Ups", "Personalized Physician Consultation"],
-          "gallery": [
-            "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1480&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1470&auto=format&fit=crop"
-          ]
-        }
-      },
-      { 
-        "title": "Gym Membership", 
-        "iconName": "Dumbbell", 
-        "desc": "Sponsored premium access to top fitness centers.",
-        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Access the best fitness facilities in your area. We subsidize memberships to premium gyms, boutique studios, and specialized fitness centers to ensure you have the equipment and environment needed to achieve your physical goals.",
-          "bulletPoints": ["Cross-country Gym Access", "Boutique Studio Allowances", "Free Access to 5000+ cult & Fiternity centers across 30+ states"]
-        }
-      },
-      { 
-        "title": "Nutrition Consultation", 
-        "iconName": "Utensils", 
-        "desc": "Nutritious, affordable meals available at all Bengaluru offices.",
-        "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1453&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Eat well at work. Enjoy hygienic, balanced, and delicious meals.",
-          "bulletPoints": ["Balanced & Nutritious Menus", "Hygienic Food Preparation", "Available Across All Bengaluru Offices"]
-        }
-      },
-      { 
-        "title": "Sports Reimbursement", 
-        "iconName": "Activity", 
-        "desc": "Thrilling inter-team sports events across multiple games.",
-        "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1470&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Get ready to compete, connect, and celebrate team spirit with Game On — our exciting inter-team sports initiative. Participate in action-packed tournaments across cricket, badminton, snooker, table tennis, and many more games designed to promote camaraderie, wellness, and friendly competition.",
-          "bulletPoints": ["Inter-Team Cricket Tournaments", "Badminton & Table Tennis Matches", "Snooker Championships", "Exciting Multi-Sport Competitions"]
-        }
-      },
-      { 
-        "title": "Empowering Women", 
-        "iconName": "Calendar", 
-        "desc": "Supporting women’s health and well-being at the workplace.",
-        "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1402&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "We are committed to creating an inclusive and supportive workplace for women. Our initiative provides convenient and eco-friendly hygiene solutions in restrooms, along with a dedicated one-day women’s wellness leave to support health, comfort, and overall well-being.",
-          "bulletPoints": ["1-Day Women’s Wellness Leave", "Convenient Hygiene Solutions", "Eco-Friendly Restroom Essentials", "Supportive & Inclusive Workplace"]
-        }
-      }
-    ]
-  },
-  "mental": {
-    "title": "Mental Wellness",
-    "subtitle": "Prioritize your inner balance and emotional resilience.",
-    "bg": "bg-zinc-950",
-    "benefits": [
-      { 
-        "title": "Therapy Sessions", 
-        "iconName": "Brain", 
-        "desc": "Confidential professional counseling.",
-        "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1470&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Take care of your mind with completely confidential, fully covered therapy sessions. Connect with licensed psychologists, psychiatrists, and counselors either in-person or virtually to navigate life's challenges.",
-          "bulletPoints": ["Daily Guided Meditation", "Stress-Relief Sessions", "Mindfullness Webinars"],
-          "gallery": [
-            "https://images.unsplash.com/photo-1555448248-2571daf6344b?q=80&w=1374&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=1470&auto=format&fit=crop"
-          ]
-        }
-      },
-      {
-      "title": "Harassment Free Workspace",
-      "iconName": "ShieldCheck",
-      "desc": "Promoting respect, safety, and dignity at work.",
-      "image": "https://image.pngaaa.com/783/4957783-middle.png",
-      "modalDetails": {
-        "fullDescription": "We are committed to maintaining a workplace where everyone feels safe, respected, and valued. Our policies, training, and support systems ensure a harassment-free environment for all employees.",
-        "bulletPoints": [
-        "Clear Anti-Harassment Policies",
-        "Training & Awareness Programs",
-        "Support & Reporting Resources"
-        ]
-      }
-    },
-      { 
-        "title": "Stress Management", 
-        "iconName": "Coffee", 
-        "desc": "Practical techniques to manage workplace stress.",
-        "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1470&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Learn how to build resilience and navigate high-pressure environments. Our stress management programs include cognitive behavioral techniques, time-management workshops, and biofeedback training.",
-          "bulletPoints": ["Ensuring transparency with swift resolutions", "Biofeedback Devices", "Managerial Support Training"]
-        }
-      },
-      {
-  "title": "Empowering Women & Supporting Families",
-  "iconName": "FamilySupport",
-  "desc": "Inclusive programs for women’s growth and family care benefits.",
-  "image": "https://static.vecteezy.com/system/resources/previews/023/523/204/large_2x/women-empowerment-womens-day-campaign-celebration-poster-with-women-face-silhouette-vector.jpg",
-  "modalDetails": {
-    "fullDescription": "We are dedicated to fostering gender equality and supporting families. Our initiatives empower women through career development and leadership opportunities, while family-focused benefits like on-site creche support make balancing work and home easier.",
-    "bulletPoints": [
-      "₹8000 Monthly childcare assistance until your child turns 6"
-    ]
-  }
-},
-      { 
-        "title": "Comprehensive Leave Program", 
-        "iconName": "Phone", 
-        "desc": "Around-the-clock emotional assistance.",
-        "image": "https://images.unsplash.com/photo-1520962880247-cfaf541c8724?q=80&w=1632&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "We believe rest and personal time are essential to long-term success. Our comprehensive leave program supports employees through life’s important moments—whether it’s vacation, parental leave, medical needs, or personal time—so you can recharge and return at your best.",
-          "bulletPoints": ["15 Days Priviledged Leave with up to 45 days of Carry-Over", "12 Days of Medical Leave", "1 Day to Celebrate Your Birthday with loved ones", "1 Additional day for Marriages", "3 Days of Bereavement Leave", "15 Days of Paternity or Adoption Leave", "Compensatory Off - Your Hard work Deserves Extra Time Off"]
-        }
-      },
-      {
-  "title": "Recognizing and Rewarding Excellence",
-  "iconName": "StarAward",
-  "desc": "Honoring outstanding performance and contributions.",
-  "image": "https://www.thomas.co/sites/default/files/thomas-files/styles/resource_banner_image/public/2022-06/The%20Secret%20of%20Employee%20Reward%20Strategies.jpg?itok=x1Ex6orI",
-  "modalDetails": {
-    "fullDescription": "We celebrate exceptional achievements by acknowledging and rewarding individuals and teams who go above and beyond. Our recognition programs are designed to motivate, inspire, and foster a culture of excellence across the organization.",
-    "bulletPoints": [
-      "Performance-Based Awards",
-      "Peer Recognition Programs",
-      "Incentives & Honors",
-      "Spot Awards - Recognizing Spot Brilliance",
-        "🏅 FYERS Values Ambassador",
-        "🏅 FYERS Rising Star",
-        "🏅FYERS Flash of Brilliance",
-        "🏅 FYERS Exceptional Team Player",
-        "THANK Anyone @ FYERS - Every Thank You makes a difference"
-
-    ]
-  }
-},
-      {
-        "title":"Milestone Celebrations",
-        "iconName":"Milestone",
-        "desc":"Celebrate achievements and team events",
-        "image":"https://lovinglifeco.com/wp-content/uploads/2023/07/motivated-employees-celebrating.jpg",
-        "modalDetails": {
-           "fullDescription": "Recognize the moments that matter. We sponsor milestone celebrations for individual achievements, project launches, anniversaries, and major team wins—creating meaningful experiences that strengthen culture and boost morale.",
-    "bulletPoints": [
-      "Company-Sponsored Celebrations",
-      "Team & Individual Recognition",
-      "Event Planning Support"
-    ]
-  }
-}  
-    ]
-  },
-  "financial": {
-    "title": "Financial Wellness",
-    "subtitle": "Build security, stability, and long-term prosperity.",
-    "bg": "bg-zinc-900",
-    "benefits": [
-      { 
-        "title": "Drive in Style", 
-        "iconName": "Car", 
-        "desc": "Premium vehicle leasing options.",
-        "image": "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=1471&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Upgrade your commute with our corporate car lease program. Enjoy tax-efficient vehicle leasing options with no down payments, inclusive insurance, and comprehensive maintenance packages.",
-          "bulletPoints": ["Exclusive Car Lease Plans for Level 6 & Above", "Zero Down Payment", "Insurance & Maintenance Included", "EV Subsidies Available"],
-          "gallery": [
-            "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1470&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1470&auto=format&fit=crop"
-          ]
-        }
-      },
-      { 
-        "title": "Retirement Planning", 
-        "iconName": "TrendingUp", 
-        "desc": "Long-term savings and pension planning.",
-        "image": "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?q=80&w=1471&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Secure your future today. We provide aggressive corporate matching on your retirement contributions, comprehensive pension planning, and access to personalized wealth accumulation strategies.",
-          "bulletPoints": ["Provident Fund (PF)", "Gratuity for long-term financial stability"]
-        }
-      },
-      {
-  "title": "Refer a You",
-  "iconName": "Megaphone",
-  "desc": "Encouraging team referrals to grow our talent community.",
-  "image": "https://static.vecteezy.com/system/resources/previews/002/899/014/non_2x/refer-a-friend-with-loudspeaker-in-speech-bubble-vector.jpg",
-  "modalDetails": {
-    "fullDescription": "Help us find great talent by referring people you know! Our Refer-a-You program rewards employees who bring in qualified candidates, strengthening our team with trusted connections and expanding our culture of success.",
-    "bulletPoints": [
-      "Earn upto ₹ 60,000 for Tech roles",
-      "₹30,000 for Non-Tech roles"
-    ]
-  }
-},
-      { 
-        "title": "Investment Assistance", 
-        "iconName": "Wallet", 
-        "desc": "Portfolio management and advisory support.",
-        "image": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1470&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Grow your wealth with expert advice. Connect with fiduciary financial advisors to review your stock portfolio, real estate investments, and asset allocation strategy without the hefty management fees.",
-          "bulletPoints": ["Expert-led sessions on budgeting", "Investment Planning", "Wealth Creation"]
-        }
-      },
-      { 
-        "title": "Risk Covered, Future Secured", 
-        "iconName": "CheckCircle", 
-        "desc": "Financial assistance during unexpected situations.",
-        "image": "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?q=80&w=1470&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Life is unpredictable, but your financial stability doesn't have to be. We offer zero-interest emergency loans, salary advances, and disaster relief grants to help you weather sudden financial storms.",
-          "bulletPoints": ["Zero-interest Emergency Loans", "Confidential Grant Programs", "Immediate Fund Disbursement"]
-        }
-      }
-    ]
-  },
   "hero": {
     "tag": "Your Modern Wellbeing Platform",
     "title": "Empowering Every",
@@ -233,6 +6,251 @@
     "subtitle": "Designed to support every aspect of your life — physical, mental, and financial. Because true success begins with holistic wellbeing.",
     "cta": "Explore Benefits"
   },
+
+  "physical": {
+    "title": "Physical Wellness",
+    "subtitle": "Invest in your health with programs designed to energize, strengthen, and sustain your lifestyle.",
+    "bg": "bg-zinc-900",
+    "benefits": [
+      {
+        "title": "Annual Health Camp",
+        "iconName": "Stethoscope",
+        "desc": "Company organized preventive health check-up for all employees.",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "FYERS organizes an annual preventive health camp to promote early detection of health risks and overall wellbeing.",
+          "bulletPoints": [
+            "Company-organized annual health camp",
+            "Preventive screenings and diagnostics",
+            "Open to all employees across locations",
+            "₹2000 reimbursement for members outside camp locations"
+          ]
+        }
+      },
+      {
+        "title": "Cult Fitness Membership",
+        "iconName": "Dumbbell",
+        "desc": "Access fitness centres across India through Cult.",
+        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Employees can access multiple Cult centres nationwide to support fitness goals and healthy lifestyles.",
+          "bulletPoints": [
+            "Nationwide Cult membership access",
+            "Multiple fitness programs",
+            "Flexible workouts and training sessions"
+          ]
+        }
+      },
+      {
+        "title": "Doctor Consultation – Practo",
+        "iconName": "Activity",
+        "desc": "24/7 access to verified doctors through Practo.",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Employees and families can connect with doctors across 24+ specialties via Practo.",
+          "bulletPoints": [
+            "15 consultations per month per family",
+            "Audio, video or chat consultations",
+            "24+ medical specialties including counselling",
+            "Up to 20% discount on medicines and lab tests"
+          ],
+          "gallery": [
+            "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1480&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1470&auto=format&fit=crop"
+          ]
+        }
+      },
+      {
+        "title": "Subsidized Healthy Lunch",
+        "iconName": "Utensils",
+        "desc": "Nutritious meals subsidized by FYERS.",
+        "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1453&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "FYERS provides healthy meals Monday to Friday with 50% subsidy to promote better nutrition and convenience.",
+          "bulletPoints": [
+            "50% meal subsidy by FYERS",
+            "Veg and non-veg meal choices",
+            "Pre-order meals via partner app",
+            "Promotes healthy and balanced diets"
+          ]
+        }
+      },
+      {
+        "title": "Sports & Fitness Events",
+        "iconName": "Calendar",
+        "desc": "Team sports events to promote wellness and collaboration.",
+        "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "FYERS organizes multiple sports and fitness activities to build teamwork and support employee wellbeing.",
+          "bulletPoints": [
+            "Inter-team sports events",
+            "Wellness engagement activities",
+            "Team collaboration through fitness"
+          ]
+        }
+      }
+    ]
+  },
+
+  "mental": {
+    "title": "Mental Wellness",
+    "subtitle": "Prioritize your inner balance and emotional resilience.",
+    "bg": "bg-zinc-950",
+    "benefits": [
+      {
+        "title": "Mental Health Webinars",
+        "iconName": "Brain",
+        "desc": "Expert-led sessions on mental wellbeing.",
+        "image": "https://resize.elle.fr/square_960_webp/var/plain_site/storage/images/minceur/bien-etre-relaxation/comment-bien-se-reposer-4053568/97376974-1-fre-FR/Comment-bien-se-reposer.jpg",
+        "modalDetails": {
+          "fullDescription": "FYERS provides webinars by industry experts to help employees improve mental health and manage stress.",
+          "bulletPoints": [
+            "Mental health awareness sessions",
+            "Stress management guidance",
+            "Available through Zoho Connect"
+          ]
+        }
+      },
+      {
+        "title": "Mindfulness & Meditation",
+        "iconName": "Coffee",
+        "desc": "Daily guided meditation and mindfulness practices.",
+        "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Employees can participate in daily meditation and mindfulness sessions to improve focus and emotional wellbeing.",
+          "bulletPoints": [
+            "Daily guided meditation",
+            "Mindfulness programs",
+            "Stress reduction techniques"
+          ]
+        }
+      },
+      {
+        "title": "Comprehensive Leave Program",
+        "iconName": "Phone",
+        "desc": "Flexible leave policies supporting work-life balance.",
+        "image": "https://images.unsplash.com/photo-1520962880247-cfaf541c8724?q=80&w=1632&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "FYERS provides multiple leave options to help employees rest, recharge, and handle important life events.",
+          "bulletPoints": [
+            "15 days Privilege Leave annually",
+            "12 days Sick Leave",
+            "Birthday Leave",
+            "Wedding Leave",
+            "Bereavement Leave",
+            "Women’s Wellness Leave",
+            "Maternity & Paternity Leave"
+          ]
+        }
+      },
+      {
+        "title": "Harassment-Free Workplace",
+        "iconName": "ShieldCheck",
+        "desc": "Promoting respect, dignity, and inclusivity.",
+        "image": "https://image.pngaaa.com/783/4957783-middle.png",
+        "modalDetails": {
+          "fullDescription": "FYERS maintains a strict zero-tolerance policy for harassment and discrimination.",
+          "bulletPoints": [
+            "POSH policy compliance",
+            "Safe reporting channels",
+            "Respectful and inclusive work environment"
+          ]
+        }
+      },
+      {
+        "title": "Grievance Helpline",
+        "iconName": "Megaphone",
+        "desc": "Dedicated support channel for employee concerns.",
+        "image": "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Employees can report workplace concerns confidentially through the grievance redressal system.",
+          "bulletPoints": [
+            "Dedicated grievance email channel",
+            "Acknowledgement within 48 hours",
+            "Structured resolution process"
+          ]
+        }
+      }
+    ]
+  },
+
+  "financial": {
+    "title": "Financial Wellness",
+    "subtitle": "Build security, stability, and long-term prosperity.",
+    "bg": "bg-zinc-900",
+    "benefits": [
+      {
+        "title": "Group Medical Insurance",
+        "iconName": "CheckCircle",
+        "desc": "Health insurance coverage for employees and dependents.",
+        "image": "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "FYERS provides group medical insurance to support hospitalization expenses.",
+          "bulletPoints": [
+            "₹5,00,000 coverage per person",
+            "Covers employees and dependents",
+            "Hospitalization due to illness or injury"
+          ]
+        }
+      },
+      {
+        "title": "Accident & Life Insurance",
+        "iconName": "Car",
+        "desc": "Financial protection against unexpected events.",
+        "image": "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=1471&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Employees receive financial protection through accident and term insurance programs.",
+          "bulletPoints": [
+            "₹30,00,000 accident insurance coverage",
+            "Term insurance up to 5× base salary"
+          ]
+        }
+      },
+      {
+        "title": "Provident Fund & Gratuity",
+        "iconName": "TrendingUp",
+        "desc": "Retirement savings and long-term financial stability.",
+        "image": "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?q=80&w=1471&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "FYERS contributes to statutory social security schemes including EPF and gratuity.",
+          "bulletPoints": [
+            "12% employer PF contribution",
+            "Employees Pension Scheme",
+            "Gratuity eligibility after 5 years"
+          ]
+        }
+      },
+      {
+        "title": "Employee Referral Program",
+        "iconName": "Wallet",
+        "desc": "Earn rewards by referring great talent.",
+        "image": "https://static.vecteezy.com/system/resources/previews/002/899/014/non_2x/refer-a-friend-with-loudspeaker-in-speech-bubble-vector.jpg",
+        "modalDetails": {
+          "fullDescription": "Employees can refer candidates and receive referral bonuses.",
+          "bulletPoints": [
+            "Up to ₹60,000 for technical roles",
+            "Up to ₹30,000 for non-technical roles",
+            "Paid after 3 and 6 months"
+          ]
+        }
+      },
+      {
+        "title": "Creche Reimbursement",
+        "iconName": "CheckCircle",
+        "desc": "Childcare expense support for working parents.",
+        "image": "https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "FYERS supports parents by reimbursing childcare expenses.",
+          "bulletPoints": [
+            "Up to ₹8000 per month per child",
+            "Applicable for children up to 6 years",
+            "Submit claims via Zoho Expense"
+          ]
+        }
+      }
+    ]
+  },
+
   "footer": {
     "title": "Your Wellness,",
     "titleHighlight": "Our Priority.",
