@@ -84,23 +84,6 @@
         "iconName": "Calendar",
         "desc": "Team sports events to promote wellness and collaboration.",
         "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1470&auto=format&fit=crop",
-        "url": "https://connect.fyers.in/home",
-        "modalDetails": {
-          "fullDescription": "FYERS organizes multiple sports and fitness events to engage and drive collaboration across employees from different teams and departments.",
-          "bulletPoints": [
-            "Multiple inter-team sports events planned annually",
-            "Wellness engagement activities",
-            "Team collaboration through fitness",
-            "Updates posted on ZOHO Connect"
-          ]
-        }
-      },
-      {
-        "title": "Health Centre",
-        "iconName": "HeartPulse",
-        "desc": "Health, Eye and Dental check-ups for insured individuals.",
-        "image": "https://images.unsplash.com/photo-1588776814546-ec7e8c8d6150?q=80&w=1470&auto=format&fit=crop",
-        "url": "https://fyers.ethika.in/employee/home",
         "modalDetails": {
           "fullDescription": "Employees can avail health, eye and dental check-ups for insured individuals through the Total Health section on the FYERS benefits portal.",
           "bulletPoints": [
@@ -186,28 +169,22 @@
         }
       },
       {
-        "title": "Harassment-Free Workplace",
-        "iconName": "ShieldCheck",
-        "desc": "Promoting respect, dignity, and inclusivity.",
-        "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1469&auto=format&fit=crop",
-        "url": "https://people.fyers.in/fyershrms/zp#files/orgfile",
-        "modalDetails": {
-          "fullDescription": "FYERS is committed to maintaining a harassment-free workplace with zero tolerance for intimidation, humiliation, or sabotage. The company prohibits all discrimination and complies with POSH regulations.",
-          "bulletPoints": [
-            "Zero tolerance for harassment and discrimination",
-            "POSH policy compliance",
-            "Covers bullying, intimidation, sexual harassment, and workplace violence",
-            "Report any instance directly to HR",
-            "Full policy available in ZOHO People → Policies section"
-          ]
-        }
-      },
-      {
-        "title": "Grievance Helpline",
-        "iconName": "Megaphone",
-        "desc": "Dedicated support channel for employee concerns.",
-        "image": "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1470&auto=format&fit=crop",
-        "url": "mailto:membergrievances@fyers.in",
+  "title": "Empowering Women & Supporting Families",
+  "iconName": "FamilySupport",
+  "desc": "Inclusive programs for women’s growth and family care benefits.",
+  "image": "https://static.vecteezy.com/system/resources/previews/023/523/204/large_2x/women-empowerment-womens-day-campaign-celebration-poster-with-women-face-silhouette-vector.jpg",
+  "modalDetails": {
+    "fullDescription": "We are dedicated to fostering gender equality and supporting families. Our initiatives empower women through career development and leadership opportunities, while family-focused benefits like on-site creche support make balancing work and home easier.",
+    "bulletPoints": [
+      "₹8000 Monthly childcare assistance until your child turns 6"
+    ]
+  }
+},
+      { 
+        "title": "Comprehensive Leave Program", 
+        "iconName": "Phone", 
+        "desc": "Around-the-clock emotional assistance.",
+        "image": "https://images.unsplash.com/photo-1520962880247-cfaf541c8724?q=80&w=1632&auto=format&fit=crop",
         "modalDetails": {
           "fullDescription": "FYERS has established a dedicated grievances email to ensure swift and transparent resolution of employee concerns. A structured escalation matrix is in place.",
           "bulletPoints": [
