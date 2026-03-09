@@ -32,13 +32,14 @@
         "iconName": "Calendar",
         "desc": "Team sports events to promote wellness and collaboration.",
         "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1470&auto=format&fit=crop",
+        "url": "https://connect.fyers.in/home",
         "modalDetails": {
-          "fullDescription": "Employees can avail health, eye and dental check-ups for insured individuals through the Total Health section on the FYERS benefits portal.",
+          "fullDescription": "FYERS organizes multiple sports and fitness events to engage and drive collaboration across employees from different teams and departments.",
           "bulletPoints": [
-            "Health check-ups for insured individuals",
-            "Eye check-ups available",
-            "Dental check-ups available",
-            "Access via Total Health section at fyers.ethika.in"
+            "Multiple inter-team sports events planned annually",
+            "Wellness engagement activities",
+            "Team collaboration through fitness",
+            "Updates posted on ZOHO Connect"
           ]
         }
       },
