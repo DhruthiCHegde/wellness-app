@@ -3,7 +3,7 @@
     "tag": "Your Modern Wellbeing Platform",
     "title": "Empowering Every",
     "highlight": "Dimension",
-    "subtitle": "Designed to support every aspect of your life — physical, mental, and financial. Because true success begins with holistic wellbeing.",
+    "subtitle": "Designed to support every aspect of your life — Physical, Mental, and Financial. Because true success begins with holistic wellbeing.",
     "cta": "Explore Benefits"
   },
 
@@ -12,23 +12,6 @@
     "subtitle": "Invest in your health with programs designed to energize, strengthen, and sustain your lifestyle.",
     "bg": "bg-zinc-900",
     "benefits": [
-      {
-        "title": "Annual Health Camp",
-        "iconName": "Stethoscope",
-        "desc": "Company organized preventive health check-up for all employees.",
-        "image": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=1491&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "FYERS organizes an annual preventive health camp to promote early detection of health risks and overall wellbeing. The camp is typically conducted during the first quarter of the calendar year and is open to all permanent, probationary, and fixed-term employees across locations.",
-          "bulletPoints": [
-            "Company-organized annual health camp, typically in Q1",
-            "Preventive screenings and diagnostics",
-            "Open to all employees — permanent, probationary, and fixed-term",
-            "₹2,000 reimbursement for members outside camp locations",
-            "Participation is voluntary; medical results remain strictly confidential",
-            "Health check results shall not be used for performance, promotion, or disciplinary decisions"
-          ]
-        }
-      },
       {
         "title": "Cult Fitness Membership",
         "iconName": "Dumbbell",
@@ -45,21 +28,17 @@
         }
       },
       {
-        "title": "Doctor Consultation – Practo",
-        "iconName": "Activity",
-        "desc": "24/7 access to verified doctors through Practo.",
-        "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1480&auto=format&fit=crop",
+        "title": "FYERS Club Verse",
+        "iconName": "Calendar",
+        "desc": "Team sports events to promote wellness and collaboration.",
+        "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1470&auto=format&fit=crop",
         "modalDetails": {
-          "fullDescription": "FYERS is tied up with Practo, a medical platform that connects employees and their families with verified doctors across all specialties for any health concern.",
+          "fullDescription": "Employees can avail health, eye and dental check-ups for insured individuals through the Total Health section on the FYERS benefits portal.",
           "bulletPoints": [
-            "15 consultations per month per family",
-            "24+ specialties including psychological counselling and veterinary",
-            "Connect via audio, video, or chat",
-            "Connect with a doctor in less than 5 minutes — 24/7 availability",
-            "Complete family coverage — add up to 4 adults + 2 kids",
-            "Up to 20% discount on online medicine orders (prescription) and lab tests",
-            "Up to 10% discount on in-clinic appointments with Practo's cashless OPD network",
-            "Access to 1L+ doctor network pan India for offline appointment booking"
+            "Health check-ups for insured individuals",
+            "Eye check-ups available",
+            "Dental check-ups available",
+            "Access via Total Health section at fyers.ethika.in"
           ]
         }
       },
@@ -80,20 +59,41 @@
         }
       },
       {
-        "title": "Sports & Fitness Events",
-        "iconName": "Calendar",
-        "desc": "Team sports events to promote wellness and collaboration.",
-        "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1470&auto=format&fit=crop",
+        "title": "Doctor Consultation – Practo",
+        "iconName": "Activity",
+        "desc": "24/7 access to verified doctors through Practo.",
+        "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1480&auto=format&fit=crop",
         "modalDetails": {
-          "fullDescription": "Employees can avail health, eye and dental check-ups for insured individuals through the Total Health section on the FYERS benefits portal.",
+          "fullDescription": "FYERS is tied up with Practo, a medical platform that connects employees and their families with verified doctors across all specialties for any health concern.",
           "bulletPoints": [
-            "Health check-ups for insured individuals",
-            "Eye check-ups available",
-            "Dental check-ups available",
-            "Access via Total Health section at fyers.ethika.in"
+            "Unlimited consultations per month per family",
+            "24+ specialties including psychological counselling and veterinary",
+            "Connect via audio, video, or chat",
+            "Connect with a doctor in less than 5 minutes — 24/7 availability",
+            "Complete family coverage — add up to 4 adults + 2 kids",
+            "Up to 20% discount on online medicine orders (prescription) and lab tests",
+            "Up to 10% discount on in-clinic appointments with Practo's cashless OPD network",
+            "Access to 1L+ doctor network pan India for offline appointment booking"
           ]
         }
       },
+      {
+        "title": "Annual Health Camp",
+        "iconName": "Stethoscope",
+        "desc": "Company organized preventive health check-up for all employees.",
+        "image": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=1491&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "FYERS organizes an annual preventive health camp to promote early detection of health risks and overall wellbeing. The camp is typically conducted during the first quarter of the calendar year and is open to all permanent, probationary, and fixed-term employees across locations.",
+          "bulletPoints": [
+            "Company-organized annual health camp for all members",
+            "Preventive screenings and diagnostics",
+            "Open to all employees — permanent, probationary, and fixed-term",
+            "₹2,000 reimbursement for members outside camp locations",
+            "Participation is voluntary; medical results remain strictly confidential",
+            "Health check results shall not be used for performance, promotion, or disciplinary decisions"
+          ]
+        }
+      },   
       {
         "title": "Physical Health Webinars",
         "iconName": "Monitor",
@@ -119,36 +119,6 @@
     "bg": "bg-zinc-950",
     "benefits": [
       {
-        "title": "Mental Health Webinars",
-        "iconName": "Brain",
-        "desc": "Expert-led sessions on mental wellbeing.",
-        "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1489&auto=format&fit=crop",
-        "url": "https://fyers.ethika.in/employee/home",
-        "modalDetails": {
-          "fullDescription": "FYERS provides access to multiple webinars by industry experts covering many aspects of mental health improvement.",
-          "bulletPoints": [
-            "Mental health awareness sessions by industry experts",
-            "Stress management guidance",
-            "Available on ZOHO Connect",
-            "Also accessible at fyers.ethika.in/employee/home"
-          ]
-        }
-      },
-      {
-        "title": "Mindfulness & Meditation",
-        "iconName": "Coffee",
-        "desc": "Daily guided meditation and mindfulness practices.",
-        "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1470&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "Employees can benefit from daily guided meditation and mindfulness programs available as part of the FYERS wellness offering (Mind the Mind).",
-          "bulletPoints": [
-            "Daily guided meditation",
-            "Mindfulness — Mind the Mind program",
-            "Stress reduction techniques"
-          ]
-        }
-      },
-      {
         "title": "Comprehensive Leave Program",
         "iconName": "CalendarCheck",
         "desc": "Flexible leave policies supporting work-life balance.",
@@ -156,6 +126,7 @@
         "modalDetails": {
           "fullDescription": "FYERS provides a comprehensive leave plan to help employees get ample time to rejuvenate and spend quality time with their loved ones. All leaves are accrued monthly and managed through Zoho People.",
           "bulletPoints": [
+            "Public Holidays - holidays declared by the central & state governments of India",
             "15 days Privilege Leave (PL) annually — carry forward up to 30 days; excess mandatorily encashed",
             "12 days Sick Leave (SL) — lapses at year end; no encashment on separation",
             "Women's Wellness Leave — 1 day per month (12 days/year) for eligible women aged 18–52; auto-approved",
@@ -165,35 +136,6 @@
             "Paternity/Adoption Leave — up to 15 days within 6 months of parenthood",
             "Bereavement Leave — up to 3 days per year for loss of immediate family member",
             "Compensatory Off — for working on weekends/public holidays; must be availed within 90 days"
-          ]
-        }
-      },
-      {
-  "title": "Empowering Women & Supporting Families",
-  "iconName": "FamilySupport",
-  "desc": "Inclusive programs for women’s growth and family care benefits.",
-  "image": "https://static.vecteezy.com/system/resources/previews/023/523/204/large_2x/women-empowerment-womens-day-campaign-celebration-poster-with-women-face-silhouette-vector.jpg",
-  "modalDetails": {
-    "fullDescription": "We are dedicated to fostering gender equality and supporting families. Our initiatives empower women through career development and leadership opportunities, while family-focused benefits like on-site creche support make balancing work and home easier.",
-    "bulletPoints": [
-      "₹8000 Monthly childcare assistance until your child turns 6"
-    ]
-  }
-},
-      { 
-        "title": "Comprehensive Leave Program", 
-        "iconName": "Phone", 
-        "desc": "Around-the-clock emotional assistance.",
-        "image": "https://images.unsplash.com/photo-1520962880247-cfaf541c8724?q=80&w=1632&auto=format&fit=crop",
-        "modalDetails": {
-          "fullDescription": "FYERS has established a dedicated grievances email to ensure swift and transparent resolution of employee concerns. A structured escalation matrix is in place.",
-          "bulletPoints": [
-            "Submit grievances to membergrievances@fyers.in",
-            "HR acknowledges within 48 working hours with a reference number",
-            "Structured 7-step resolution process",
-            "Escalation to HR Ops → Asha Murali → HR Head (Girish Subramanian)",
-            "No retaliation for raising grievances in good faith",
-            "All grievances handled with strict confidentiality"
           ]
         }
       },
@@ -214,6 +156,54 @@
           ]
         }
       },
+      {
+        "title": "Mental Health Webinars",
+        "iconName": "Brain",
+        "desc": "Expert-led sessions on mental wellbeing.",
+        "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1489&auto=format&fit=crop",
+        "url": "https://fyers.ethika.in/employee/home",
+        "modalDetails": {
+          "fullDescription": "FYERS provides access to multiple webinars by industry experts covering many aspects of mental health improvement.",
+          "bulletPoints": [
+            "Mental health awareness sessions by industry experts",
+            "Stress management guidance",
+            "Available on ZOHO Connect",
+            "Also accessible at fyers.ethika.in/employee/home"
+          ]
+        }
+      },
+      { 
+        "title": "Grievance Helpline", 
+        "iconName": "Phone", 
+        "desc": "Around-the-clock emotional assistance.",
+        "image": "https://images.unsplash.com/photo-1520962880247-cfaf541c8724?q=80&w=1632&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "FYERS has established a dedicated grievances email to ensure swift and transparent resolution of employee concerns. A structured escalation matrix is in place.",
+          "bulletPoints": [
+            "Submit grievances to membergrievances@fyers.in",
+            "HR acknowledges within 48 working hours with a reference number",
+            "Structured 7-step resolution process",
+            "Escalation to HR Ops → Asha Murali → HR Head (Girish Subramanian)",
+            "No retaliation for raising grievances in good faith",
+            "All grievances handled with strict confidentiality"
+          ]
+        }
+      },
+      {
+        "title": "Mindfulness & Meditation",
+        "iconName": "Coffee",
+        "desc": "Daily guided meditation and mindfulness practices.",
+        "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1470&auto=format&fit=crop",
+        "modalDetails": {
+          "fullDescription": "Employees can benefit from daily guided meditation and mindfulness programs available as part of the FYERS wellness offering (Mind the Mind).",
+          "bulletPoints": [
+            "Daily guided meditation",
+            "Mindfulness — Mind the Mind program",
+            "Stress reduction techniques"
+          ]
+        }
+      }, 
+      
       {
         "title": "Milestone Celebrations & Team Events",
         "iconName": "PartyPopper",
@@ -239,7 +229,7 @@
     "bg": "bg-zinc-900",
     "benefits": [
       {
-        "title": "Group Medical Insurance",
+        "title": "Insurance Benifits",
         "iconName": "HeartHandshake",
         "desc": "Health insurance coverage for employees and dependents.",
         "image": "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?q=80&w=1470&auto=format&fit=crop",
@@ -250,19 +240,6 @@
             "₹5,00,000 coverage per person",
             "Covers employees and dependents",
             "Hospitalization due to illness, disease, or injury",
-            "Policy details at fyers.ethika.in/employee/home"
-          ]
-        }
-      },
-      {
-        "title": "Accident & Life Insurance",
-        "iconName": "ShieldPlus",
-        "desc": "Financial protection against accidents and life events.",
-        "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1470&auto=format&fit=crop",
-        "url": "https://fyers.ethika.in/employee/home",
-        "modalDetails": {
-          "fullDescription": "Employees receive financial protection through Group Personal Accident Insurance and Group Term Insurance programs.",
-          "bulletPoints": [
             "₹30,00,000 Group Personal Accident Insurance — covers accidental death, disability, or injury",
             "Group Term Insurance — 3× base salary for career level 8 & below",
             "Group Term Insurance — 5× base salary for career level 9 & above",
@@ -272,7 +249,7 @@
         }
       },
       {
-        "title": "Provident Fund & Gratuity",
+        "title": "Retirement Benifit",
         "iconName": "TrendingUp",
         "desc": "Retirement savings and long-term financial stability.",
         "image": "https://images.unsplash.com/photo-1559526324-593bc073d938?q=80&w=1470&auto=format&fit=crop",
