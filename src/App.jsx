@@ -179,7 +179,7 @@ const Modal = ({ isOpen, onClose, data }) => {
           <div className="absolute bottom-6 left-8 right-8 flex flex-row justify-between items-end gap-4">
             <div className="flex-1 pr-4">
               <h2 className="font-playfair text-3xl md:text-5xl font-bold bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent mb-2 pb-1">{data.item.title}</h2>
-              <p className={`text-base md:text-lg font-bold ${data.theme.text}`}>{data.item.desc}</p>
+              <p className={`text-base md:text-lg font-bold ${data.theme.text}`}>{renderTextWithLinks(data.item.desc, data.theme.text)}</p>
             </div>
             {/* Animated Policy Link Pinned to Image overlay */}
             <a
@@ -205,7 +205,7 @@ const Modal = ({ isOpen, onClose, data }) => {
 
         <div className="p-8 md:p-12 text-zinc-300 space-y-8">
           <div className="prose prose-invert prose-lg max-w-none font-light leading-relaxed">
-            <p>{data.item.modalDetails?.fullDescription || data.item.desc}</p>
+            <p>{renderTextWithLinks(data.item.modalDetails?.fullDescription || data.item.desc, data.theme.text)}</p>
           </div>
 
           {data.item.modalDetails?.gallery && (
@@ -221,7 +221,7 @@ const Modal = ({ isOpen, onClose, data }) => {
               {data.item.modalDetails.bulletPoints.map((point, i) => (
                 <li key={i} className="flex items-start gap-3 bg-zinc-900/50 p-4 rounded-xl border border-zinc-800/50 hover:bg-zinc-800/80 transition-colors">
                   <CheckCircle className={`w-6 h-6 shrink-0 ${data.theme.text} mt-0.5`} />
-                  <span className="font-medium text-zinc-200">{point}</span>
+                  <span className="font-medium text-zinc-200">{renderTextWithLinks(point, data.theme.text)}</span>
                 </li>
               ))}
             </ul>
@@ -230,6 +230,33 @@ const Modal = ({ isOpen, onClose, data }) => {
       </div>
     </div>
   );
+};
+
+const renderTextWithLinks = (text, themeClass) => {
+  if (!text) return null;
+  // Match URLs starting with http:// or https:// or simple domain names like fyers.ethika.in
+  const urlRegex = /(https?:\/\/[^\s]+|[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?)/g;
+
+  return text.split(urlRegex).map((part, i) => {
+    if (part && part.match(/^(https?:\/\/[^\s]+|[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?)$/)) {
+      const href = part.startsWith('http') ? part : `https://${part}`;
+      // Remove https:// or http:// for clean display
+      const displayString = part.replace(/^https?:\/\//, '');
+      return (
+        <a
+          key={i}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className={`font-bold underline underline-offset-4 ${themeClass || 'text-white'} hover:opacity-80 transition-opacity whitespace-normal break-all`}
+        >
+          {displayString}
+        </a>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
 };
 
 const SectionHeader = ({ title, subtitle, color, containerRef, scrollerRef }) => (
@@ -309,7 +336,26 @@ const BenefitCard = ({ item, theme, index, onClick }) => {
         </div>
         <div className="mt-auto transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
           <h3 className="font-playfair font-semibold text-2xl bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent mb-2 pb-1">{item.title}</h3>
-          <p className="text-zinc-300 text-sm line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">{item.desc}</p>
+          <p className="text-zinc-300 text-sm line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+            {item.desc.split(/(https?:\/\/[^\s]+|[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?)/g).map((part, i) => {
+              if (part.match(/^(https?:\/\/[^\s]+|[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?)$/)) {
+                const href = part.startsWith('http') ? part : `https://${part}`;
+                return (
+                  <a
+                    key={i}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()} // Prevent card click when clicking link
+                    className={`font-semibold underline underline-offset-2 ${theme.text} hover:opacity-80 transition-opacity`}
+                  >
+                    {part}
+                  </a>
+                );
+              }
+              return part;
+            })}
+          </p>
         </div>
       </div>
     </div>
@@ -566,15 +612,15 @@ const OverviewSection = ({ scrollerRef, onNavigate }) => {
       <div className="parallax-bg absolute bottom-1/4 -left-1/4 w-[800px] h-[800px] bg-violet-500/10 rounded-full blur-[150px] mix-blend-screen pointer-events-none z-0"></div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 mt-0 md:mt-0">
-        <SectionHeader
+        {/* <SectionHeader
           title=""
           subtitle="We support every dimension of your life with comprehensive benefits."
           color="text-white"
           containerRef={containerRef}
           scrollerRef={scrollerRef}
-        />
+        /> */}
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mt-12 lg:mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mt-10 lg:mt-10">
           {['physical', 'mental', 'financial'].map((key, index) => {
             const catData = content[key];
             const theme = getThemeClasses(key);
@@ -874,9 +920,13 @@ function App() {
           {/* Logos in Hero Section */}
           <div className="absolute top-8 left-0 right-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-50 pointer-events-none">
             <div className="flex justify-between items-center w-full pointer-events-auto">
-              <div className="flex items-center gap-3 cursor-pointer nav-logo w-fit" onClick={() => scrollToSection('home')}>
-                <img src="/fyers.jpeg" alt="Fyers Logo" className="h-8 md:h-10 w-auto rounded-md object-contain" />
-                <span className="font-playfair text-2xl font-bold tracking-tight text-white hover:text-emerald-400 transition-colors">360° Wellness</span>
+              <div className="flex items-center gap-3 cursor-pointer nav-logo w-fit text-white hover:text-emerald-400 transition-colors" onClick={() => scrollToSection('home')}>
+                {/*<img src="/fyers.jpeg" alt="Fyers Logo" className="h-8 md:h-10 w-auto rounded-md object-contain" />*/}
+                <svg className="h-5 md:h-6 w-auto shrink-0" viewBox="47 110 472 378" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M47.166 110.056H273.859V487.389L222.67 404.619V284.116H151.981L117.855 229.342H222.67V181.871H88.6044L47.166 110.056ZM518.833 110.056H292.14V487.389L343.329 404.619V284.116H414.017L446.924 229.342H343.329V181.871H477.393L518.833 110.056Z" fill="currentColor" />
+                </svg>
+
+                <span className="font-sans text-xl md:text-2xl font-bold tracking-tight whitespace-nowrap">360° Wellness</span>
               </div>
               <div className="nav-logo w-fit cursor-pointer group">
                 <img src="/GPW.jpeg" alt="Great Place To Work" className="w-14 md:w-16 h-auto object-contain rounded-md transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]" />
