@@ -235,10 +235,10 @@ const Modal = ({ isOpen, onClose, data }) => {
 const renderTextWithLinks = (text, themeClass) => {
   if (!text) return null;
   // Match URLs starting with http:// or https:// or simple domain names like fyers.ethika.in
-  const urlRegex = /(https?:\/\/[^\s]+|[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?)/g;
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
 
   return text.split(urlRegex).map((part, i) => {
-    if (part && part.match(/^(https?:\/\/[^\s]+|[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?)$/)) {
+    if (part && part.match(/^https?:\/\/[^\s]+$/)) {
       const href = part.startsWith('http') ? part : `https://${part}`;
       // Remove https:// or http:// for clean display
       const displayString = part.replace(/^https?:\/\//, '');
@@ -362,7 +362,7 @@ const BenefitCard = ({ item, theme, index, onClick }) => {
   );
 };
 
-const CategorySection = ({ categoryKey, scrollerRef, onCardClick }) => {
+const CategorySection = ({ categoryKey, scrollerRef, onCardClick, isModalOpen }) => {
   const data = content[categoryKey];
   const theme = getThemeClasses(categoryKey);
   const containerRef = useRef(null);
@@ -371,6 +371,7 @@ const CategorySection = ({ categoryKey, scrollerRef, onCardClick }) => {
   const [isDragging, setIsDragging] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const dragStartRef = useRef({ x: 0, rotation: 0 });
+
 
   const totalItems = data.benefits.length;
   const angle = 360 / totalItems;
@@ -387,14 +388,14 @@ const CategorySection = ({ categoryKey, scrollerRef, onCardClick }) => {
   // Auto-play Carousel Loop
   useEffect(() => {
     // Pause auto-rotation if the user is interacting
-    if (isDragging || isHovered) return;
+    if (isDragging || isHovered || isModalOpen) return;
 
     const intervalId = setInterval(() => {
       setRotation(r => r - angle);
     }, 3000); // spins every 3 seconds
 
     return () => clearInterval(intervalId);
-  }, [isDragging, isHovered, angle]);
+  }, [isDragging, isHovered, angle, isModalOpen]);
 
   const next = () => setRotation(r => r - angle);
   const prev = () => setRotation(r => r + angle);
@@ -525,7 +526,9 @@ const CategorySection = ({ categoryKey, scrollerRef, onCardClick }) => {
                     index={index}
                     item={item}
                     theme={theme}
-                    onClick={onCardClick}
+                    onClick={(item, theme) => {
+                      onCardClick(item, theme);
+                    }}
                   />
                 </div>
               );
@@ -577,12 +580,6 @@ const CategorySection = ({ categoryKey, scrollerRef, onCardClick }) => {
 
 const OverviewSection = ({ scrollerRef, onNavigate }) => {
   const containerRef = useRef(null);
-
-  const overviewImages = {
-    physical: "https://hr-assets.fyers.co.in/kettlebell-fitness-still-life.jpg",
-    mental: "https://hr-assets.fyers.co.in/wellness-practices-self-care-world-health-day.jpg",
-    financial: "https://hr-assets.fyers.co.in/photorealistic-money-with-plant.jpg"
-  };
 
   useGSAP(() => {
     if (!containerRef.current || !scrollerRef?.current) return;
@@ -636,7 +633,7 @@ const OverviewSection = ({ scrollerRef, onNavigate }) => {
               <div key={key} className={`animate-float-small ${delayClass} h-full`}>
                 <div
                   onClick={() => onNavigate(key)}
-                  className="overview-card group cursor-pointer border border-[#00FFAB]/20 bg-zinc-950/40 backdrop-blur-xl p-8 lg:p-10 rounded-3xl hover:border-[#00FFAB]/50 transition-all duration-700 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,255,171,0.1)] relative overflow-hidden h-[400px] md:h-[450px]"
+                  className="overview-card group cursor-pointer border border-[#00FFAB]/20 bg-zinc-950/40 p-8 lg:p-10 rounded-3xl hover:border-[#00FFAB]/50 transition-all duration-700 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,255,171,0.1)] relative overflow-hidden h-[400px] md:h-[450px]"
                 >
                   <div
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
@@ -644,7 +641,7 @@ const OverviewSection = ({ scrollerRef, onNavigate }) => {
                   ></div>
 
                   {/* Glass overlay */}
-                  <div className="absolute inset-0 bg-zinc-950/60 group-hover:bg-zinc-950/40 backdrop-blur-sm transition-colors duration-500"></div>
+                  <div className="absolute inset-0 bg-zinc-950/60 group-hover:bg-zinc-950/40  transition-colors duration-500"></div>
 
                   <div className={`absolute top-0 right-0 w-48 h-48 ${theme.bg} rounded-full blur-3xl -mr-16 -mt-16 opacity-30 group-hover:opacity-60 transition-opacity duration-700`}></div>
 
@@ -922,11 +919,11 @@ function App() {
             <div className="flex justify-between items-center w-full pointer-events-auto">
               <div className="flex items-center gap-3 cursor-pointer nav-logo w-fit text-white hover:text-emerald-400 transition-colors" onClick={() => scrollToSection('home')}>
                 {/*<img src="/fyers.jpeg" alt="Fyers Logo" className="h-8 md:h-10 w-auto rounded-md object-contain" />*/}
-                <svg className="h-5 md:h-6 w-auto shrink-0" viewBox="47 110 472 378" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-8 md:h-10 w-auto shrink-0" viewBox="47 110 472 378" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M47.166 110.056H273.859V487.389L222.67 404.619V284.116H151.981L117.855 229.342H222.67V181.871H88.6044L47.166 110.056ZM518.833 110.056H292.14V487.389L343.329 404.619V284.116H414.017L446.924 229.342H343.329V181.871H477.393L518.833 110.056Z" fill="currentColor" />
                 </svg>
 
-                <span className="font-sans text-xl md:text-2xl font-bold tracking-tight whitespace-nowrap">360° Wellness</span>
+                <span className="font-sans text-2xl md:text-2xl font-bold tracking-tight whitespace-nowrap">360° Wellness</span>
               </div>
               <div className="nav-logo w-fit cursor-pointer group">
                 <img src="/GPW.jpeg" alt="Great Place To Work" className="w-14 md:w-16 h-auto object-contain rounded-md transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]" />
@@ -1008,9 +1005,9 @@ function App() {
         {scrollerReady && (
           <>
             <OverviewSection scrollerRef={scrollContainerRef} onNavigate={scrollToSection} />
-            <CategorySection categoryKey="physical" scrollerRef={scrollContainerRef} onCardClick={handleCardClick} />
-            <CategorySection categoryKey="mental" scrollerRef={scrollContainerRef} onCardClick={handleCardClick} />
-            <CategorySection categoryKey="financial" scrollerRef={scrollContainerRef} onCardClick={handleCardClick} />
+            <CategorySection categoryKey="physical" scrollerRef={scrollContainerRef} onCardClick={handleCardClick} isModalOpen={isModalOpen} />
+            <CategorySection categoryKey="mental" scrollerRef={scrollContainerRef} onCardClick={handleCardClick} isModalOpen={isModalOpen} />
+            <CategorySection categoryKey="financial" scrollerRef={scrollContainerRef} onCardClick={handleCardClick} isModalOpen={isModalOpen} />
           </>
         )}
 
