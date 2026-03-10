@@ -233,7 +233,7 @@
     "bg": "bg-zinc-900",
     "benefits": [
       {
-        "title": "Insurance Benifits",
+        "title": "Insurance Benefits",
         "iconName": "HeartHandshake",
         "desc": "Insurance coverage for employees and dependents.",
         "image": "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?q=80&w=1470&auto=format&fit=crop",
@@ -251,7 +251,7 @@
         }
       },
       {
-        "title": "Retirement Benifit",
+        "title": "Retirement Benefits",
         "iconName": "TrendingUp",
         "desc": "Retirement savings and long-term financial stability.",
         "image": "https://images.unsplash.com/photo-1559526324-593bc073d938?q=80&w=1470&auto=format&fit=crop",
@@ -351,7 +351,7 @@
       {
         "title": "Car Leace Policy",
         "iconName": "Car",
-        "desc": "Company-supportred car leasing benifit for eligible employees.",
+        "desc": "Company-supportred car leasing benefit for eligible employees.",
         "image": "https://hr-assets.fyers.co.in/Car.gif",
         "modalDetails":{
         "fullDescription": "The Car Lease Policy provides eligible members with efficient and reliable transportation while offering tax benefits as per prevailing tax laws. This policy establishes guidelines for employees who wish to lease a car through the company to support their professional responsibilities.",
