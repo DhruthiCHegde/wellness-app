@@ -579,9 +579,9 @@ const OverviewSection = ({ scrollerRef, onNavigate }) => {
   const containerRef = useRef(null);
 
   const overviewImages = {
-    physical: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop",
-    mental: "https://images.unsplash.com/photo-1522845015757-50bce044e5da?q=80&w=1470&auto=format&fit=crop",
-    financial: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1469&auto=format&fit=crop"
+    physical: "https://hr-assets.fyers.co.in/kettlebell-fitness-still-life.jpg",
+    mental: "https://hr-assets.fyers.co.in/wellness-practices-self-care-world-health-day.jpg",
+    financial: "https://hr-assets.fyers.co.in/photorealistic-money-with-plant.jpg"
   };
 
   useGSAP(() => {
@@ -625,9 +625,9 @@ const OverviewSection = ({ scrollerRef, onNavigate }) => {
             const catData = content[key];
             const theme = getThemeClasses(key);
             const overviewImages = {
-              physical: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop",
-              mental: "https://images.unsplash.com/photo-1522845015757-50bce044e5da?q=80&w=1470&auto=format&fit=crop",
-              financial: "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1469&auto=format&fit=crop"
+              physical: "https://hr-assets.fyers.co.in/kettlebell-fitness-still-life.jpg",
+              mental: "https://hr-assets.fyers.co.in/wellness-practices-self-care-world-health-day.jpg",
+              financial: "https://hr-assets.fyers.co.in/photorealistic-money-with-plant.jpg"
             };
             const bgImage = overviewImages[key];
             const delayClass = `animation-delay-${((index * 2000) % 4000) || 1000}`; // simple stagger for 3 items
@@ -652,7 +652,7 @@ const OverviewSection = ({ scrollerRef, onNavigate }) => {
                     <h3 className="font-playfair text-3xl font-bold bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent mb-4 pb-1 transition-all duration-500 group-hover:text-white group-hover:from-white group-hover:to-white">{catData.title}</h3>
                     <p className="text-zinc-300 text-base leading-relaxed mb-8 transform transition-transform duration-500 group-hover:translate-x-2">{catData.subtitle}</p>
                     <div className={`flex items-center gap-2 text-sm font-bold ${theme.text} uppercase tracking-wider`}>
-                      Explore Category <ArrowUp className="w-5 h-5 rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                      Explore Benefits <ArrowUp className="w-5 h-5 rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </div>
                   </div>
                 </div>

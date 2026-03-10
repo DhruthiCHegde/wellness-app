@@ -16,7 +16,7 @@
         "title": "Cult Fitness Membership",
         "iconName": "Dumbbell",
         "desc": "Access fitness centres across India through Cult.",
-        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Cult.gif.gif",
         "url": "https://connect.fyers.in/stream/21661000002962028",
         "modalDetails": {
           "fullDescription": "All employees can access multiple Cult centres across the country through the Cult app to attain their wellness goals.",
@@ -31,7 +31,7 @@
         "title": "FYERS Club Verse",
         "iconName": "Calendar",
         "desc": "Team sports events to promote wellness and collaboration.",
-        "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1470&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/CV.gif.gif",
         "url": "https://connect.fyers.in/home",
         "modalDetails": {
           "fullDescription": "FYERS organizes multiple sports and fitness events to engage and drive collaboration across employees from different teams and departments.",
@@ -47,7 +47,7 @@
         "title": "Subsidized Healthy Lunch",
         "iconName": "Utensils",
         "desc": "Nutritious meals subsidized by FYERS.",
-        "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1453&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Food.gif.gif",
         "modalDetails": {
           "fullDescription": "FYERS provides healthy meals Monday to Friday with a 50% subsidy to promote better nutrition and convenience. Meals are ordered via an app-based partner service that reduces food waste by allowing advance selection.",
           "bulletPoints": [
@@ -63,7 +63,7 @@
         "title": "Doctor Consultation – Practo",
         "iconName": "Activity",
         "desc": "24/7 access to verified doctors through Practo.",
-        "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1480&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Online%20consultation.jpg",
         "modalDetails": {
           "fullDescription": "FYERS is tied up with Practo, a medical platform that connects employees and their families with verified doctors across all specialties for any health concern.",
           "bulletPoints": [
@@ -74,7 +74,8 @@
             "Complete family coverage — add up to 4 adults + 2 kids",
             "Up to 20% discount on online medicine orders (prescription) and lab tests",
             "Up to 10% discount on in-clinic appointments with Practo's cashless OPD network",
-            "Access to 1L+ doctor network pan India for offline appointment booking"
+            "Access to 1L+ doctor network pan India for offline appointment booking",
+            "Veterianary Benefits are also covered"
           ]
         }
       },
@@ -82,7 +83,7 @@
         "title": "Annual Health Camp",
         "iconName": "Stethoscope",
         "desc": "Company organized preventive health check-up for all employees.",
-        "image": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=1491&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Health%20Checkup.jpg",
         "modalDetails": {
           "fullDescription": "FYERS organizes an annual preventive health camp to promote early detection of health risks and overall wellbeing. The camp is typically conducted during the first quarter of the calendar year and is open to all permanent, probationary, and fixed-term employees across locations.",
           "bulletPoints": [
@@ -99,7 +100,7 @@
         "title": "Physical Health Webinars",
         "iconName": "Monitor",
         "desc": "Expert-led webinars to help improve your physical health.",
-        "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1499&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Physical%20health%20Webinar.png",
         "url": "https://fyers.ethika.in/employee/home",
         "modalDetails": {
           "fullDescription": "FYERS provides access to multiple webinars presented by industry experts covering various aspects of physical health.",
@@ -123,19 +124,19 @@
         "title": "Comprehensive Leave Program",
         "iconName": "CalendarCheck",
         "desc": "Flexible leave policies supporting work-life balance.",
-        "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1468&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Leave%20Policy.png",
         "modalDetails": {
           "fullDescription": "FYERS provides a comprehensive leave plan to help employees get ample time to rejuvenate and spend quality time with their loved ones. All leaves are accrued monthly and managed through Zoho People.",
           "bulletPoints": [
-            "Public Holidays - holidays declared by the central & state governments of India",
+            "Public Holidays - The yearly holiday calendar will be published every year in Zoho People under the leave tracker - holiday section",
             "15 days Privilege Leave (PL) annually — carry forward up to 30 days; excess mandatorily encashed",
             "12 days Sick Leave (SL) — lapses at year end; no encashment on separation",
             "Women's Wellness Leave — 1 day per month (12 days/year) for eligible women aged 18–52; auto-approved",
             "Birthday Leave — 1 paid day to be availed within 1 week before/after birthday",
             "Wedding Leave — 1 paid day to be availed within 1 week before/after marriage",
-            "Maternity Leave — up to 26 weeks (2 children) or 12 weeks (more than 2 children) with full pay",
+            "Maternity Leave — Maximum limit of 26 weeks (182 days) for two surviving children and 12 weeks (84 days) for more than two surviving children with full pay",
             "Paternity/Adoption Leave — up to 15 days within 6 months of parenthood",
-            "Bereavement Leave — up to 3 days per year for loss of immediate family member",
+            "Bereavement Leave — up to 3 days per year for loss of immediate family member which comprises of spouse, children, siblings, parents, and parent-in-law",
             "Compensatory Off — for working on weekends/public holidays; must be availed within 90 days"
           ]
         }
@@ -144,7 +145,7 @@
         "title": "Work From Home",
         "iconName": "Home",
         "desc": "Flexible WFH benefit for eligible employees.",
-        "image": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?q=80&w=1469&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/WFH.gif",
         "modalDetails": {
           "fullDescription": "FYERS offers a Work From Home benefit to all permanent employees (excluding Customer Success, Sales, Quality, and Facilities teams) to promote flexibility and work-life balance.",
           "bulletPoints": [
@@ -161,7 +162,7 @@
         "title": "Mental Health Webinars",
         "iconName": "Brain",
         "desc": "Expert-led sessions on mental wellbeing.",
-        "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1489&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Mental.png",
         "url": "https://fyers.ethika.in/employee/home",
         "modalDetails": {
           "fullDescription": "FYERS provides access to multiple webinars by industry experts covering many aspects of mental health improvement.",
@@ -177,7 +178,7 @@
         "title": "Grievance Helpline", 
         "iconName": "Phone", 
         "desc": "Around-the-clock emotional assistance.",
-        "image": "https://images.unsplash.com/photo-1520962880247-cfaf541c8724?q=80&w=1632&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Grievance.png",
         "modalDetails": {
           "fullDescription": "FYERS has established a dedicated grievances email to ensure swift and transparent resolution of employee concerns. A structured escalation matrix is in place.",
           "bulletPoints": [
@@ -191,25 +192,27 @@
         }
       },
       {
-        "title": "Mindfulness & Meditation",
-        "iconName": "Coffee",
-        "desc": "Daily guided meditation and mindfulness practices.",
-        "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?q=80&w=1470&auto=format&fit=crop",
+        "title": "Harassment-Free Workspace",
+        "iconName": "ShieldCheck",
+        "desc": "Promoting respect, dignity, and inclusivity.",
+        "image": "https://hr-assets.fyers.co.in/Harassment%20Free.png",
+        "url": "https://people.fyers.in/fyershrms/zp#files/orgfile",
         "modalDetails": {
-          "fullDescription": "Employees can benefit from daily guided meditation and mindfulness programs available as part of the FYERS wellness offering (Mind the Mind).",
+          "fullDescription": "FYERS is committed to maintaining a harassment-free workspace with zero tolerance for intimidation, humiliation, or sabotage. The Company prohibits all discrimination and complies with POSH regulations.",
           "bulletPoints": [
-            "Daily guided meditation",
-            "Mindfulness — Mind the Mind program",
-            "Stress reduction techniques"
+            "Zero tolerance for harassment and discrimination",
+            "POSH policy compliance",
+            "Covers bullying, intimidation, sexual harassment, and workplace violence",
+            "Report any instance directly to HR",
+            "Full policy available in Zoho People -> Policies section"
           ]
         }
       }, 
-      
       {
         "title": "Milestone Celebrations & Team Events",
         "iconName": "PartyPopper",
         "desc": "Events and activities celebrating milestones and building team spirit.",
-        "image": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=1470&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Party.jpg",
         "url": "https://connect.fyers.in/home",
         "modalDetails": {
           "fullDescription": "FYERS organizes multiple events celebrating milestones, team outings, dinners, lunches, and team-building activities to drive engagement and collaboration across teams.",
@@ -232,16 +235,14 @@
       {
         "title": "Insurance Benifits",
         "iconName": "HeartHandshake",
-        "desc": "Health insurance coverage for employees and dependents.",
+        "desc": "Insurance coverage for employees and dependents.",
         "image": "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?q=80&w=1470&auto=format&fit=crop",
         "url": "https://fyers.ethika.in/employee/home",
         "modalDetails": {
           "fullDescription": "The Group Health Insurance Program provides pre-defined insurance coverage to all employees and their dependents for hospitalization expenses due to illness, disease, or injury.",
           "bulletPoints": [
-            "₹5,00,000 coverage per person",
-            "Covers employees and dependents",
-            "Hospitalization due to illness, disease, or injury",
-            "₹30,00,000 Group Personal Accident Insurance — covers accidental death, disability, or injury",
+            "Group Medical Insurance: Coverage of ₹5,00,000 per person, including employees and their dependents, for hospitalization due to illness, disease, or injury.",
+            "Group Personal Accidental insurance: Coverage of ₹30,00,000 for accidental death, disability, or injury.",
             "Group Term Insurance — 3× base salary for career level 8 & below",
             "Group Term Insurance — 5× base salary for career level 9 & above",
             "Coverage subject to pre-defined underwriting criteria",
@@ -262,15 +263,16 @@
             "EDLI — 0.50% employer contribution providing life insurance to EPF-covered employees",
             "Gratuity eligibility after 5 years of continuous service (4 years 6 months deemed as 5 years)",
             "Gratuity = 15/26 × Last Drawn Eligible Wages × Completed Years of Service",
+            "EPF Administrative Charges: FYERS contributes 0.50% of restricted PF wages (₹900 annually) or as notified by EPFO fromtime to time.",
             "Statutory bonus administered per Code on Wages, 2019"
           ]
         }
       },
       {
-        "title": "ESI & Statutory Compliance",
+        "title": "Employee State Insurance (ESI)",
         "iconName": "FileCheck",
         "desc": "Employee State Insurance and statutory social security benefits.",
-        "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1511&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/ESI.png",
         "modalDetails": {
           "fullDescription": "FYERS complies with the Code on Social Security, 2020 for Employee State Insurance (ESI) for all eligible employees, ensuring access to medical, sickness, maternity, and disablement benefits.",
           "bulletPoints": [
@@ -286,7 +288,7 @@
         "title": "Employee Referral Program",
         "iconName": "Wallet",
         "desc": "Earn rewards by referring great talent.",
-        "image": "https://images.unsplash.com/photo-1543269664-7eef42226a21?q=80&w=1470&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Referal%20Bonus.png",
         "modalDetails": {
           "fullDescription": "FYERS believes great talent knows great talent. Employees can refer candidates via ZOHO Recruit and earn referral bonuses paid in two installments.",
           "bulletPoints": [
@@ -303,7 +305,7 @@
         "title": "Creche Reimbursement",
         "iconName": "Baby",
         "desc": "Childcare expense support for working parents.",
-        "image": "https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=1470&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Creche.gif",
         "modalDetails": {
           "fullDescription": "FYERS supports working parents by reimbursing creche expenses in accordance with the Code on Social Security, 2020, where a common creche facility is not provided.",
           "bulletPoints": [
@@ -319,7 +321,7 @@
         "title": "Financial Health Webinars",
         "iconName": "BarChart",
         "desc": "Expert-led webinars to help improve your financial health.",
-        "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1470&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Mental.png",
         "url": "https://fyers.ethika.in/employee/home",
         "modalDetails": {
           "fullDescription": "FYERS provides access to multiple webinars by industry experts covering many aspects of financial health improvement.",
@@ -347,10 +349,28 @@
         }
       },
       {
+        "title": "Car Leace Policy",
+        "iconName": "Car",
+        "desc": "Company-supportred car leasing benifit for eligible employees.",
+        "image": "https://hr-assets.fyers.co.in/Car.gif",
+        "modalDetails":{
+        "fullDescription": "The Car Lease Policy provides eligible members with efficient and reliable transportation while offering tax benefits as per prevailing tax laws. This policy establishes guidelines for employees who wish to lease a car through the company to support their professional responsibilities.",
+        "bulletPoints": [
+          "Available to members with career level 6 and above",
+          "The car’s on-road price must not exceed 50% of the Annual Base Salary multiplied by the lease tenure",
+          "All car lease requests require approval from the HR Head",
+          "Members must submit an undertaking as specified in Annexure 1 along with the request",
+          "A minimum CIBIL score of 700 is required to avail the benefit",
+          "Members under Performance or Behavioural Improvement Program are not eligible",
+          "To know more about the policy visit https://fyers.ethika.in/employee/home"
+         ]
+        }
+      },
+      {
         "title": "Company Sponsored Trainings",
         "iconName": "Users",
         "desc": "Industry and domain expert-led trainings fully covered by FYERS.",
-        "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1470&auto=format&fit=crop",
+        "image": "https://hr-assets.fyers.co.in/Training.avif",
         "modalDetails": {
           "fullDescription": "FYERS engages industry and domain experts to train employees or encourages participation in external conferences and webinars, with the entire cost covered by the company.",
           "bulletPoints": [
