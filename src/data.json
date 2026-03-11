@@ -4,7 +4,7 @@
         "title": "Empowering Every",
         "highlight": "Dimension",
         "subtitle": "Designed to support every aspect of your life — Physical, Mental, and Financial. Because true success begins with holistic wellbeing.",
-        "cta": "Explore Benefits"
+        "cta": "Explore Wellness Benefits"
     },
     "physical": {
         "title": "Physical Wellness",
@@ -346,6 +346,7 @@
                 "iconName": "Car",
                 "desc": "Company-supported car leasing benefit for eligible members.",
                 "image": "https://hr-assets.fyers.co.in/Car.gif",
+                "policy_url": "https://www.youtube.com",
                 "modalDetails": {
                     "fullDescription": "The Car Lease Policy provides eligible members with efficient and reliable transportation while offering tax benefits as per prevailing tax laws. This policy establishes guidelines for members who wish to lease a car through the company to support their professional responsibilities.",
                     "bulletPoints": [
@@ -439,25 +440,6 @@
                 }
             },
             {
-                "title": "Rewards & Recognition",
-                "iconName": "Trophy",
-                "desc": "Celebrating excellence and appreciating contributions across FYERS.",
-                "image": "https://static.vecteezy.com/system/resources/thumbnails/042/567/195/small_2x/ai-generated-hands-of-business-woman-holding-and-lift-a-golden-trophy-surrounding-with-congratulations-confetti-ribbon-flakes-photo.jpeg",
-                "modalDetails": {
-                    "fullDescription": "At FYERS, we believe recognition fuels motivation and growth. Our Rewards & Recognition programs celebrate individual achievements, team excellence, and everyday contributions that embody our values and drive collective success.",
-                    "bulletPoints": [
-                        "FYERS Champion – Recognizing outstanding individual excellence",
-                        "FYERS FORCE – Celebrating exceptional team achievements",
-                        "SPOT Awards – Recognizing quick, impactful contributions",
-                        "FYERS Values Ambassador – Honoring members who embody FYERS values",
-                        "FYERS Rising Star – Recognizing emerging talent and growth",
-                        "FYERS Flash of Brilliance – Celebrating innovative ideas and problem-solving",
-                        "FYERS Exceptional Team Player – Appreciating collaboration and support",
-                        "THANK Anyone @ FYERS – Encouraging everyday appreciation among members"
-                    ]
-                }
-            },
-            {
                 "title": "Company Sponsored Trainings",
                 "iconName": "Users",
                 "desc": "Industry and domain expert-led trainings fully covered by FYERS.",
@@ -474,13 +456,27 @@
             }
         ]
     },
+    "common_url": {
+        "policyUrl": "https://people.zoho.in/fyershrms/zp#files/orgfile-catId:46493000000196190"
+    },
     "footer": {
-        "title": "Your Wellness,",
-        "titleHighlight": "Our Priority.",
-        "subtitle": "We are committed to providing comprehensive support across all facets of your life, ensuring you thrive both personally and professionally.",
-        "policyTag": "Policy Reference",
-        "policyLinkText": "View Detailed Policies",
-        "policyUrl": "https://people.zoho.in/fyershrms/zp#files/orgfile-catId:46493000000196190",
-        "copyright": "360° Wellness Platform. All rights reserved."
+        "title": "Rewards & Recognition",
+        "iconName": "Trophy",
+        "desc": "Celebrating excellence and appreciating contributions across FYERS.",
+        "policy_url": "https://www.google.com",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/042/567/195/small_2x/ai-generated-hands-of-business-woman-holding-and-lift-a-golden-trophy-surrounding-with-congratulations-confetti-ribbon-flakes-photo.jpeg",
+        "modalDetails": {
+            "fullDescription": "At FYERS, we believe recognition fuels motivation and growth. Our Rewards & Recognition programs celebrate individual achievements, team excellence, and everyday contributions that embody our values and drive collective success.",
+            "bulletPoints": [
+                "FYERS Champion – Recognizing outstanding individual excellence",
+                "FYERS FORCE – Celebrating exceptional team achievements",
+                "SPOT Awards – Recognizing quick, impactful contributions",
+                "FYERS Values Ambassador – Honoring members who embody FYERS values",
+                "FYERS Rising Star – Recognizing emerging talent and growth",
+                "FYERS Flash of Brilliance – Celebrating innovative ideas and problem-solving",
+                "FYERS Exceptional Team Player – Appreciating collaboration and support",
+                "THANK Anyone @ FYERS – Encouraging everyday appreciation among members"
+            ]
+        }
     }
 }

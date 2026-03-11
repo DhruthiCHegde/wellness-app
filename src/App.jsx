@@ -24,7 +24,8 @@ import {
   Award,
   Milestone,
   Megaphone,
-  Orbit // Renamed FamilySupport to a standard Lucide equivalent Orbit or Users
+  Orbit, // Renamed FamilySupport to a standard Lucide equivalent Orbit or Users
+  Trophy
 } from 'lucide-react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -159,6 +160,9 @@ const Modal = ({ isOpen, onClose, data }) => {
 
   if (!data) return null;
 
+  // Dynamically resolve the URL: use specific item URL if present, else fallback
+  const url = data.item.policy_url || content.common_url.policyUrl;
+
   return (
     <div ref={modalRef} className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 opacity-0 pointer-events-none">
       <div className="absolute inset-0 bg-black/80 backdrop-blur-lg" onClick={onClose}></div>
@@ -183,7 +187,7 @@ const Modal = ({ isOpen, onClose, data }) => {
             </div>
             {/* Animated Policy Link Pinned to Image overlay */}
             <a
-              href={content.footer.policyUrl}
+              href={url}
               target="_blank"
               rel="noopener noreferrer"
               className="group block relative w-12 h-12 md:w-16 md:h-16 shrink-0 transition-all duration-300 hover:scale-110 md:mb-2 hover:-translate-y-1"
@@ -204,9 +208,11 @@ const Modal = ({ isOpen, onClose, data }) => {
         </div>
 
         <div className="p-8 md:p-12 text-zinc-300 space-y-8">
-          <div className="prose prose-invert prose-lg max-w-none font-light leading-relaxed">
-            <p>{renderTextWithLinks(data.item.modalDetails?.fullDescription || data.item.desc, data.theme.text)}</p>
-          </div>
+          {data.item.title !== 'Rewards & Recognition' && (
+            <div className="prose prose-invert prose-lg max-w-none font-light leading-relaxed">
+              <p>{renderTextWithLinks(data.item.modalDetails?.fullDescription || data.item.desc, data.theme.text)}</p>
+            </div>
+          )}
 
           {data.item.modalDetails?.gallery && (
             <div className="grid grid-cols-2 gap-4 mt-8">
@@ -260,11 +266,11 @@ const renderTextWithLinks = (text, themeClass) => {
 };
 
 const SectionHeader = ({ title, subtitle, color, containerRef, scrollerRef }) => (
-  <div className="mb-4 md:mb-16 text-center overflow-hidden">
+  <div className="mb-0 md:mb-0 text-center overflow-hidden">
     <RevealText
       text={title}
-      containerRef={containerRef} scrollerRef={scrollerRef} className={`font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent pb-2`} />
-    <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto subtitle-reveal opacity-0 translate-y-8">{subtitle}</p>
+      containerRef={containerRef} scrollerRef={scrollerRef} className={`font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent`} />
+    {/* <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto subtitle-reveal opacity-0 translate-y-8">{subtitle}</p> */}
   </div>
 );
 
@@ -919,11 +925,16 @@ function App() {
             <div className="flex justify-between items-center w-full pointer-events-auto">
               <div className="flex items-center gap-3 cursor-pointer nav-logo w-fit text-white hover:text-emerald-400 transition-colors" onClick={() => scrollToSection('home')}>
                 {/*<img src="/fyers.jpeg" alt="Fyers Logo" className="h-8 md:h-10 w-auto rounded-md object-contain" />*/}
-                <svg className="h-8 md:h-10 w-auto shrink-0" viewBox="47 110 472 378" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M47.166 110.056H273.859V487.389L222.67 404.619V284.116H151.981L117.855 229.342H222.67V181.871H88.6044L47.166 110.056ZM518.833 110.056H292.14V487.389L343.329 404.619V284.116H414.017L446.924 229.342H343.329V181.871H477.393L518.833 110.056Z" fill="currentColor" />
-                </svg>
+                <div className="flex items-center gap-[3px] shrink-0">
+                  <svg className="h-10 md:h-12 w-auto" viewBox="47.166 110.056 226.693 377.333" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M47.166 110.056H273.859V487.389L222.67 404.619V284.116H151.981L117.855 229.342H222.67V181.871H88.6044L47.166 110.056Z" fill="currentColor" />
+                  </svg>
+                  <svg className="h-10 md:h-12 w-auto" viewBox="292.14 110.056 226.693 377.333" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M518.833 110.056H292.14V487.389L343.329 404.619V284.116H414.017L446.924 229.342H343.329V181.871H477.393L518.833 110.056Z" fill="currentColor" />
+                  </svg>
+                </div>
 
-                <span className="font-sans text-2xl md:text-2xl font-bold tracking-tight whitespace-nowrap">360° Wellness</span>
+                {/* <span className="font-sans text-2xl md:text-2xl font-bold tracking-tight whitespace-nowrap">360° Wellness</span> */}
               </div>
               <div className="nav-logo w-fit cursor-pointer group">
                 <img src="/GPW.jpeg" alt="Great Place To Work" className="w-14 md:w-16 h-auto object-contain rounded-md transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]" />
@@ -970,15 +981,15 @@ function App() {
               <span className="text-xs sm:text-sm font-semibold text-zinc-300">{content.hero.tag}</span>
             </div>*/}
 
-            <h1 className="font-playfair text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 md:mb-8 tracking-tight leading-[1.1] md:leading-[1.1]">
+            <h1 className="font-playfair text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 md:mb-8 tracking-tight leading-[1.3] md:leading-[1.3]">
               <div className="flex justify-center flex-wrap gap-x-2 md:gap-x-4">
                 {content.hero.title.split(' ').map((word, index) => (
-                  <span key={index} className="hero-title-word inline-block opacity-0" style={{ backgroundImage: 'linear-gradient(to right, #fff 50%, #4a4a5a 50%)', backgroundSize: '200% 100%', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', transition: 'background-position 1.5s cubic-bezier(0.16, 1, 0.3, 1)', backgroundPosition: '100% 0' }} ref={(el) => { if (el) setTimeout(() => el.style.backgroundPosition = '0 0', 500 + (index * 100)) }}>
+                  <span key={index} className="hero-title-word inline-block opacity-0 px-1 pb-2 md:pb-4" style={{ backgroundImage: 'linear-gradient(to right, #fff 50%, #4a4a5a 50%)', backgroundSize: '200% 100%', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', transition: 'background-position 1.5s cubic-bezier(0.16, 1, 0.3, 1)', backgroundPosition: '100% 0' }} ref={(el) => { if (el) setTimeout(() => el.style.backgroundPosition = '0 0', 500 + (index * 100)) }}>
                     {word}
                   </span>
                 ))}
               </div>
-              <div className="mt-1 md:mt-2 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-indigo-400 font-playfair italic hero-title-word opacity-0">
+              <div className="mt-1 md:mt-2 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-indigo-400 font-playfair italic hero-title-word opacity-0 px-1 pb-2 md:pb-4">
                 {content.hero.highlight}
               </div>
             </h1>
@@ -987,13 +998,21 @@ function App() {
               {content.hero.subtitle}
             </p>
 
-            <div className="hero-cta opacity-0">
+            <div className="hero-cta opacity-0 flex flex-wrap justify-center items-center gap-4 sm:gap-6 mt-4">
               <MagneticButton
                 onClick={() => scrollToSection('overview')}
                 className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 font-bold text-zinc-950 bg-[#00FFAB] rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_4px_20px_rgba(0,255,171,0.2)] hover:shadow-[0_8px_40px_rgba(0,255,171,0.4)] duration-300 text-base sm:text-lg border border-[#00FFAB]/50"
               >
                 <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease"></div>
                 <span className="relative z-10 mr-2 transition-colors duration-300">{content.hero.cta}</span>
+                <svg className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-all duration-300 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </MagneticButton>
+              <MagneticButton
+                onClick={() => scrollToSection('footer')}
+                className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 font-bold text-zinc-950 bg-[#00FFAB] rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_4px_20px_rgba(0,255,171,0.2)] hover:shadow-[0_8px_40px_rgba(0,255,171,0.4)] duration-300 text-base sm:text-lg border border-[#00FFAB]/50"
+              >
+                <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease"></div>
+                <span className="relative z-10 mr-2 transition-colors duration-300">Explore Rewards & Recognition</span>
                 <svg className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-all duration-300 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </MagneticButton>
             </div>
@@ -1011,44 +1030,55 @@ function App() {
           </>
         )}
 
-        {/* Policy Reference Footer */}
-        <footer id="footer" ref={footerRef} className="snap-start min-h-screen w-full bg-zinc-950 text-white flex flex-col justify-center items-center shrink-0 relative overflow-hidden">
+        {/* Rewards & Recognition Footer */}
+        <footer id="footer" ref={footerRef} className="snap-start min-h-screen w-full bg-zinc-950 text-white flex flex-col justify-center items-center shrink-0 relative overflow-hidden pt-2">
           {/* Gradient Divider Transitions */}
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#00FFAB]/30 to-violet-500/30 opacity-70"></div>
 
           {/* Abstract bg element */}
           <div className="parallax-footer-bg absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[800px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none"></div>
 
-          <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-            <div className="footer-text-anim mb-12 inline-flex items-center justify-center p-5 bg-zinc-900/40 backdrop-blur-md rounded-3xl border border-[#00FFAB]/20 shadow-[0_0_30px_rgba(0,255,171,0.1)]">
-              <Heart className="h-10 w-10 text-[#00FFAB] fill-current opacity-80" />
-            </div>
-            <h3 className="footer-text-anim font-playfair text-5xl md:text-6xl font-black mb-8 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent pb-2">{content.footer.title}<br /> <span className="text-[#00FFAB] italic">{content.footer.titleHighlight}</span></h3>
-            <p className="footer-text-anim text-zinc-400 mb-14 max-w-2xl mx-auto text-xl leading-relaxed font-light">
-              {content.footer.subtitle}
-            </p>
-
-            {/* <a
-              href={content.footer.policyUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footer-text-anim group inline-flex flex-col items-center bg-zinc-900/40 p-10 rounded-3xl border border-zinc-800 hover:border-emerald-500/50 hover:bg-zinc-900 transition-all duration-500 backdrop-blur-md shadow-2xl hover:shadow-[0_0_50px_rgba(16,185,129,0.1)] relative overflow-hidden"
-            >
-              <div className="absolute inset-0 w-full h-full bg-emerald-500/5 -translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]"></div>
-              <p className="relative z-10 text-sm text-zinc-500 mb-4 uppercase tracking-widest font-bold">{content.footer.policyTag}</p>
-              <div className="relative z-10 flex items-center gap-3 text-emerald-400 font-bold text-2xl md:text-3xl group-hover:text-emerald-300">
-                {content.footer.policyLinkText}
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 group-hover:translate-x-3 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full flex flex-col lg:flex-row items-center  gap-10 lg:gap-16 pt-16 pb-12">
+            <div className="flex-1 footer-text-anim w-full lg:max-w-xl text-left">
+              <div className="mb-6 inline-flex items-center justify-center p-4 bg-zinc-900/40 backdrop-blur-md rounded-3xl border border-[#00FFAB]/20 shadow-[0_0_30px_rgba(0,255,171,0.1)]">
+                <Trophy className="h-8 w-8 text-[#00FFAB] opacity-90" />
               </div>
-            </a> */}
-
-            {/* Trust Badge has been moved to absolute corner positioning below */}
-
-            <div className="footer-text-anim mt-16 text-sm text-zinc-600 font-medium tracking-wide">
-              © {new Date().getFullYear()} {content.footer.copyright}
+              <h2 className="font-playfair text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-black mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent whitespace-nowrap overflow-hidden text-ellipsis">{content.footer.title}</h2>
+              <p className="text-zinc-400 text-lg md:text-xl leading-relaxed font-light mb-8">
+                {content.footer.modalDetails.fullDescription}
+              </p>
+              <ul className="flex flex-col gap-4 mb-8">
+                {content.footer.modalDetails.bulletPoints.slice(0, 3).map((point, i) => (
+                  <li key={i} className="flex items-start gap-4 bg-zinc-900/40 backdrop-blur-md p-4 rounded-2xl border border-zinc-800 hover:border-[#00FFAB]/30 transition-colors">
+                    <CheckCircle className="w-6 h-6 text-[#00FFAB] shrink-0" />
+                    <span className="text-zinc-300 font-medium leading-relaxed">{point}</span>
+                  </li>
+                ))}
+              </ul>
+              <button
+                className="group relative inline-flex items-center justify-center px-6 py-3 font-bold text-zinc-950 bg-[#00FFAB] rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_4px_20px_rgba(0,255,171,0.2)] hover:shadow-[0_8px_40px_rgba(0,255,171,0.4)] duration-300 text-base border border-[#00FFAB]/50"
+                onClick={() => handleCardClick(content.footer, { text: 'text-[#00FFAB]', bg: 'bg-[#00FFAB]/10', icon: 'text-[#00FFAB]', hover: 'group-hover:bg-[#00FFAB]/20' })}
+              >
+                <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease"></div>
+                <span className="relative z-10 mr-2 transition-colors duration-300">View More</span>
+                <svg className="relative z-10 w-4 h-4 group-hover:translate-x-1 transition-all duration-300 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </button>
             </div>
+
+            <div className="flex-1 footer-text-anim w-full relative max-w-lg lg:max-w-none mx-auto lg:mx-0">
+              <div className="aspect-[4/3] rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl relative group">
+                <div className="absolute inset-0 bg-[#00FFAB]/20 mix-blend-overlay group-hover:opacity-0 transition-opacity duration-700 z-10 pointer-events-none"></div>
+                <img
+                  src={content.footer.image}
+                  alt={content.footer.title}
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="footer-text-anim mt-auto pb-2 text-sm text-zinc-600 font-medium tracking-wide">
+            © {new Date().getFullYear()} 360° Wellness Platform. All rights reserved.
           </div>
         </footer>
 
