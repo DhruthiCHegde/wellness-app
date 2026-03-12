@@ -471,7 +471,7 @@ const CategorySection = ({ categoryKey, scrollerRef, onCardClick, isModalOpen })
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#00FFAB]/30 to-violet-500/30 opacity-70"></div>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-gradient-to-b from-[#00FFAB]/5 to-transparent blur-[100px] pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 flex flex-col items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 flex flex-col items-center -translate-y-8 md:-translate-y-16">
         <div className="w-full mb-8 md:mb-16">
           <SectionHeader
             title={data.title}
@@ -1038,7 +1038,7 @@ function App() {
           {/* Abstract bg element */}
           <div className="parallax-footer-bg absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[800px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none"></div>
 
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full flex flex-col lg:flex-row items-center  gap-10 lg:gap-16 pt-16 pb-12">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full flex flex-col lg:flex-row items-center  gap-10 lg:gap-16 pt-16 pb-12 -translate-y-8 md:-translate-y-16">
             <div className="flex-1 footer-text-anim w-full lg:max-w-xl text-left">
               <div className="mb-6 inline-flex items-center justify-center p-4 bg-zinc-900/40 backdrop-blur-md rounded-3xl border border-[#00FFAB]/20 shadow-[0_0_30px_rgba(0,255,171,0.1)]">
                 <Trophy className="h-8 w-8 text-[#00FFAB] opacity-90" />
