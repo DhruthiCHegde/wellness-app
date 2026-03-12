@@ -534,13 +534,25 @@ const CategorySection = ({ categoryKey, scrollerRef, onCardClick, isModalOpen })
               const itemAngle = index * angle;
               const isFront = index === normalizedActiveIndex;
 
+              // Calculate shortest distance in slots from current active index
+              let diff = index - normalizedActiveIndex;
+              if (diff > totalItems / 2) diff -= totalItems;
+              if (diff < -totalItems / 2) diff += totalItems;
+
+              // Add a gap on the left and right side of the current card if total items > 6
+              let gapOffset = 0;
+              if (totalItems > 6 && !isFront) {
+                // Push right-sided cards further right, left-sided cards further left
+                gapOffset = diff > 0 ? 120 : -120;
+              }
+
               return (
                 <div
                   key={index}
                   className="absolute w-[70vw] sm:w-[350px] md:w-[450px]"
                   style={{
                     // Each card orbits around the central cylinder point
-                    transform: `rotateY(${itemAngle}deg) translateZ(${radius}px)`,
+                    transform: `rotateY(${itemAngle}deg) translateZ(${radius}px) translateX(${gapOffset}px)`,
                     opacity: isFront ? 1 : 0.3,
                     filter: isFront ? 'blur(0px)' : 'blur(4px)',
                     pointerEvents: isFront ? 'auto' : 'none',
