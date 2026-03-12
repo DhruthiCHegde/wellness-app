@@ -266,10 +266,10 @@ const renderTextWithLinks = (text, themeClass) => {
 };
 
 const SectionHeader = ({ title, subtitle, color, containerRef, scrollerRef }) => (
-  <div className="mb-0 md:mb-0 text-center overflow-hidden">
+  <div className="mb-0 md:mb-0 text-center overflow-hidden pb-4">
     <RevealText
       text={title}
-      containerRef={containerRef} scrollerRef={scrollerRef} className={`font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent`} />
+      containerRef={containerRef} scrollerRef={scrollerRef} className={`font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent pb-2`} />
     {/* <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto subtitle-reveal opacity-0 translate-y-8">{subtitle}</p> */}
   </div>
 );
@@ -1043,7 +1043,7 @@ function App() {
               <div className="mb-6 inline-flex items-center justify-center p-4 bg-zinc-900/40 backdrop-blur-md rounded-3xl border border-[#00FFAB]/20 shadow-[0_0_30px_rgba(0,255,171,0.1)]">
                 <Trophy className="h-8 w-8 text-[#00FFAB] opacity-90" />
               </div>
-              <h2 className="font-playfair text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-black mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent whitespace-nowrap overflow-hidden text-ellipsis">{content.footer.title}</h2>
+              <h2 className="font-playfair text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-black mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent whitespace-nowrap overflow-hidden text-ellipsis pb-2">{content.footer.title}</h2>
               <p className="text-zinc-400 text-lg md:text-xl leading-relaxed font-light mb-8">
                 {content.footer.modalDetails.fullDescription}
               </p>
