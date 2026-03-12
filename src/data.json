@@ -459,24 +459,72 @@
     "common_url": {
         "policyUrl": "https://people.zoho.in/fyershrms/zp#files/orgfile-catId:46493000000196190"
     },
-    "footer": {
+    "rewards": {
         "title": "Rewards & Recognition",
-        "iconName": "Trophy",
-        "desc": "Celebrating excellence and appreciating contributions across FYERS.",
-        "policy_url": "https://www.google.com",
-        "image": "https://static.vecteezy.com/system/resources/thumbnails/042/567/195/small_2x/ai-generated-hands-of-business-woman-holding-and-lift-a-golden-trophy-surrounding-with-congratulations-confetti-ribbon-flakes-photo.jpeg",
-        "modalDetails": {
-            "fullDescription": "At FYERS, we believe recognition fuels motivation and growth. Our Rewards & Recognition programs celebrate individual achievements, team excellence, and everyday contributions that embody our values and drive collective success.",
-            "bulletPoints": [
-                "FYERS Champion – Recognizing outstanding individual excellence",
-                "FYERS FORCE – Celebrating exceptional team achievements",
-                "SPOT Awards – Recognizing quick, impactful contributions",
-                "FYERS Values Ambassador – Honoring members who embody FYERS values",
-                "FYERS Rising Star – Recognizing emerging talent and growth",
-                "FYERS Flash of Brilliance – Celebrating innovative ideas and problem-solving",
-                "FYERS Exceptional Team Player – Appreciating collaboration and support",
-                "THANK Anyone @ FYERS – Encouraging everyday appreciation among members"
-            ]
-        }
+        "subtitle": "Celebrating excellence and appreciating contributions across FYERS.",
+        "bg": "bg-zinc-950",
+        "benefits": [
+            {
+                "title": "FYERS Champion",
+                "iconName": "Trophy",
+                "desc": "Recognizing outstanding individual excellence across the organization.",
+                "image": "https://hr-assets.fyers.co.in/Individual.jpg",
+                "policy_url": "https://www.google.com",
+                "modalDetails": {
+                    "fullDescription": "The FYERS Champion award is our highest individual honor, recognizing members who consistently go above and beyond their regular duties.",
+                    "bulletPoints": [
+                        "Awarded for outstanding individual excellence",
+                        "Demonstrates exceptional commitment to company goals",
+                        "Consistently exceeds performance expectations"
+                    ]
+                }
+            },
+            {
+                "title": "FYERS Force",
+                "iconName": "Users",
+                "desc": "Celebrating exceptional team achievements and collaborative success.",
+                "image": "https://hr-assets.fyers.co.in/Team.jpg",
+                "policy_url": "https://www.google.com",
+                "modalDetails": {
+                    "fullDescription": "The FYERS Force award celebrates teams that have demonstrated exceptional collaboration to achieve significant milestones.",
+                    "bulletPoints": [
+                        "Recognizes exceptional team achievements",
+                        "Highlights successful cross-functional collaboration",
+                        "Awarded for delivering high-impact projects together"
+                    ]
+                }
+            },
+            {
+                "title": "Spot Award",
+                "iconName": "Star",
+                "desc": "Recognizing quick, impactful contributions and exceptional behaviors.",
+                "image": "https://hr-assets.fyers.co.in/Spot.jpg",
+                "policy_url": "https://www.google.com",
+                "modalDetails": {
+                    "fullDescription": "Spot Awards are given instantly to recognize quick, impactful contributions that might otherwise go unnoticed.",
+                    "bulletPoints": [
+                        "Rising Star - Recognizing emerging talent and growth",
+                        "Exceptional Team Player - Appreciating collaboration and support",
+                        "Value Ambassador - Honoring members who embody FYERS values",
+                        "Flash of Brilliance - Celebrating innovative ideas and problem-solving"
+                    ]
+                }
+            },
+            {
+                "title": "Thank Anyone",
+                "iconName": "Heart",
+                "desc": "Encouraging everyday appreciation and gratitude among colleagues.",
+                "image": "https://hr-assets.fyers.co.in/Thankyou.jpg",
+                "policy_url": "https://www.google.com",
+                "modalDetails": {
+                    "fullDescription": "The 'Thank Anyone' program is a peer-to-peer recognition system designed to cultivate a culture of gratitude.",
+                    "bulletPoints": [
+                        "Peer-to-peer recognition program",
+                        "Encourages everyday appreciation among members",
+                        "Helps build a positive and supportive workplace culture"
+                    ]
+                }
+            }
+        ]
     }
 }

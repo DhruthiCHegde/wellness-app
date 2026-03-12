@@ -65,8 +65,8 @@ const MagneticButton = ({ children, className, onClick, ...props }) => {
       const y = e.clientY - rect.top - h;
 
       gsap.to(navItem, {
-        x: x * 0.4,
-        y: y * 0.4,
+        x: x * 0.1,
+        y: y * 0.1,
         duration: 1,
         ease: 'power4.out',
       });
@@ -129,9 +129,9 @@ const RevealText = ({ text, className, containerRef, scrollerRef, scrollSnapDela
   }, { scope: containerRef });
 
   return (
-    <div ref={textRef} className={`perspective-1000 ${className}`} style={{ perspective: '1000px' }}>
+    <div ref={textRef} className={`perspective-1000 ${className} py-2`} style={{ perspective: '1000px' }}>
       {text.split('').map((char, index) => (
-        <span key={index} className="char inline-block" style={{ transformOrigin: 'top center' }}>
+        <span key={index} className="char inline-block" style={{ transformOrigin: 'top center', paddingBottom: '0.1em' }}>
           {char === ' ' ? '\u00A0' : char}
         </span>
       ))}
@@ -269,7 +269,7 @@ const SectionHeader = ({ title, subtitle, color, containerRef, scrollerRef }) =>
   <div className="mb-0 md:mb-0 text-center overflow-hidden pb-4">
     <RevealText
       text={title}
-      containerRef={containerRef} scrollerRef={scrollerRef} className={`font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent pb-2`} />
+      containerRef={containerRef} scrollerRef={scrollerRef} className={`font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent pb-2 leading-relaxed`} />
     {/* <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto subtitle-reveal opacity-0 translate-y-8">{subtitle}</p> */}
   </div>
 );
@@ -463,6 +463,25 @@ const CategorySection = ({ categoryKey, scrollerRef, onCardClick, isModalOpen })
       }
     });
 
+    if (categoryKey === 'rewards') {
+      gsap.fromTo('.footer-text-anim',
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1.5,
+          stagger: 0.1,
+          ease: 'expo.out',
+          delay: 0.5,
+          scrollTrigger: {
+            trigger: containerRef.current,
+            scroller: scrollerRef.current,
+            start: 'top center+=100',
+            toggleActions: 'play none none reverse'
+          }
+        }
+      );
+    }
   }, { scope: containerRef });
 
   return (
@@ -578,6 +597,15 @@ const CategorySection = ({ categoryKey, scrollerRef, onCardClick, isModalOpen })
         </div>
 
       </div>
+
+      {categoryKey === 'rewards' && (
+        <footer className="absolute bottom-0 left-0 w-full text-white flex flex-col justify-center items-center shrink-0 z-20 pointer-events-none">
+          <div className="footer-text-anim pb-4 text-sm text-zinc-600 font-medium tracking-wide text-center pointer-events-auto">
+            <p>© {new Date().getFullYear()} FYERS Securities Private Limited. All rights reserved.</p>
+            <p className="mt-1 text-xs opacity-75">360° Wellness Platform</p>
+          </div>
+        </footer>
+      )}
     </section>
   );
 };
@@ -677,7 +705,6 @@ function App() {
 
   const scrollContainerRef = useRef(null);
   const homeRef = useRef(null);
-  const footerRef = useRef(null);
 
   const handleCardClick = (item, theme) => {
     setSelectedCard({ item, theme });
@@ -746,7 +773,7 @@ function App() {
 
   // Navbar Logo Floating Effect
   useGSAP(() => {
-    if (!scrollContainerRef.current || !homeRef.current || !footerRef.current) return;
+    if (!scrollContainerRef.current || !homeRef.current) return;
     const scroller = scrollContainerRef.current;
     gsap.to('.nav-logo', {
       y: -5,
@@ -889,27 +916,6 @@ function App() {
       });
     }
 
-    if (scroller && footerRef.current) {
-      // Footer Text Stagger
-      gsap.fromTo('.footer-text-anim',
-        { y: 50, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1.5,
-          stagger: 0.1,
-          ease: 'expo.out',
-          scrollTrigger: {
-            trigger: footerRef.current,
-            scroller: scroller,
-            start: 'top center+=200',
-            toggleActions: 'play none none reverse'
-          }
-        }
-      );
-
-    }
-
     return cleanup;
   }, { scope: scrollContainerRef });
 
@@ -1008,7 +1014,7 @@ function App() {
                 <svg className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-all duration-300 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </MagneticButton>
               <MagneticButton
-                onClick={() => scrollToSection('footer')}
+                onClick={() => scrollToSection('rewards')}
                 className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 font-bold text-zinc-950 bg-[#00FFAB] rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_4px_20px_rgba(0,255,171,0.2)] hover:shadow-[0_8px_40px_rgba(0,255,171,0.4)] duration-300 text-base sm:text-lg border border-[#00FFAB]/50"
               >
                 <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease"></div>
@@ -1027,60 +1033,9 @@ function App() {
             <CategorySection categoryKey="physical" scrollerRef={scrollContainerRef} onCardClick={handleCardClick} isModalOpen={isModalOpen} />
             <CategorySection categoryKey="mental" scrollerRef={scrollContainerRef} onCardClick={handleCardClick} isModalOpen={isModalOpen} />
             <CategorySection categoryKey="financial" scrollerRef={scrollContainerRef} onCardClick={handleCardClick} isModalOpen={isModalOpen} />
+            <CategorySection categoryKey="rewards" scrollerRef={scrollContainerRef} onCardClick={handleCardClick} isModalOpen={isModalOpen} />
           </>
         )}
-
-        {/* Rewards & Recognition Footer */}
-        <footer id="footer" ref={footerRef} className="snap-start min-h-screen w-full bg-zinc-950 text-white flex flex-col justify-center items-center shrink-0 relative overflow-hidden pt-2">
-          {/* Gradient Divider Transitions */}
-          <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#00FFAB]/30 to-violet-500/30 opacity-70"></div>
-
-          {/* Abstract bg element */}
-          <div className="parallax-footer-bg absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[800px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none"></div>
-
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full flex flex-col lg:flex-row items-center  gap-10 lg:gap-16 pt-16 pb-12 -translate-y-8 md:-translate-y-16">
-            <div className="flex-1 footer-text-anim w-full lg:max-w-xl text-left">
-              <div className="mb-6 inline-flex items-center justify-center p-4 bg-zinc-900/40 backdrop-blur-md rounded-3xl border border-[#00FFAB]/20 shadow-[0_0_30px_rgba(0,255,171,0.1)]">
-                <Trophy className="h-8 w-8 text-[#00FFAB] opacity-90" />
-              </div>
-              <h2 className="font-playfair text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-black mb-6 tracking-tight bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-transparent whitespace-nowrap overflow-hidden text-ellipsis pb-2">{content.footer.title}</h2>
-              <p className="text-zinc-400 text-lg md:text-xl leading-relaxed font-light mb-8">
-                {content.footer.modalDetails.fullDescription}
-              </p>
-              <ul className="flex flex-col gap-4 mb-8">
-                {content.footer.modalDetails.bulletPoints.slice(0, 3).map((point, i) => (
-                  <li key={i} className="flex items-start gap-4 bg-zinc-900/40 backdrop-blur-md p-4 rounded-2xl border border-zinc-800 hover:border-[#00FFAB]/30 transition-colors">
-                    <CheckCircle className="w-6 h-6 text-[#00FFAB] shrink-0" />
-                    <span className="text-zinc-300 font-medium leading-relaxed">{point}</span>
-                  </li>
-                ))}
-              </ul>
-              <button
-                className="group relative inline-flex items-center justify-center px-6 py-3 font-bold text-zinc-950 bg-[#00FFAB] rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_4px_20px_rgba(0,255,171,0.2)] hover:shadow-[0_8px_40px_rgba(0,255,171,0.4)] duration-300 text-base border border-[#00FFAB]/50"
-                onClick={() => handleCardClick(content.footer, { text: 'text-[#00FFAB]', bg: 'bg-[#00FFAB]/10', icon: 'text-[#00FFAB]', hover: 'group-hover:bg-[#00FFAB]/20' })}
-              >
-                <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease"></div>
-                <span className="relative z-10 mr-2 transition-colors duration-300">View More</span>
-                <svg className="relative z-10 w-4 h-4 group-hover:translate-x-1 transition-all duration-300 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-              </button>
-            </div>
-
-            <div className="flex-1 footer-text-anim w-full relative max-w-lg lg:max-w-none mx-auto lg:mx-0">
-              <div className="aspect-[4/3] rounded-3xl overflow-hidden border border-zinc-800 shadow-2xl relative group">
-                <div className="absolute inset-0 bg-[#00FFAB]/20 mix-blend-overlay group-hover:opacity-0 transition-opacity duration-700 z-10 pointer-events-none"></div>
-                <img
-                  src={content.footer.image}
-                  alt={content.footer.title}
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="footer-text-anim mt-auto pb-2 text-sm text-zinc-600 font-medium tracking-wide">
-            © {new Date().getFullYear()} 360° Wellness Platform. All rights reserved.
-          </div>
-        </footer>
 
         {/* Back to Top Button */}
         <button
