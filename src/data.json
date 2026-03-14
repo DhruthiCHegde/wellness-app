@@ -46,7 +46,7 @@
                 "title": "Subsidized Healthy Lunch",
                 "iconName": "Utensils",
                 "desc": "Nutritious meals subsidized by FYERS.",
-                "image": "https://hr-assets.fyers.co.in/Food.gif.gif",
+                "image": "https://hr-assets.fyers.co.in/Food.png",
                 "modalDetails": {
                     "fullDescription": "We provide healthy meals Monday to Friday with a 50% subsidy to promote better nutrition and convenience. Meals are ordered via an app-based partner service that reduces food waste by allowing advance selection.",
                     "bulletPoints": [
@@ -62,7 +62,7 @@
                 "title": "Festive Menu",
                 "iconName": "PartyPopper",
                 "desc": "Special festive meals celebrating diverse cultures.",
-                "image": "https://tse2.mm.bing.net/th/id/OIP.R_EjTGnTyxo6thXevHXs5wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
+                "image": "https://hr-assets.fyers.co.in/Festive%20Menu.png",
                 "modalDetails": {
                     "fullDescription": "FYERS celebrates cultural diversity by introducing special festive menus based on different festivals throughout the year. Meals are thoughtfully curated to reflect traditional dishes associated with each festival, allowing team members to experience and appreciate the rich culinary traditions of different cultures.",
                     "bulletPoints": [
@@ -98,7 +98,7 @@
                 "title": "Health Centre",
                 "iconName": "HeartPulse",
                 "desc": "Health, Eye and Dental check-ups for insured individuals.",
-                "image": "https://images.unsplash.com/photo-1588776814546-ec7e8c8d6150?q=80&w=1470&auto=format&fit=crop",
+                "image": "https://hr-assets.fyers.co.in/Health%20Center.gif",
                 "url": "https://fyers.ethika.in/employee/home",
                 "modalDetails": {
                     "fullDescription": "Employees can avail health, eye and dental check-ups for insured individuals through the Total Health section on the FYERS benefits portal.",
@@ -124,22 +124,6 @@
                         "₹2,000 reimbursement for members outside camp locations",
                         "Participation is voluntary; medical results remain strictly confidential",
                         "Health check results shall not be used for performance, promotion, or disciplinary decisions"
-                    ]
-                }
-            },
-            {
-                "title": "Physical Health Webinars",
-                "iconName": "Monitor",
-                "desc": "Expert-led webinars to help improve your physical health.",
-                "image": "https://hr-assets.fyers.co.in/Physical%20health%20Webinars.png",
-                "url": "https://fyers.ethika.in/employee/home",
-                "modalDetails": {
-                    "fullDescription": "FYERS provides access to multiple webinars presented by industry experts covering various aspects of physical health.",
-                    "bulletPoints": [
-                        "Webinars by industry experts",
-                        "Covers multiple aspects of physical health",
-                        "Posted on ZOHO Connect",
-                        "Also accessible at https://fyers.ethika.in/employee/home"
                     ]
                 }
             }
@@ -189,10 +173,10 @@
                 }
             },
             {
-                "title": "Mental Health Webinars",
+                "title": "Consious Corner",
                 "iconName": "Brain",
                 "desc": "Expert-led sessions on mental wellbeing.",
-                "image": "https://hr-assets.fyers.co.in/Mental.png",
+                "image": "https://hr-assets.fyers.co.in/Conscious%20Corner.png",
                 "url": "https://fyers.ethika.in/employee/home",
                 "modalDetails": {
                     "fullDescription": "FYERS provides access to multiple webinars by industry experts covering many aspects of mental health improvement.",
@@ -208,7 +192,7 @@
                 "title": "Women’s Wellness",
                 "iconName": "HeartHandshake",
                 "desc": "Supporting women’s health, comfort, and wellbeing at the workplace.",
-                "image": "https://img.freepik.com/premium-vector/women-s-health-logo-illustration_775854-500.jpg?q=80&w=1491&auto=format&fit=crop",
+                "image": "https://hr-assets.fyers.co.in/WW.gif",
                 "modalDetails": {
                     "fullDescription": "FYERS is committed to fostering a supportive and inclusive workplace that recognises the health and wellbeing of women members. In line with the Government of Karnataka’s Menstrual Leave Policy, 2025, Women’s Wellness Leave is provided to support members experiencing menstrual discomfort or related health concerns, ensuring a respectful and stigma-free work environment.",
                     "bulletPoints": [
@@ -258,7 +242,7 @@
                 "title": "Milestone Celebrations & Team Events",
                 "iconName": "PartyPopper",
                 "desc": "Events and activities celebrating milestones and building team spirit.",
-                "image": "https://hr-assets.fyers.co.in/Party.jpg",
+                "image": "https://hr-assets.fyers.co.in/Borntotrade.gif",
                 "url": "https://connect.fyers.in/home",
                 "modalDetails": {
                     "fullDescription": "FYERS organizes multiple events celebrating milestones, team outings, dinners, lunches, and team-building activities to drive engagement and collaboration across teams.",
@@ -298,7 +282,7 @@
                 "title": "Group Personal Accident Insurance",
                 "iconName": "Shield",
                 "desc": "Financial protection against accidental injuries and disabilities.",
-                "image": "https://hr-assets.fyers.co.in/GPA.gif",
+                "image": "https://hr-assets.fyers.co.in/Insurance2.gif",
                 "modalDetails": {
                     "fullDescription": "FYERS provides Group Personal Accident Insurance to support members and their families in case of accidental death, injury, or disability.",
                     "bulletPoints": [
@@ -325,7 +309,7 @@
                 }
             },
             {
-                "title": "Retirement Benefits",
+                "title": "Retiral Benefits",
                 "iconName": "TrendingUp",
                 "desc": "Retirement savings and long-term financial stability.",
                 "image": "https://hr-assets.fyers.co.in/Retiral.gif",
@@ -363,7 +347,7 @@
                 "title": "Employee State Insurance (ESI)",
                 "iconName": "FileCheck",
                 "desc": "Employee State Insurance and statutory social security benefits.",
-                "image": "https://hr-assets.fyers.co.in/ESI.png",
+                "image": "https://hr-assets.fyers.co.in/ESI%203.png",
                 "modalDetails": {
                     "fullDescription": "FYERS complies with the Code on Social Security, 2020 for Employee State Insurance (ESI) for all eligible employees, ensuring access to medical, sickness, maternity, and disablement benefits.",
                     "bulletPoints": [
@@ -379,7 +363,7 @@
                 "title": "Employee Referral Program",
                 "iconName": "Wallet",
                 "desc": "Earn rewards by referring great talent.",
-                "image": "https://hr-assets.fyers.co.in/Referal%20Bonus.png",
+                "image": "https://hr-assets.fyers.co.in/refer-2.png",
                 "modalDetails": {
                     "fullDescription": "FYERS believes great talent knows great talent. Employees can refer candidates via ZOHO Recruit and earn referral bonuses paid in two installments.",
                     "bulletPoints": [
@@ -408,27 +392,12 @@
                     ]
                 }
             },
-            {
-                "title": "Financial Health Webinars",
-                "iconName": "BarChart",
-                "desc": "Expert-led webinars to help improve your financial health.",
-                "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1470&auto=format&fit=crop",
-                "url": "https://fyers.ethika.in/employee/home",
-                "modalDetails": {
-                    "fullDescription": "FYERS provides access to multiple webinars by industry experts covering many aspects of financial health improvement.",
-                    "bulletPoints": [
-                        "Webinars by industry experts",
-                        "Covers multiple financial health topics",
-                        "Posted on ZOHO Connect",
-                        "Also accessible at https://fyers.ethika.in/employee/home"
-                    ]
-                }
-            },
+           
             {
                 "title": "Training Reimbursement Program",
                 "iconName": "GraduationCap",
                 "desc": "Reimbursement for external courses and conferences that benefit your work.",
-                "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1470&auto=format&fit=crop",
+                "image": "https://hr-assets.fyers.co.in/TR.jpg",
                 "modalDetails": {
                     "fullDescription": "We reimburses members who undertake further studies, training courses, or conferences outside of work that benefit their role. Eligibility requires at least 6 months of service and high work performance.",
                     "bulletPoints": [
@@ -443,7 +412,7 @@
                 "title": "Company Sponsored Trainings",
                 "iconName": "Users",
                 "desc": "Industry and domain expert-led trainings fully covered by FYERS.",
-                "image": "https://hr-assets.fyers.co.in/Training.avif",
+                "image": "https://hr-assets.fyers.co.in/1773382593519.png",
                 "modalDetails": {
                     "fullDescription": "FYERS engages industry and domain experts to train members or encourages participation in external conferences and webinars, with the entire cost covered by the company.",
                     "bulletPoints": [
@@ -468,7 +437,7 @@
                 "title": "FYERS Champion",
                 "iconName": "Trophy",
                 "desc": "Recognizing outstanding individual excellence across the organization.",
-                "image": "https://hr-assets.fyers.co.in/Individual.jpg",
+                "image": "https://hr-assets.fyers.co.in/fyers_champion.png",
                 "policy_url": "https://www.google.com",
                 "modalDetails": {
                     "fullDescription": "The FYERS Champion award is our highest individual honor, recognizing members who consistently go above and beyond their regular duties.",
@@ -483,7 +452,7 @@
                 "title": "FYERS Force",
                 "iconName": "Users",
                 "desc": "Celebrating exceptional team achievements and collaborative success.",
-                "image": "https://hr-assets.fyers.co.in/Team.jpg",
+                "image": "https://hr-assets.fyers.co.in/Force%201.png",
                 "policy_url": "https://www.google.com",
                 "modalDetails": {
                     "fullDescription": "The FYERS Force award celebrates teams that have demonstrated exceptional collaboration to achieve significant milestones.",
@@ -498,7 +467,7 @@
                 "title": "Spot Award",
                 "iconName": "Star",
                 "desc": "Recognizing quick, impactful contributions and exceptional behaviors.",
-                "image": "https://hr-assets.fyers.co.in/Spot.jpg",
+                "image": "https://hr-assets.fyers.co.in/SA.avif",
                 "policy_url": "https://www.google.com",
                 "modalDetails": {
                     "fullDescription": "Spot Awards are given instantly to recognize quick, impactful contributions that might otherwise go unnoticed.",
@@ -514,7 +483,7 @@
                 "title": "Thank Anyone",
                 "iconName": "Heart",
                 "desc": "Encouraging everyday appreciation and gratitude among colleagues.",
-                "image": "https://hr-assets.fyers.co.in/Thankyou.jpg",
+                "image": "https://hr-assets.fyers.co.in/Force.avif",
                 "policy_url": "https://www.google.com",
                 "modalDetails": {
                     "fullDescription": "The 'Thank Anyone' program is a peer-to-peer recognition system designed to cultivate a culture of gratitude.",

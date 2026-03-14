@@ -613,8 +613,8 @@ const CategorySection = ({ categoryKey, scrollerRef, onCardClick, isModalOpen })
       {categoryKey === 'rewards' && (
         <footer className="absolute bottom-0 left-0 w-full text-white flex flex-col justify-center items-center shrink-0 z-20 pointer-events-none">
           <div className="footer-text-anim pb-4 text-sm text-zinc-600 font-medium tracking-wide text-center pointer-events-auto">
-            <p>© {new Date().getFullYear()} FYERS Securities Private Limited. All rights reserved.</p>
-            <p className="mt-1 text-xs opacity-75">360° Wellness Platform</p>
+            <p>© {new Date().getFullYear()} Copyright © FYERS Securities Private Limited.</p>
+            {/* <p className="mt-1 text-xs opacity-75">360° Wellness Platform</p> */}
           </div>
         </footer>
       )}
