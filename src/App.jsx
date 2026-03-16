@@ -162,6 +162,8 @@ const Modal = ({ isOpen, onClose, data }) => {
 
   // Dynamically resolve the URL: use specific item URL if present, else fallback
   const url = data.item.policy_url || content.common_url.policyUrl;
+  const policyIconImg = data.item.policyIconImg || "privacy-policy.gif";
+  const policyIconName = data.item.policyIconName || "View detailed policy";
 
   return (
     <div ref={modalRef} className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 opacity-0 pointer-events-none">
@@ -194,13 +196,13 @@ const Modal = ({ isOpen, onClose, data }) => {
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src="/privacy-policy.gif"
+                src={policyIconImg}
                 alt="Policy Information"
                 className="w-full h-full object-contain filter drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)] group-hover:drop-shadow-[0_8px_20px_rgba(0,255,171,0.6)] transition-all duration-300"
               />
               {/* Tooltip */}
               <span className="absolute top-[100%] left-1/3 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap bg-zinc-900 border border-[#00FFAB]/30 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-xl pointer-events-none z-20">
-                View detailed policy
+                {policyIconName}
                 <span className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-zinc-900 border-t border-l border-[#00FFAB]/30 rotate-45 transform"></span>
               </span>
             </a>

@@ -46,6 +46,9 @@
                 "iconName": "Utensils",
                 "desc": "Eat Well. Work Better.",
                 "image": "https://hr-assets.fyers.co.in/Food.png",
+                "policy_url":"https://connect.fyers.in/announcement/introducing-lunch-meals",
+                "policyIconImg":"/food.gif",
+                "policyIconName":"View More",
                 "modalDetails": {
                     "fullDescription": "Good nutrition fuels great performance. To make healthy eating easier and more convenient, FYERS provides nutritious weekday meals with a 50% subsidy.",
                     "bulletPoints": [
@@ -176,6 +179,9 @@
                 "desc": "Supporting Your Mental Well-being.",
                 "image": "https://hr-assets.fyers.co.in/Conscious%20Corner.png",
                 "url": "https://fyers.ethika.in/employee/home",
+                "policyIconImg":"/emotional.gif",
+                "policyIconName":"View More",
+                "policy_url":"https://connect.fyers.in/announcement/welcome-to-the-conscious-corner-%E2%80%94-your-sanctuary-for-mindful-learning-and-intentional-growth",
                 "modalDetails": {
                     "fullDescription": "Conscious Corner brings expert-led sessions focused on mental health awareness, emotional wellbeing, Physical and Financial best practices webinar by Industry experts helping members build resilience and maintain balance.",
                     "bulletPoints": [
@@ -327,7 +333,6 @@
                 "iconName": "Car",
                 "desc": "Drive with Smart Financial Benefits.",
                 "image": "https://hr-assets.fyers.co.in/Car.gif",
-                "policy_url": "https://www.youtube.com",    
                 "modalDetails": {
                     "fullDescription": "Eligible members can opt for a company-supported car leasing program that offers flexibility and financial advantages while owning a vehicle.",
                     "bulletPoints": [
@@ -430,7 +435,6 @@
                 "iconName": "Trophy",
                 "desc": "Recognizing Outstanding Individual Excellence.",
                 "image": "https://hr-assets.fyers.co.in/fyers_champion.png",
-                "policy_url": "https://www.google.com",
                 "modalDetails": {
                     "fullDescription": "This award honors individuals who consistently deliver exceptional performance, demonstrate creativity, embody FYERS values, and make a significant impact on the organization’s growth.",
                     "bulletPoints": [
@@ -447,7 +451,6 @@
                 "iconName": "Users",
                 "desc": "Celebrating Exceptional Team Achievements.",
                 "image": "https://hr-assets.fyers.co.in/Force%201.png",
-                "policy_url": "https://www.google.com",
                 "modalDetails": {
                     "fullDescription": "This team award recognizes collaboration, innovation, and collective efforts that create meaningful impact and contribute to FYERS’ success.",
                     "bulletPoints": [
@@ -465,7 +468,6 @@
                 "iconName": "Star",
                 "desc": "Recognizing Impact in the Moment.",
                 "image": "https://hr-assets.fyers.co.in/SA.avif",
-                "policy_url": "https://www.google.com",
                 "modalDetails": {
                     "fullDescription": "SPOT Awards celebrate members who make exceptional contributions within a short time frame while demonstrating FYERS values and delivering meaningful results.",
                     "bulletPoints": [
@@ -482,7 +484,6 @@
                 "iconName": "Heart",
                 "desc": "A Simple Way to Appreciate Each Other.",
                 "image": "https://hr-assets.fyers.co.in/Force.avif",
-                "policy_url": "https://www.google.com",
                 "modalDetails": {
                     "fullDescription": "Gratitude goes a long way. This initiative encourages members to thank colleagues across the organization for their support, collaboration, and contributions.",
                     "bulletPoints": [
