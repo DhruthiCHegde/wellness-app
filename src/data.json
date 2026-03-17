@@ -3,7 +3,7 @@
         "tag": "Your Modern Wellbeing Platform",
         "title": "Empowering Every",
         "highlight": "Dimension",
-        "subtitle": "Designed to support every aspect of your life - Physical, Mental, and Financial. Because true success begins with holistic wellbeing.",
+        "subtitle": "Designed to support every aspect of your life — Physical, Mental, and Financial. Because true success begins with holistic wellbeing.",
         "cta": "Explore Wellness Benefits"
     },
     "physical": {
@@ -31,13 +31,15 @@
                 "desc": "Play Together. Win Together.",
                 "image": "https://hr-assets.fyers.co.in/CV.gif.gif",
                 "url": "https://connect.fyers.in/home",
+                "connect_url":"https://connect.fyers.in/home",
                 "modalDetails": {
                     "fullDescription": "FYERS Club Verse brings teams together through sports, wellness, and friendly competition. From tournaments to fitness activities, these events create opportunities to connect, collaborate, and stay active.",
                     "bulletPoints": [
                         "Inter-team sports tournaments throughout the year",
                         "Fun wellness and fitness engagement activities",
                         "Opportunities to build team spirit and collaboration",
-                        "Event announcements and updates shared on Zoho Connect and Zoho Cliq"
+                        "Event announcements and updates shared on Zoho Connect and Zoho Cliq",
+                        "Easy access on Zoho Connect"
                     ]
                 }
             },
@@ -231,6 +233,7 @@
                 "desc": "A Culture of Respect and Safety.",
                 "image": "https://hr-assets.fyers.co.in/Harassment%20Free.png",
                 "url": "https://people.fyers.in/fyershrms/zp#files/orgfile",
+                "connect_url":"https://connect.fyers.in/home",
                 "modalDetails": {
                     "fullDescription": "We are committed to creating a workplace where every member feels safe, respected, and valued. Our policies ensure a professional environment built on dignity, inclusion, and mutual respect.",
                     "bulletPoints": [
@@ -248,13 +251,14 @@
                 "desc": "Celebrating Wins, Big and Small.",
                 "image": "https://hr-assets.fyers.co.in/Borntotrade.gif",
                 "url": "https://connect.fyers.in/home",
+                "connect_url":"https://connect.fyers.in/home",
                 "modalDetails": {
                     "fullDescription": "We believe achievements deserve recognition and moments of celebration. From milestone events to team outings, these activities bring members together and strengthen our collaborative culture.",
                     "bulletPoints": [
                         "Milestone celebrations recognizing our contribution to add in customers.",
                         "Team outings and dinners to connect beyond work",
                         "Engaging team-building activities",
-                        "Event updates and announcements shared on Zoho Connect "
+                        "Event updates and announcements shared on Zoho Connect"
                     ]
                 }
             }
@@ -271,6 +275,7 @@
                 "desc": "Comprehensive Health Protection.",
                 "image": "https://hr-assets.fyers.co.in/Health%20Insurance.gif",
                 "url": "https://fyers.ethika.in/employee/home",
+                "connect_url":"https://fyers.ethika.in/employee/home",
                 "modalDetails": {
                     "fullDescription": "To support members and their families during medical emergencies, comprehensive Group Medical Insurance coverage is provided for hospitalization due to illness, disease, or injury.",
                     "bulletPoints": [
@@ -278,7 +283,7 @@
                         "Coverage for members and eligible dependents",
                         "Protection against hospitalization expenses due to illness or injury",
                         "Cashless treatment at network hospitals",
-                        "Accessible via the Ethika portal - fyers.ethika.in"
+                        "Accessible via the Ethika portal -  fyers.ethika.in"
                     ]
                 }
             },
@@ -366,6 +371,7 @@
                 "iconName": "Wallet",
                 "desc": "Help Build the Team. Get Rewarded.",
                 "image": "https://hr-assets.fyers.co.in/refer-2.png",
+                "connect_url":"https://connect.fyers.in/home",
                 "modalDetails": {
                     "fullDescription": "Know someone who would be a great fit? Refer talented candidates and earn exciting rewards when they successfully join the team.",
                     "bulletPoints": [
@@ -411,6 +417,7 @@
                 "iconName": "Users",
                 "desc": "Learn from Industry Experts.",
                 "image": "https://hr-assets.fyers.co.in/1773382593519.png",
+                "connect_url": "https://connect.fyers.in/home",
                 "modalDetails": {
                     "fullDescription": "We organize fully funded learning opportunities to help members stay updated with the latest industry knowledge and skills.",
                     "bulletPoints": [

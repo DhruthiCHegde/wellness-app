@@ -226,12 +226,41 @@ const Modal = ({ isOpen, onClose, data }) => {
 
           {data.item.modalDetails?.bulletPoints && (
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-              {data.item.modalDetails.bulletPoints.map((point, i) => (
-                <li key={i} className="flex items-start gap-3 bg-zinc-900/50 p-4 rounded-xl border border-zinc-800/50 hover:bg-zinc-800/80 transition-colors">
-                  <CheckCircle className={`w-6 h-6 shrink-0 ${data.theme.text} mt-0.5`} />
-                  <span className="font-medium text-zinc-200">{renderTextWithLinks(point, data.theme.text)}</span>
-                </li>
-              ))}
+              {data.item.modalDetails.bulletPoints.map((point, i) => {
+                const isLastItem = i === data.item.modalDetails.bulletPoints.length - 1;
+                const hasConnectUrl = !!data.item.connect_url;
+
+                let renderedPoint = renderTextWithLinks(point, data.theme.text);
+
+                if (isLastItem && hasConnectUrl) {
+                  const words = point.split(' ');
+                  if (words.length >= 2) {
+                    const lastTwo = words.slice(-2).join(' ');
+                    const rest = words.slice(0, -2).join(' ');
+                    renderedPoint = (
+                      <>
+                        {renderTextWithLinks(rest + (rest ? ' ' : ''), data.theme.text)}
+                        <a
+                          href={data.item.connect_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="text-[#00FFAB] underline underline-offset-4 hover:opacity-80 transition-opacity"
+                        >
+                          {lastTwo}
+                        </a>
+                      </>
+                    );
+                  }
+                }
+
+                return (
+                  <li key={i} className="flex items-start gap-3 bg-zinc-900/50 p-4 rounded-xl border border-zinc-800/50 hover:bg-zinc-800/80 transition-colors">
+                    <CheckCircle className={`w-6 h-6 shrink-0 ${data.theme.text} mt-0.5`} />
+                    <span className="font-medium text-zinc-200">{renderedPoint}</span>
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>
