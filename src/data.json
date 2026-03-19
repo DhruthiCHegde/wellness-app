@@ -4,7 +4,7 @@
         "title": "Empowering Every",
         "highlight": "Dimension",
         "subtitle": "Designed to support every aspect of your life — Physical, Mental, and Financial. Because true success begins with holistic wellbeing.",
-        "cta": "Explore Wellness Benefits"
+        "cta": " Wellness Benefits"
     },
     "physical": {
         "title": "Physical Wellness",
@@ -266,6 +266,171 @@
     },
     "financial": {
         "title": "Financial Wellness",
+        "subtitle": "Build security, stability, and long-term prosperity.",
+        "bg": "bg-zinc-900",
+        "benefits": [
+            {
+                "title": "Group Medical Insurance",
+                "iconName": "HeartPulse",
+                "desc": "Comprehensive Health Protection.",
+                "image": "https://hr-assets.fyers.co.in/Health%20Insurance.gif",
+                "url": "https://fyers.ethika.in/employee/home",
+                "connect_url":"https://fyers.ethika.in/employee/home",
+                "modalDetails": {
+                    "fullDescription": "To support members and their families during medical emergencies, comprehensive Group Medical Insurance coverage is provided for hospitalization due to illness, disease, or injury.",
+                    "bulletPoints": [
+                        "₹5,00,000 medical insurance coverage per person and upto 30 lakhs medical insurance coverage per member",
+                        "Coverage for members and eligible dependents",
+                        "Protection against hospitalization expenses due to illness or injury",
+                        "Cashless treatment at network hospitals",
+                        "Accessible via the Ethika portal -  fyers.ethika.in"
+                    ]
+                }
+            },
+            {
+                "title": "Group Personal Accident Insurance",
+                "iconName": "Shield",
+                "desc": "Protection When It Matters Most.",
+                "image": "https://hr-assets.fyers.co.in/Insurance2.gif",
+                "modalDetails": {
+                    "fullDescription": "This provides financial protection in the event of accidental injury, disability, or death, ensuring support for members and their families during unforeseen situations.",
+                    "bulletPoints": [
+                        "₹30,00,000 coverage for accidental death or disability",
+                        "Coverage for permanent or partial disability due to accidents",
+                        "Financial protection for members and their families",
+                        "Coverage applicable as per policy terms and conditions"
+                    ]
+                }
+            },
+            {
+                "title": "Group Term Insurance",
+                "iconName": "FileHeart",
+                "desc": "Financial Protection for Your Loved Ones.",
+                "image": "https://hr-assets.fyers.co.in/GTL.gif",
+                "modalDetails": {
+                    "fullDescription": "To provide peace of mind and long-term security, Group Term Life Insurance ensures financial protection for your family in the event of unforeseen circumstances.",
+                    "bulletPoints": [
+                        "3× base salary coverage for career level 8 and below",
+                        "5× base salary coverage for career level 9 and above",
+                        "Financial protection and support for your dependents",
+                        "Coverage applicable as per policy underwriting guidelines"
+                    ]
+                }
+            },
+            {
+                "title": "Retirement Benefits",
+                "iconName": "TrendingUp",
+                "desc": "Secure Your Future with Long-Term Savings.",
+                "image": "https://hr-assets.fyers.co.in/Retiral.gif",
+                "modalDetails": {
+                    "fullDescription": "Our retiral benefits are designed to help members build financial stability for the future while ensuring compliance with statutory requirements.",
+                    "bulletPoints": [
+                        "Employer contribution towards EPF",
+                        "Allocation to the Employee Pension Scheme (EPS)",
+                        "EDLI life insurance coverage for added protection",
+                        "Gratuity eligibility after 5 years of service",
+                        "Statutory bonus as per the Code on Wages"
+                    ]
+                }
+            },
+            {
+                "title": "Car Lease Policy",
+                "iconName": "Car",
+                "desc": "Drive with Smart Financial Benefits.",
+                "image": "https://hr-assets.fyers.co.in/Car.gif",
+                "modalDetails": {
+                    "fullDescription": "Eligible members can opt for a company-supported car leasing program that offers flexibility and financial advantages while owning a vehicle.",
+                    "bulletPoints": [
+                        "Available for career level 6 and above",
+                        "Car price limit based on salary and lease tenure",
+                        "Requires HR Head approval",
+                        "Minimum CIBIL score of 700 required",
+                        "A minimum CIBIL score of 700 is required to avail the benefit",
+                        "Not applicable during Performance Improvement Programs or during probation"
+                    ]
+                }
+            },
+            {
+                "title": "Employee State Insurance (ESI)",
+                "iconName": "FileCheck",
+                "desc": "Statutory Protection for Your Well-being.",
+                "image": "https://hr-assets.fyers.co.in/ESI%203.png",
+                "modalDetails": {
+                    "fullDescription": "Employee State Insurance provides essential social security benefits that support members and their families during medical or financial emergencies.",
+                    "bulletPoints": [
+                        "Employer contribution: 3.25%",
+                        "Employee contribution: 0.75%",
+                        "Contributions remitted within statutory timelines",
+                        "Coverage includes medical, sickness, maternity, and disability benefits",
+                        "Subjective to applicable members"
+                    ]
+                }
+            },
+            {
+                "title": "Employee Referral Program",
+                "iconName": "Wallet",
+                "desc": "Help Build the Team. Get Rewarded.",
+                "image": "https://hr-assets.fyers.co.in/refer-2.png",
+                "connect_url":"https://connect.fyers.in/home",
+                "modalDetails": {
+                    "fullDescription": "Know someone who would be a great fit? Refer talented candidates and earn exciting rewards when they successfully join the team.",
+                    "bulletPoints": [
+                        "Up to ₹30,000 referral bonus for non-technical roles",
+                        "Up to ₹60,000 referral bonus for technical roles",
+                        "Rewards paid in two stages (3 months & 6 months)",
+                        "Referrals submitted through Zoho Recruit"
+                    ]
+                }
+            },
+            {
+                "title": "Creche Reimbursement",
+                "iconName": "Baby",
+                "desc": "Supporting Working Parents.",
+                "image": "https://hr-assets.fyers.co.in/creche2.gif",
+                "modalDetails": {
+                    "fullDescription": "Balancing work and family is important. This benefit helps working parents manage childcare expenses with monthly creche reimbursements.",
+                    "bulletPoints": [
+                        "Up to ₹8,000 per month per child",
+                        "Applicable for children up to 6 years of age",
+                        "Submit bills and birth certificate for reimbursement",
+                        "Claims processed through Zoho Expense"
+                    ]
+                }
+            },
+            {
+                "title": "Training Reimbursement Program",
+                "iconName": "GraduationCap",
+                "desc": "Invest in Your Growth.",
+                "image": "https://hr-assets.fyers.co.in/TR.jpg",
+                "modalDetails": {
+                    "fullDescription": "Members are encouraged to enhance their professional skills through external courses, certifications, and conferences. This program helps support continuous learning and career development.",
+                    "bulletPoints": [
+                        "Available after 6 months of service",
+                        "Requires manager and department head approval",
+                        "Final approval by HR & Management",
+                        "Submit receipts and completion certificates via Zoho Expense"
+                    ]
+                }
+            },
+            {
+                "title": "Company Sponsored Trainings",
+                "iconName": "Users",
+                "desc": "Learn from Industry Experts.",
+                "image": "https://hr-assets.fyers.co.in/1773382593519.png",
+                "connect_url": "https://connect.fyers.in/home",
+                "modalDetails": {
+                    "fullDescription": "We organize fully funded learning opportunities to help members stay updated with the latest industry knowledge and skills.",
+                    "bulletPoints": [
+                        "Sessions conducted by internal and external experts",
+                        "Company-sponsored training programs like NISM",
+                        "Easy access to modules to refer to on Zoho Learn"
+                    ]
+                }
+            }
+        ]
+    },
+    "leadership": {
+        "title": "Leadership",
         "subtitle": "Build security, stability, and long-term prosperity.",
         "bg": "bg-zinc-900",
         "benefits": [
