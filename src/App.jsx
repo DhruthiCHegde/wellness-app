@@ -25,7 +25,14 @@ import {
   Milestone,
   Megaphone,
   Orbit, // Renamed FamilySupport to a standard Lucide equivalent Orbit or Users
-  Trophy
+  Trophy,
+  Fuel,
+  Plane,
+  Palmtree,
+  CarFront,
+  Crown,
+  Key,
+  Star
 } from 'lucide-react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -40,7 +47,8 @@ const iconMap = {
   Heart, Activity, Wallet, Brain, Leaf, Coffee, Phone,
   TrendingUp, Car, DollarSign, Calendar, Utensils,
   Dumbbell, Stethoscope, CheckCircle, ShieldCheck,
-  StarAward: Award, Milestone, Megaphone, FamilySupport: Orbit
+  StarAward: Award, Milestone, Megaphone, FamilySupport: Orbit,
+  Fuel, Plane, Palmtree, CarFront, Crown, Key, Trophy, Star
 };
 
 const getThemeClasses = (categoryKey) => {
@@ -800,7 +808,21 @@ function App() {
     setActiveTab(section);
     const element = document.getElementById(section);
     if (element && scrollContainerRef.current) {
-      scrollContainerRef.current.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
+      // Temporarily disable CSS scroll snapping to allow smooth scrolling past multiple sections
+      const container = scrollContainerRef.current;
+      container.style.scrollSnapType = 'none';
+
+      container.scrollTo({ top: element.offsetTop, behavior: 'smooth' });
+
+      // If user clicks multiple times or clicks different buttons quickly, clear the old timeout
+      if (container.snapTimeout) clearTimeout(container.snapTimeout);
+
+      // Re-enable snap after the smooth scroll completes.
+      container.snapTimeout = setTimeout(() => {
+        if (container) {
+          container.style.scrollSnapType = '';
+        }
+      }, 1500);
     }
   };
 
@@ -1052,24 +1074,24 @@ function App() {
                 onClick={() => scrollToSection('overview')}
                 className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 font-bold text-zinc-950 bg-[#00FFAB] rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_4px_20px_rgba(0,255,171,0.2)] hover:shadow-[0_8px_40px_rgba(0,255,171,0.4)] duration-300 text-base sm:text-lg border border-[#00FFAB]/50"
               >
-                <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease"></div>
-                <span className="relative z-10 mr-2 transition-colors duration-300">{content.hero.cta}</span>
+                <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                <span className="relative z-10 transition-colors duration-300">{content.hero.cta}</span>
                 {/* <svg className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-all duration-300 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg> */}
               </MagneticButton>
               <MagneticButton
                 onClick={() => scrollToSection('leadership')}
                 className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 font-bold text-zinc-950 bg-[#00FFAB] rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_4px_20px_rgba(0,255,171,0.2)] hover:shadow-[0_8px_40px_rgba(0,255,171,0.4)] duration-300 text-base sm:text-lg border border-[#00FFAB]/50"
               >
-                <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease"></div>
-                <span className="relative z-10 mr-2 transition-colors duration-300">Leadership Benefits</span>
+                <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                <span className="relative z-10 transition-colors duration-300">Leadership Benefits</span>
                 {/* <svg className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-all duration-300 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg> */}
               </MagneticButton>
               <MagneticButton
                 onClick={() => scrollToSection('rewards')}
                 className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 font-bold text-zinc-950 bg-[#00FFAB] rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_4px_20px_rgba(0,255,171,0.2)] hover:shadow-[0_8px_40px_rgba(0,255,171,0.4)] duration-300 text-base sm:text-lg border border-[#00FFAB]/50"
               >
-                <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease"></div>
-                <span className="relative z-10 mr-2 transition-colors duration-300">Rewards & Recognition</span>
+                <div className="absolute inset-0 w-full h-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                <span className="relative z-10 transition-colors duration-300">Rewards &amp; Recognition</span>
                 {/* <svg className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-all duration-300 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg> */}
               </MagneticButton>
 

@@ -3,25 +3,25 @@
         "tag": "Your Modern Wellbeing Platform",
         "title": "Empowering Every",
         "highlight": "Dimension",
-        "subtitle": "Designed to support every aspect of your life — Physical, Mental, and Financial. Because true success begins with holistic wellbeing.",
-        "cta": " Wellness Benefits"
+        "subtitle": "Designed to support every aspect of your life - Physical, Mental and Financial. Because true success begins with holistic wellbeing.",
+        "cta": "Wellness Benefits"
     },
-    "physical": {
+   "physical": {
         "title": "Physical Wellness",
-        "subtitle": "Invest in your health with programs designed to energize, strengthen, and sustain your lifestyle.",
+        "subtitle": "Invest in your health with programs designed to energize, strengthen and sustain your lifestyle.",
         "bg": "bg-zinc-900",
         "benefits": [
             {
-                "title": "Your Nationwide Gym Access",
+                "title": "Ultimate Fitness Freedom",
                 "iconName": "Dumbbell",
-                "desc": "The Ultimate Fitness Freedom.",
-                "image": "https://hr-assets.fyers.co.in/Cult.gif.gif",
+                "desc": "Fitness That Fits Your Life.",
+                "image": "https://hr-assets.fyers.co.in/images/Cult.gif.gif",
                 "url": "https://connect.fyers.in/stream/21661000002962028",
                 "modalDetails": {
                     "fullDescription": " Why settle for one gym when you can have them all? We’ve partnered with Cult.fit to give you an all-access pass to India’s premium fitness ecosystem. Whether you’re at home or traveling, your workout never skips a beat.",
                     "bulletPoints": [
-                        "Walk into any Cult center across the country—your membership travels with you",
-                        "From high-intensity HRX and Boxing to Yoga and Dance, find the format that fuels your fire"
+                        "Walk into any Cult center across the country, your membership travels with you",
+                        "From high-intensity HRX and boxing to yoga and dance plus badminton and swimming, find the fitness style that fuels your passion"
                     ]
                 }
             },
@@ -29,17 +29,16 @@
                 "title": "FYERS Club Verse",
                 "iconName": "Calendar",
                 "desc": "Play Together. Win Together.",
-                "image": "https://hr-assets.fyers.co.in/CV.gif.gif",
+                "image": "https://hr-assets.fyers.co.in/images/CV.gif.gif",
                 "url": "https://connect.fyers.in/home",
-                "connect_url":"https://connect.fyers.in/home",
+                "connect_url":"https://connect.fyers.in/announcement/unveiling-fyers-club-verse-where-collaboration-meets-competition",
                 "modalDetails": {
-                    "fullDescription": "FYERS Club Verse brings teams together through sports, wellness, and friendly competition. From tournaments to fitness activities, these events create opportunities to connect, collaborate, and stay active.",
+                    "fullDescription": "FYERS Club Verse brings teams together through sports, wellness and friendly competition. From tournaments to fitness activities, these events create opportunities to connect, collaborate and stay active.",
                     "bulletPoints": [
                         "Inter-team sports tournaments throughout the year",
-                        "Fun wellness and fitness engagement activities",
+                        "Fun, wellness and fitness engagement activities",
                         "Opportunities to build team spirit and collaboration",
-                        "Event announcements and updates shared on Zoho Connect and Zoho Cliq",
-                        "Easy access on Zoho Connect"
+                        "Event announcements and updates shared on Zoho Connect"
                     ]
                 }
             },
@@ -47,19 +46,18 @@
                 "title": "Subsidized Healthy Lunch",
                 "iconName": "Utensils",
                 "desc": "Eat Well. Work Better.",
-                "image": "https://hr-assets.fyers.co.in/Food.png",
+                "image": "https://hr-assets.fyers.co.in/images/Food.png",
                 "policy_url":"https://connect.fyers.in/announcement/introducing-lunch-meals",
                 "policyIconImg":"/food.gif",
                 "policyIconName":"View More",
+                "connect_url": "https://www.hungerbox.ai/",
                 "modalDetails": {
                     "fullDescription": "Good nutrition fuels great performance. To make healthy eating easier and more convenient, FYERS provides nutritious weekday meals with a 50% subsidy.",
                     "bulletPoints": [
-                        "50% meal subsidy sponsored by FYERS",
-                        "Choice of veg and non-veg healthy meal options",
-                        "Convenient pre-ordering through our partner app - Hunger Box",
-                        "Available Monday to Friday",
+                        "50% meal subsidy co-contributed by FYERS and members, encouraging mindful consumption and helping reduce food wastage while continuing to make healthy meals accessible to everyone",
                         "Nutritious meals with no maida or refined sugar, featuring millets and brown rice, along with calorie information for every meal",
-                        "Member contribution adjusted in the monthly payroll cycle"
+                        "Choice of veg and non-veg healthy meal options, available Monday to Friday",
+                        "Convenient pre-ordering through our partner app - Hunger Box"
                     ]
                 }
             },
@@ -67,14 +65,14 @@
                 "title": "Festive Menu",
                 "iconName": "PartyPopper",
                 "desc": "Celebrate Cultures and Seasons Through Food.",
-                "image": "https://hr-assets.fyers.co.in/Festive%20Menu.png",
+                "image": "https://hr-assets.fyers.co.in/images/menu.png",
                 "modalDetails": {
-                    "fullDescription": "Special festive menus are introduced throughout the year to celebrate the diverse cultures and seasons. These curated meals bring traditional flavors seasonal food from different regions, creating moments to experience and enjoy together.",
+                    "fullDescription": "While our daily meals focus on healthy and balanced nutrition, festive menus are our way of adding a little indulgence to the mix. Think of them as well-deserved cheat meals, bringing together rich flavors, traditional recipes and the joy of celebration across cultures.",
                     "bulletPoints": [
-                        "Special menus for major festivals and seasons",
-                        "Traditional dishes inspired by festival cultures",
-                        "Explore diverse seasonal cuisines",
-                        "Encourages cultural connection and feast together"
+                        "Festive menus introduced during key festivals and seasonal occasions",
+                        "Indulgent cheat meal experiences alongside everyday healthy meals",
+                        "Traditional and regional delicacies from across India, opportunity to explore diverse seasonal cuisines",
+                        "Company-wide potluck across all locations, brings teams together through shared food and celebrations"
                     ]
                 }
             },
@@ -82,35 +80,34 @@
                 "title": "Doctor Consultation",
                 "iconName": "Activity",
                 "desc": "Healthcare, Anytime You Need It.",
-                "image": "https://hr-assets.fyers.co.in/Online%20consultation.jpg",
+                "image": "https://hr-assets.fyers.co.in/images/Online%20consultation.jpg",
                 "modalDetails": {
                     "fullDescription": "Through our partnership with Practo, members and their families can access verified doctors across multiple specialties anytime, anywhere.",
                     "bulletPoints": [
                         "Unlimited online consultations for your family",
-                        "Access to 24+ medical specialties",
+                        "Access to 24+ medical specialties and 1L+ doctors across India",
                         "Audio, video, or chat consultation options",
-                        "Connect with a doctor in under 5 minutes — 24/7",
+                        "Connect with a doctor 24/7",
                         "Coverage for up to 4 adults and 2 children",
                         "Veterinary consultations included",
                         "Up to 20% discount on medicines and lab tests",
-                        "Up to 10% discount on clinic visits",
-                        "Access to 1L+ doctors across India"
+                        "Up to 10% discount on clinic visits"
                     ]
                 }
             },
             {
-                "title": "Health Centre",
+                "title": "Discounted Health Checkup",
                 "iconName": "HeartPulse",
                 "desc": "Stay on Top of Your Health.",
-                "image": "https://hr-assets.fyers.co.in/Health%20Center.gif",
-                "url": "https://fyers.ethika.in/employee/home",
+                "image": "https://hr-assets.fyers.co.in/images/Health%20Center.jpg",
+                "connect_url": "https://fyers.ethika.in/employee/home",
                 "modalDetails": {
-                    "fullDescription": "Take proactive care of your well-being with access to health, eye, and dental check-ups available through Employee Health section on the Ethika portal. These services help ensure you and your insured dependents stay healthy and supported.",
+                    "fullDescription": "Take proactive care of your well-being with access to health, eye and dental check-ups available through Employee Health section on the Ethika portal. These services help ensure you and your insured dependents stay healthy and supported.",
                     "bulletPoints": [
                         "Health check-ups for insured individuals",
                         "Eye check-up services",
                         "Dental check-up services",
-                        "Easy access through fyers.ethika.in"
+                        "Easy access through -  fyers.ethika.in"
                     ]
                 }
             },
@@ -118,21 +115,19 @@
                 "title": "Annual Health Camp",
                 "iconName": "Stethoscope",
                 "desc": "Proactive Care for a Healthier You.",
-                "image": "https://hr-assets.fyers.co.in/Health%20Checkup.jpg",
+                "image": "https://hr-assets.fyers.co.in/images/Health%20Checkup.jpg",
                 "modalDetails": {
                     "fullDescription": "An annual preventive health camp is organized to help members stay ahead of potential health risks through early screenings and diagnostics. It’s an opportunity to check in on your health and take proactive steps toward long-term well-being.",
                     "bulletPoints": [
                         "Company-organized annual preventive health camp",
-                        "Access to health screenings and diagnostic tests",
-                        "₹2,000 reimbursement for members outside bangalore locations",
-                        "Participation is voluntary and confidential",
-                        "Results are not linked to performance or promotion decisions"
+                        "Supports timely and proactive diagnosis",
+                        "₹2,000 reimbursement for members outside Bengaluru",
+                        "Reports and diagnosis remains confidential"
                     ]
                 }
             }
         ]
     },
-            
     "mental": {
         "title": "Mental Wellness",
         "subtitle": "Prioritize your inner balance and emotional resilience.",
@@ -142,20 +137,19 @@
                 "title": "Comprehensive Leave Program",
                 "iconName": "CalendarCheck",
                 "desc": "Time Off That Supports Life Beyond Work.",
-                "image": "https://hr-assets.fyers.co.in/Leave.gif",
+                "image": "https://hr-assets.fyers.co.in/images/Leave.gif",
                 "modalDetails": {
-                    "fullDescription": "Our leave policies are designed to give you the flexibility to rest, recharge, and take care of life’s important moments while maintaining a healthy work-life balance.",
+                    "fullDescription": "Our leave policies are designed to give you the flexibility to rest, recharge and take care of life’s important moments while maintaining a healthy work-life balance.",
                     "bulletPoints": [
-                        "Public Holiday Calendar",
+                        "Public Holidays",
                         "15 days Privilege Leave (carry forward up to 30 days)",
                         "12 days Sick Leave each year",
-                        "Women’s Wellness Leave – 1 day per month",
-                        "Birthday Leave – 1 paid day to celebrate you",
-                        "Wedding Leave – 1 paid day",
-                        "Maternity Leave – 26 weeks",
-                        "Paternity / Adoption Leave – 15 days ( can be taken in within 6 months)",
-                        "Bereavement Leave – up to 3 days annually",
-                        "Compensatory Off for work on weekends or public holidays"
+                        "Birthday Leave : 1 paid day to celebrate you",
+                        "Wedding Leave : 1 paid day",
+                        "Maternity Leave : 26 weeks / Adoption Leave as per the act",
+                        "Paternity / Adoption Leave : 15 days ( can be taken within 6 months)",
+                        "Compensatory Off for work on weekends or public holidays",
+                        "Bereavement Leave : members may take up to 3 days of leave in a year in the event of the loss of an immediate family member (spouse, children, siblings, parents or parents-in-law)"
                     ]
                 }
             },
@@ -163,15 +157,14 @@
                 "title": "Work From Home",
                 "iconName": "Home",
                 "desc": "Flexibility When You Need It.",
-                "image": "https://hr-assets.fyers.co.in/WFH.gif",
+                "image": "https://hr-assets.fyers.co.in/images/WFH.gif",
                 "modalDetails": {
-                    "fullDescription": "Enjoy the flexibility to work remotely while staying connected and productive. The Work From Home benefit allows eligible members to manage personal commitments without missing a beat at work.",
+                    "fullDescription": "Recognizing the impact of daily commutes and the importance of maintaining a healthy work-life balance, this Work From Home benefit is designed to give you the flexibility you need—when you need it. It empowers you to WFH with the same efficiency by staying connected, collaborative and productive as a team.",
                     "bulletPoints": [
                         "Up to 4 Work From Home days per month",
-                        "Requests submitted through the Zoho People - WFH & Leave module",
-                        "WFH subjective to approval by your manager",
-                        "WFH cannot be used as a substitute for leave or cannot be carried forward",
-                        "Not applicable for Customer Success, Sales, Quality, and Facilities teams"
+                        "Easy request submission through the Zoho People - WFH & Leave module",
+                        "WFH cannot be used as a substitute for leave and cannot be carried forward",
+                        "This benefit is tailored for flexible work roles with Customer Success, Sales, Quality and Facilities teams continuing their valuable onsite contributions"
                     ]
                 }
             },
@@ -179,16 +172,15 @@
                 "title": "Consious Corner",
                 "iconName": "Brain",
                 "desc": "Supporting Your Mental Well-being.",
-                "image": "https://hr-assets.fyers.co.in/Conscious%20Corner.png",
-                "url": "https://fyers.ethika.in/employee/home",
+                "image": "https://hr-assets.fyers.co.in/images/Conscious%20Corner.png",
+                "connect_url":"https://connect.fyers.in/announcement/welcome-to-the-conscious-corner-%E2%80%94-your-sanctuary-for-mindful-learning-and-intentional-growth",
                 "policyIconImg":"/emotional.gif",
                 "policyIconName":"View More",
                 "policy_url":"https://connect.fyers.in/announcement/welcome-to-the-conscious-corner-%E2%80%94-your-sanctuary-for-mindful-learning-and-intentional-growth",
                 "modalDetails": {
                     "fullDescription": "Conscious Corner brings expert-led sessions focused on mental health awareness, emotional wellbeing, Physical and Financial best practices webinar by Industry experts helping members build resilience and maintain balance.",
                     "bulletPoints": [
-                        "Expert-led mental wellness webinar",
-                        "Guidance on Physical, Financial and Mental well-being",
+                        "Expert-led wellness webinar",
                         "Updates and resources shared on Zoho Connect"
                     ]
                 }
@@ -197,17 +189,14 @@
                 "title": "Women’s Wellness",
                 "iconName": "HeartHandshake",
                 "desc": "Supporting Health, Comfort, and Wellbeing.",
-                "image": "https://hr-assets.fyers.co.in/WW.gif",
+                "image": "https://hr-assets.fyers.co.in/images/WW.gif",
                 "modalDetails": {
-                    "fullDescription": "This initiative is designed to support women members experiencing menstrual discomfort or related health concerns, ensuring they have the flexibility and facilities needed for their wellbeing at work.",
+                    "fullDescription": "In line with our commitment to fostering a supportive and inclusive workplace, the Women’s Wellness initiative is designed to acknowledge and support the natural health needs of our women members. It enables them to prioritize their wellbeing with dignity, comfort and ease.",
                     "bulletPoints": [
-                        "1 day paid Women’s Wellness Leave each month (12 days annually)",
-                        "Available for women aged 18–52 years",
-                        "Auto-approved leave with no medical documentation required",
-                        "Easy application through the Zoho Leave module",
-                        "Sanitary napkin dispensers and hygiene disposal bins in restrooms",
-                        "Seat disinfectant spray provided in women’s restrooms",
-                        "Hygienic facilities to support comfort and well-being"
+                        "1 day of paid Women’s Wellness Leave each month, to be availed within the same month",
+                        "Auto-approved leave which ensures privacy",
+                        "Seamless application through the Zoho Leave module",
+                        "Sanitary napkin dispensers, hygiene disposal bins & Disinfectant sprays available in all restrooms"
                     ]
                 }
             },
@@ -215,15 +204,15 @@
                 "title": "Grievance Redressal",
                 "iconName": "Phone",
                 "desc": "A Safe Space to Raise Concerns.",
-                "image": "https://hr-assets.fyers.co.in/Grievance.png",
+                "image": "https://hr-assets.fyers.co.in/images/Grievance.png",
+                "connect_url":"https://people.zoho.in/fyershrms/zp#files/orgfile-catId:46493000000196190",
                 "modalDetails": {
                     "fullDescription": "We are committed to maintaining a respectful and supportive workplace. Members can raise concerns or grievances through a structured and confidential process designed to ensure fair and timely resolution.",
                     "bulletPoints": [
-                        "Submit concerns via membergrievances@fyers.in",
                         "HR acknowledgement within 48 working hours",
                         "A structured and transparent resolution process",
-                        "Escalation to HR leadership when required",
-                        "Strict confidentiality maintained throughout"
+                        "Strict confidentiality maintained throughout",
+                        "Submit concerns via Grievance Community"
                     ]
                 }
             },
@@ -231,17 +220,17 @@
                 "title": "Harassment-Free Workplace",
                 "iconName": "ShieldCheck",
                 "desc": "A Culture of Respect and Safety.",
-                "image": "https://hr-assets.fyers.co.in/Harassment%20Free.png",
+                "image": "https://hr-assets.fyers.co.in/images/Harrasments.png",
                 "url": "https://people.fyers.in/fyershrms/zp#files/orgfile",
-                "connect_url":"https://connect.fyers.in/home",
+                "connect_url":"https://people.zoho.in/fyershrms/zp#files/orgfile",
                 "modalDetails": {
-                    "fullDescription": "We are committed to creating a workplace where every member feels safe, respected, and valued. Our policies ensure a professional environment built on dignity, inclusion, and mutual respect.",
+                    "fullDescription": "We are committed to creating a workplace where every member feels safe, respected and valued. Our policies ensure a professional environment built on dignity, inclusion and mutual respect.",
                     "bulletPoints": [
                         "Zero tolerance for harassment and discrimination",
-                        "Full compliance with PoSH policy guidelines",
+                        "Full compliance with PoSH Act",
                         "Protection against Work place harassment",
-                        "Ability to report concerns directly to reportsexualharassment@fyers.in",
-                        "Complete policy details available on Zoho People"
+                        "Ability to report concerns directly: Click here"
+  
                     ]
                 }
             },
@@ -249,13 +238,12 @@
                 "title": "Milestone Celebrations & Team Events",
                 "iconName": "PartyPopper",
                 "desc": "Celebrating Wins, Big and Small.",
-                "image": "https://hr-assets.fyers.co.in/Borntotrade.gif",
+                "image": "https://hr-assets.fyers.co.in/images/Milestone.gif",
                 "url": "https://connect.fyers.in/home",
-                "connect_url":"https://connect.fyers.in/home",
                 "modalDetails": {
                     "fullDescription": "We believe achievements deserve recognition and moments of celebration. From milestone events to team outings, these activities bring members together and strengthen our collaborative culture.",
                     "bulletPoints": [
-                        "Milestone celebrations recognizing our contribution to add in customers.",
+                        "Milestone celebrations recognizing FYERS achievement",
                         "Team outings and dinners to connect beyond work",
                         "Engaging team-building activities",
                         "Event updates and announcements shared on Zoho Connect"
@@ -264,7 +252,7 @@
             }
         ]
     },
-    "financial": {
+     "financial": {
         "title": "Financial Wellness",
         "subtitle": "Build security, stability, and long-term prosperity.",
         "bg": "bg-zinc-900",
@@ -273,17 +261,16 @@
                 "title": "Group Medical Insurance",
                 "iconName": "HeartPulse",
                 "desc": "Comprehensive Health Protection.",
-                "image": "https://hr-assets.fyers.co.in/Health%20Insurance.gif",
+                "image": "https://hr-assets.fyers.co.in/images/Health%20Insurance.gif",
                 "url": "https://fyers.ethika.in/employee/home",
-                "connect_url":"https://fyers.ethika.in/employee/home",
+                "connect_url":"https://fyers.ethika.in/",
                 "modalDetails": {
-                    "fullDescription": "To support members and their families during medical emergencies, comprehensive Group Medical Insurance coverage is provided for hospitalization due to illness, disease, or injury.",
+                    "fullDescription": "To support members and their families during medical emergencies, comprehensive Group Medical Insurance coverage is provided for hospitalization due to illness, disease or injury.",
                     "bulletPoints": [
-                        "₹5,00,000 medical insurance coverage per person and upto 30 lakhs medical insurance coverage per member",
-                        "Coverage for members and eligible dependents",
+                        "₹5,00,000 medical insurance coverage per member & their dependence",
                         "Protection against hospitalization expenses due to illness or injury",
-                        "Cashless treatment at network hospitals",
-                        "Accessible via the Ethika portal -  fyers.ethika.in"
+                        "Coverage applicable as per policy terms and conditions",
+                        "Enjoy cashless treatment at network hospitals, easily accessible via the Ethika portal"
                     ]
                 }
             },
@@ -291,13 +278,13 @@
                 "title": "Group Personal Accident Insurance",
                 "iconName": "Shield",
                 "desc": "Protection When It Matters Most.",
-                "image": "https://hr-assets.fyers.co.in/Insurance2.gif",
+                "image": "https://hr-assets.fyers.co.in/images/Insurance2.gif",
                 "modalDetails": {
-                    "fullDescription": "This provides financial protection in the event of accidental injury, disability, or death, ensuring support for members and their families during unforeseen situations.",
+                    "fullDescription": "This provides financial protection to members in the event of accidental injury, disability or death, ensuring support for members and their families during unforeseen situations.",
                     "bulletPoints": [
                         "₹30,00,000 coverage for accidental death or disability",
-                        "Coverage for permanent or partial disability due to accidents",
-                        "Financial protection for members and their families",
+                        "Coverage for permanent or partial disability",
+                        "Comprehensive protection for members",
                         "Coverage applicable as per policy terms and conditions"
                     ]
                 }
@@ -306,14 +293,14 @@
                 "title": "Group Term Insurance",
                 "iconName": "FileHeart",
                 "desc": "Financial Protection for Your Loved Ones.",
-                "image": "https://hr-assets.fyers.co.in/GTL.gif",
+                "image": "https://hr-assets.fyers.co.in/images/GTL.gif",
                 "modalDetails": {
                     "fullDescription": "To provide peace of mind and long-term security, Group Term Life Insurance ensures financial protection for your family in the event of unforeseen circumstances.",
                     "bulletPoints": [
                         "3× base salary coverage for career level 8 and below",
                         "5× base salary coverage for career level 9 and above",
                         "Financial protection and support for your dependents",
-                        "Coverage applicable as per policy underwriting guidelines"
+                        "Coverage applicable as per policy terms and conditions"
                     ]
                 }
             },
@@ -321,57 +308,49 @@
                 "title": "Retirement Benefits",
                 "iconName": "TrendingUp",
                 "desc": "Secure Your Future with Long-Term Savings.",
-                "image": "https://hr-assets.fyers.co.in/Retiral.gif",
+                "image": "https://hr-assets.fyers.co.in/images/Retiral.gif",
                 "modalDetails": {
                     "fullDescription": "Our retiral benefits are designed to help members build financial stability for the future while ensuring compliance with statutory requirements.",
                     "bulletPoints": [
-                        "Employer contribution towards EPF",
-                        "Allocation to the Employee Pension Scheme (EPS)",
-                        "EDLI life insurance coverage for added protection",
-                        "Gratuity eligibility after 5 years of service",
-                        "Statutory bonus as per the Code on Wages"
-                    ]
+                        "Retirement Savings: Employer contribution to Provident Fund (EPF)",
+                        "Pension scheme allocation (EPS)",
+                        "Long-Term Security & Benefits: Life insurance coverage for added protection (EDLI)",
+                        "Gratuity (5+ years): Recognizing members’ long-term contribution, paid as per the Gratuity Act"     
+                                ]
                 }
             },
             {
                 "title": "Car Lease Policy",
                 "iconName": "Car",
                 "desc": "Drive with Smart Financial Benefits.",
-                "image": "https://hr-assets.fyers.co.in/Car.gif",
+                "image": "https://hr-assets.fyers.co.in/images/Car.gif",
                 "modalDetails": {
                     "fullDescription": "Eligible members can opt for a company-supported car leasing program that offers flexibility and financial advantages while owning a vehicle.",
                     "bulletPoints": [
-                        "Available for career level 6 and above",
-                        "Car price limit based on salary and lease tenure",
-                        "Requires HR Head approval",
-                        "Minimum CIBIL score of 700 required",
-                        "A minimum CIBIL score of 700 is required to avail the benefit",
-                        "Not applicable during Performance Improvement Programs or during probation"
+                        "Applicable for career level 6 and above",
+                        "A tax-efficient way to upgrade your drive while maximizing your savings"
                     ]
                 }
             },
             {
-                "title": "Employee State Insurance (ESI)",
+                "title": "ESI & Statutory Benefits ",
                 "iconName": "FileCheck",
                 "desc": "Statutory Protection for Your Well-being.",
-                "image": "https://hr-assets.fyers.co.in/ESI%203.png",
+                "image": "https://hr-assets.fyers.co.in/images/ESI%203.png",
                 "modalDetails": {
                     "fullDescription": "Employee State Insurance provides essential social security benefits that support members and their families during medical or financial emergencies.",
                     "bulletPoints": [
-                        "Employer contribution: 3.25%",
-                        "Employee contribution: 0.75%",
-                        "Contributions remitted within statutory timelines",
-                        "Coverage includes medical, sickness, maternity, and disability benefits",
-                        "Subjective to applicable members"
+                        "Comprehensive Health & Disability Coverage: Includes sickness, maternity and disability benefits to ensure member well-being",
+                        "Statutory bonus as per Code on Wages"
                     ]
                 }
             },
             {
                 "title": "Employee Referral Program",
                 "iconName": "Wallet",
-                "desc": "Help Build the Team. Get Rewarded.",
-                "image": "https://hr-assets.fyers.co.in/refer-2.png",
-                "connect_url":"https://connect.fyers.in/home",
+                "desc": "Help Build Our Team & Get Rewarded.",
+                "image": "https://hr-assets.fyers.co.in/images/refer-2.png",
+                "connect_url":"https://recruit.zoho.in/recruit/org60008426741/ShowTab.do?module=Referrals&submodule=Referrals",
                 "modalDetails": {
                     "fullDescription": "Know someone who would be a great fit? Refer talented candidates and earn exciting rewards when they successfully join the team.",
                     "bulletPoints": [
@@ -386,7 +365,8 @@
                 "title": "Creche Reimbursement",
                 "iconName": "Baby",
                 "desc": "Supporting Working Parents.",
-                "image": "https://hr-assets.fyers.co.in/creche2.gif",
+                "image": "https://hr-assets.fyers.co.in/images/ggggg.png",
+                "connect_url":"https://expense.zoho.in/app/60004776756#/home/dashboard",
                 "modalDetails": {
                     "fullDescription": "Balancing work and family is important. This benefit helps working parents manage childcare expenses with monthly creche reimbursements.",
                     "bulletPoints": [
@@ -401,13 +381,12 @@
                 "title": "Training Reimbursement Program",
                 "iconName": "GraduationCap",
                 "desc": "Invest in Your Growth.",
-                "image": "https://hr-assets.fyers.co.in/TR.jpg",
+                "image": "https://hr-assets.fyers.co.in/images/TR.jpg",
+                 "connect_url": "https://expense.zoho.in/app/60004776756#/home/dashboard",
                 "modalDetails": {
-                    "fullDescription": "Members are encouraged to enhance their professional skills through external courses, certifications, and conferences. This program helps support continuous learning and career development.",
+                    "fullDescription": "Members are encouraged to enhance their professional skills through external courses, certifications and conferences. This program helps support continuous learning and career development.",
                     "bulletPoints": [
-                        "Available after 6 months of service",
-                        "Requires manager and department head approval",
-                        "Final approval by HR & Management",
+                        "Available after 6 months of service, subject to manager and department head approval and based on role requirements",
                         "Submit receipts and completion certificates via Zoho Expense"
                     ]
                 }
@@ -415,180 +394,72 @@
             {
                 "title": "Company Sponsored Trainings",
                 "iconName": "Users",
-                "desc": "Learn from Industry Experts.",
-                "image": "https://hr-assets.fyers.co.in/1773382593519.png",
-                "connect_url": "https://connect.fyers.in/home",
+                "desc": "Learn from Experts.",
+                "image": "https://hr-assets.fyers.co.in/images/1773382593519.png",
+                "connect_url": "https://learn.zoho.in/portal/fyers/course?view=learn",
                 "modalDetails": {
                     "fullDescription": "We organize fully funded learning opportunities to help members stay updated with the latest industry knowledge and skills.",
                     "bulletPoints": [
+                        "FYERS Product Certified (FPC): A mandatory program to help every member master our platform",
                         "Sessions conducted by internal and external experts",
-                        "Company-sponsored training programs like NISM",
+                        "Company-sponsored training programs like NISM & more",
                         "Easy access to modules to refer to on Zoho Learn"
+                       
                     ]
                 }
             }
         ]
     },
     "leadership": {
-        "title": "Leadership",
-        "subtitle": "Build security, stability, and long-term prosperity.",
+        "title": "Leadership Benefits",
+        "subtitle": "Build security, stability and long-term prosperity.",
         "bg": "bg-zinc-900",
         "benefits": [
             {
-                "title": "Group Medical Insurance",
-                "iconName": "HeartPulse",
-                "desc": "Comprehensive Health Protection.",
-                "image": "https://hr-assets.fyers.co.in/Health%20Insurance.gif",
-                "url": "https://fyers.ethika.in/employee/home",
-                "connect_url":"https://fyers.ethika.in/employee/home",
+                "title": "Elite Chauffeur Service",
+                "iconName": "CarFront",
+                "desc": "Drive Like Royalty – Your Personal Chauffeur Awaits!",
+                "image": "https://hr-assets.fyers.co.in/images/Chauffeur%20Service.jpg",
+                "policy_url": " https://people.zoho.in/fyershrms/zp#files/myfile/me",
                 "modalDetails": {
-                    "fullDescription": "To support members and their families during medical emergencies, comprehensive Group Medical Insurance coverage is provided for hospitalization due to illness, disease, or injury.",
+                    "fullDescription": "Leaders are the heartbeat of success and we treat you like the legends you are! Step into ultimate luxury with a dedicated, six-step safety-screened chauffeur who ferries you and your entire family in complete comfort.",
                     "bulletPoints": [
-                        "₹5,00,000 medical insurance coverage per person and upto 30 lakhs medical insurance coverage per member",
-                        "Coverage for members and eligible dependents",
-                        "Protection against hospitalization expenses due to illness or injury",
-                        "Cashless treatment at network hospitals",
-                        "Accessible via the Ethika portal -  fyers.ethika.in"
+                        "12 flexible hours a day, 6 days a week",
+                        "Company pays every rupee – hiring & salary",
+                        "You hand-pick your chauffeur before we hire",
+                        "Seamless replacements if needed"
                     ]
                 }
             },
             {
-                "title": "Group Personal Accident Insurance",
-                "iconName": "Shield",
-                "desc": "Protection When It Matters Most.",
-                "image": "https://hr-assets.fyers.co.in/Insurance2.gif",
+                "title": "Car Fuel Reimbursement",
+                "iconName": "Fuel",
+                "desc": "Fuel Your Fire",
+                "image": "https://hr-assets.fyers.co.in/images/Car%20Fuel%20Reimbursement.jpg",
+                "policy_url": " https://people.zoho.in/fyershrms/zp#files/myfile/me",
                 "modalDetails": {
-                    "fullDescription": "This provides financial protection in the event of accidental injury, disability, or death, ensuring support for members and their families during unforeseen situations.",
+                    "fullDescription": "Keep the momentum going with zero worries! As leaders, claim up to ₹10,000 per month towards fuel.",
                     "bulletPoints": [
-                        "₹30,00,000 coverage for accidental death or disability",
-                        "Coverage for permanent or partial disability due to accidents",
-                        "Financial protection for members and their families",
-                        "Coverage applicable as per policy terms and conditions"
+                        "Up to ₹10,000 per month fuel reimbursement - claim it every single month",
+                        "Exclusive for our rockstar leaders at Career Level 9+ working out of office",
+                        "Super-easy claims via ZOHO Expenses - just upload car registration details & fuel bills",
+                        "Vehicle must be registered in members name"
                     ]
                 }
             },
             {
-                "title": "Group Term Insurance",
-                "iconName": "FileHeart",
-                "desc": "Financial Protection for Your Loved Ones.",
-                "image": "https://hr-assets.fyers.co.in/GTL.gif",
+                "title": "Annual Family Vacation Program",
+                "iconName": "Plane",
+                "desc": "Make Magical Memories",
+                "image": "https://hr-assets.fyers.co.in/images/Family%20Vacation.jpg",
+                "policy_url": " https://people.zoho.in/fyershrms/zp#files/myfile/me",
                 "modalDetails": {
-                    "fullDescription": "To provide peace of mind and long-term security, Group Term Life Insurance ensures financial protection for your family in the event of unforeseen circumstances.",
+                    "fullDescription": "Your family’s love and sacrifices power your greatness, now it’s time to celebrate them in style! Travel the world (or India) with your loved ones and get up to ₹3,00,000",
                     "bulletPoints": [
-                        "3× base salary coverage for career level 8 and below",
-                        "5× base salary coverage for career level 9 and above",
-                        "Financial protection and support for your dependents",
-                        "Coverage applicable as per policy underwriting guidelines"
-                    ]
-                }
-            },
-            {
-                "title": "Retirement Benefits",
-                "iconName": "TrendingUp",
-                "desc": "Secure Your Future with Long-Term Savings.",
-                "image": "https://hr-assets.fyers.co.in/Retiral.gif",
-                "modalDetails": {
-                    "fullDescription": "Our retiral benefits are designed to help members build financial stability for the future while ensuring compliance with statutory requirements.",
-                    "bulletPoints": [
-                        "Employer contribution towards EPF",
-                        "Allocation to the Employee Pension Scheme (EPS)",
-                        "EDLI life insurance coverage for added protection",
-                        "Gratuity eligibility after 5 years of service",
-                        "Statutory bonus as per the Code on Wages"
-                    ]
-                }
-            },
-            {
-                "title": "Car Lease Policy",
-                "iconName": "Car",
-                "desc": "Drive with Smart Financial Benefits.",
-                "image": "https://hr-assets.fyers.co.in/Car.gif",
-                "modalDetails": {
-                    "fullDescription": "Eligible members can opt for a company-supported car leasing program that offers flexibility and financial advantages while owning a vehicle.",
-                    "bulletPoints": [
-                        "Available for career level 6 and above",
-                        "Car price limit based on salary and lease tenure",
-                        "Requires HR Head approval",
-                        "Minimum CIBIL score of 700 required",
-                        "A minimum CIBIL score of 700 is required to avail the benefit",
-                        "Not applicable during Performance Improvement Programs or during probation"
-                    ]
-                }
-            },
-            {
-                "title": "Employee State Insurance (ESI)",
-                "iconName": "FileCheck",
-                "desc": "Statutory Protection for Your Well-being.",
-                "image": "https://hr-assets.fyers.co.in/ESI%203.png",
-                "modalDetails": {
-                    "fullDescription": "Employee State Insurance provides essential social security benefits that support members and their families during medical or financial emergencies.",
-                    "bulletPoints": [
-                        "Employer contribution: 3.25%",
-                        "Employee contribution: 0.75%",
-                        "Contributions remitted within statutory timelines",
-                        "Coverage includes medical, sickness, maternity, and disability benefits",
-                        "Subjective to applicable members"
-                    ]
-                }
-            },
-            {
-                "title": "Employee Referral Program",
-                "iconName": "Wallet",
-                "desc": "Help Build the Team. Get Rewarded.",
-                "image": "https://hr-assets.fyers.co.in/refer-2.png",
-                "connect_url":"https://connect.fyers.in/home",
-                "modalDetails": {
-                    "fullDescription": "Know someone who would be a great fit? Refer talented candidates and earn exciting rewards when they successfully join the team.",
-                    "bulletPoints": [
-                        "Up to ₹30,000 referral bonus for non-technical roles",
-                        "Up to ₹60,000 referral bonus for technical roles",
-                        "Rewards paid in two stages (3 months & 6 months)",
-                        "Referrals submitted through Zoho Recruit"
-                    ]
-                }
-            },
-            {
-                "title": "Creche Reimbursement",
-                "iconName": "Baby",
-                "desc": "Supporting Working Parents.",
-                "image": "https://hr-assets.fyers.co.in/creche2.gif",
-                "modalDetails": {
-                    "fullDescription": "Balancing work and family is important. This benefit helps working parents manage childcare expenses with monthly creche reimbursements.",
-                    "bulletPoints": [
-                        "Up to ₹8,000 per month per child",
-                        "Applicable for children up to 6 years of age",
-                        "Submit bills and birth certificate for reimbursement",
-                        "Claims processed through Zoho Expense"
-                    ]
-                }
-            },
-            {
-                "title": "Training Reimbursement Program",
-                "iconName": "GraduationCap",
-                "desc": "Invest in Your Growth.",
-                "image": "https://hr-assets.fyers.co.in/TR.jpg",
-                "modalDetails": {
-                    "fullDescription": "Members are encouraged to enhance their professional skills through external courses, certifications, and conferences. This program helps support continuous learning and career development.",
-                    "bulletPoints": [
-                        "Available after 6 months of service",
-                        "Requires manager and department head approval",
-                        "Final approval by HR & Management",
-                        "Submit receipts and completion certificates via Zoho Expense"
-                    ]
-                }
-            },
-            {
-                "title": "Company Sponsored Trainings",
-                "iconName": "Users",
-                "desc": "Learn from Industry Experts.",
-                "image": "https://hr-assets.fyers.co.in/1773382593519.png",
-                "connect_url": "https://connect.fyers.in/home",
-                "modalDetails": {
-                    "fullDescription": "We organize fully funded learning opportunities to help members stay updated with the latest industry knowledge and skills.",
-                    "bulletPoints": [
-                        "Sessions conducted by internal and external experts",
-                        "Company-sponsored training programs like NISM",
-                        "Easy access to modules to refer to on Zoho Learn"
+                        "Air, land, sea travel - domestic or international",
+                        "Hotels, resorts, meals, visa charges - everything covered",
+                        "Family = Self + Spouse + Children + Parents + In-Laws",
+                        "Submit travel plan & bills via ZOHO Expense"
                     ]
                 }
             }
@@ -597,7 +468,7 @@
     "common_url": {
         "policyUrl": "https://people.zoho.in/fyershrms/zp#files/orgfile-catId:46493000000196190"
     },
-    "rewards": {
+     "rewards": {
         "title": "Rewards & Recognition",
         "subtitle": "Celebrating Excellence Across FYERS.",
         "bg": "bg-zinc-950",
@@ -605,64 +476,59 @@
             {
                 "title": "FYERS Champion",
                 "iconName": "Trophy",
-                "desc": "Recognizing Outstanding Individual Excellence.",
-                "image": "https://hr-assets.fyers.co.in/fyers_champion.png",
+                "desc": "For Those Who Raise the Bar.",
+                "image": "https://hr-assets.fyers.co.in/images/fyers_champion.png",
                 "modalDetails": {
-                    "fullDescription": "This award honors individuals who consistently deliver exceptional performance, demonstrate creativity, embody FYERS values, and make a significant impact on the organization’s growth.",
+                    "fullDescription": "This is for the game-changers. The ones who consistently go the extra mile, think differently and create real impact. If you’re someone who brings creativity, delivers excellence and truly lives the FYERS values - this spotlight is yours.",
                     "bulletPoints": [
-                        "Rewards worth ₹1,00,000 (vouchers, cash, vacation, or equivalent options) & Recognition certificates for all winners",
-                        "Recognition Frequency: Twice a year, October & April",
-                        "Number of Winners: 2 winners per cycle & 4 winners in a financial year",
-                        "Nomination Process: Any FYERS member can nominate another member (self-nominations not allowed)",
-                        "Selection Process: Nominations reviewed by HR & Final selection by Founders & Leadership"
+                        "A well-deserved recognition of your journey, achievements and impact",
+                        "Rewards worth ₹1,00,000 (gift vouchers/cash/vacations & more)",
+                        "When it happens: Twice a year - because excellence deserves to be celebrated often",
+                        "Who makes it happen: Nominated by your peers, recognized by leadership - making it truly meaningful"
                     ]
                 }
             },
             {
                 "title": "FYERS Force",
-                "iconName": "Users",
-                "desc": "Celebrating Exceptional Team Achievements.",
-                "image": "https://hr-assets.fyers.co.in/Force%201.png",
+                "iconName": "Award",
+                "desc": "When Teams Win, We Celebrate Bigger .",
+                "image": "https://hr-assets.fyers.co.in/images/Force%201.png",
                 "modalDetails": {
-                    "fullDescription": "This team award recognizes collaboration, innovation, and collective efforts that create meaningful impact and contribute to FYERS’ success.",
+                    "fullDescription": "Great things happen when teams come together and this award is all about that collective magic. From collaboration to innovation, this recognizes teams that turn ideas into impact and move FYERS forward together.",
                     "bulletPoints": [
-                        "₹1,50,000 worth team rewards which may include celebrations, vouchers, cash, giveaways, or team experiences & Recognition certificates for all team members",
-                        "Recognition Frequency: Twice a year, October & April",
-                        "Number of Winners: 2 winners per cycle & 4 winners in a financial year",
-                        "Nomination Process: Any FYERS member can nominate another member (self-nominations not allowed)",
-                        "Selection Process: Nominations reviewed by HR & Final selection by Founders & Leadership"
-
+                        "₹1,50,000 worth of rewards - think team outings/celebrations/vouchers and more",
+                        "Recognition for every team member who made it happen",
+                        "When it happens: Twice a year - because success is sweeter when shared",
+                        "Who makes it happen: Reporting managers lead the way, with the power to nominate talent from any team or entity, ensuring no great impact goes unnoticed."
                     ]
                 }
             },
             {
                 "title": "Spot Award",
                 "iconName": "Star",
-                "desc": "Recognizing Impact in the Moment.",
-                "image": "https://hr-assets.fyers.co.in/SA.avif",
+                "desc": "For Wins That Deserve Instant Applause.",
+                "image": "https://hr-assets.fyers.co.in/images/SPOT%20Award%20FInal.png",
                 "modalDetails": {
-                    "fullDescription": "SPOT Awards celebrate members who make exceptional contributions within a short time frame while demonstrating FYERS values and delivering meaningful results.",
+                    "fullDescription": "Not all achievements wait for a big stage - some deserve recognition right away. SPOT Awards are all about celebrating those moments where you step up, stand out and make an immediate impact.",
                     "bulletPoints": [
-                        "Award Categories: FYERS Values Ambassador, FYERS Rising Star, FYERS Flash of Brilliance, FYERS Exceptional Team Player",
-                        "₹5,000 gift vouchers & Recognition certificates for winners",
-                        "Frequency: Awarded at the discretion of department heads and line managers",
-                        "Nomination Process: Line managers recommend members with proper justification & Limited to 30% of team headcount per financial year",
-                        "Selection Process: Final approval by Department Heads & Rewards issued by HR"
+                        "FYERS Values Ambassador: Our very own Brand Ambassador of showcasing our culture, leading by example in every interaction",
+                        "FYERS Rising Star:  Recognizing emerging talent who demonstrate exceptional potential and rapid professional growth",
+                        "FYERS Flash of Brilliance:  Celebrating moments of high-impact innovation and creative problem-solving",
+                        "FYERS Exceptional Team Player:  Honoring those who go above and beyond to support their peers and drive collective success",
+                        "Recognition Certificate & ₹5,000 Gift Vouchers"
                     ]
                 }
             },
             {
                 "title": "Thank Anyone @ FYERS",
                 "iconName": "Heart",
-                "desc": "A Simple Way to Appreciate Each Other.",
-                "image": "https://hr-assets.fyers.co.in/Force.avif",
+                "desc": "Because Appreciation Should Be Everyday.",
+                "image": "https://hr-assets.fyers.co.in/images/Force.avif",
                 "modalDetails": {
-                    "fullDescription": "Gratitude goes a long way. This initiative encourages members to thank colleagues across the organization for their support, collaboration, and contributions.",
+                    "fullDescription": "Sometimes, a simple thank you means everything. This initiative makes it easy to appreciate your colleagues - across teams, roles and levels - anytime you feel someone made a difference.",
                     "bulletPoints": [
-                        "Members can thank anyone across FYERS anytime",
-                        "Submit appreciation via Zoho People or the Thank Anyone @ FYERS",
-                        "4 winners selected every quarter through a raffle draw",
-                        "Winners receive ₹2,000 Amazon vouchers"
+                        "It builds a culture where appreciation flows freely and every effort feels valued",
+                        "4 winners selected every quarter through a raffle draw, receive ₹2,000 gift vouchers"
                     ]
                 }
             }
